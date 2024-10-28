@@ -1,4 +1,5 @@
 #!/bin/bash
+cd ~/Documents/dotfiles/ || exit
 #Document Folders Copy
 #-a: Archive mode, which preserves permissions, timestamps, and recursively copies directories.
 #-v: Verbose, to show progress.
@@ -13,8 +14,6 @@ rsync -av "${include[@]}" ~/Documents/ ~/Documents/dotfiles/Documents_Folder
 include=(--include 'hypr/' --include 'waybar/' --include 'qt5ct/' --include 'qt6ct/' --exclude '*/')
 
 rsync -av "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
-
-cd ~/Documents/dotfiles/ || exit
 
 if [[ $(git status --porcelain) ]]; then
     git add .
