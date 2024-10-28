@@ -1,4 +1,6 @@
 #!/bin/bash
+
+#cd into the dotfiles directory so the git status --porcelain doesnt return nothing
 cd ~/Documents/dotfiles/ || exit
 #Document Folders Copy
 #-a: Archive mode, which preserves permissions, timestamps, and recursively copies directories.
@@ -11,7 +13,7 @@ rsync -av "${include[@]}" ~/Documents/ ~/Documents/dotfiles/Documents_Folder
 
 #.config Folders Copy
 
-include=(--include 'hypr/' --include 'waybar/' --include 'qt5ct/' --include 'qt6ct/' --exclude '*/')
+include=(--include 'hypr/' --include 'waybar/' --include 'qt5ct/' --include 'qt6ct/' --exclude '*/' --exclude '*.')
 
 rsync -av "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
 
@@ -23,3 +25,5 @@ if [[ $(git status --porcelain) ]]; then
 else 
     echo "no changes to commit"
 fi
+
+exit 0
