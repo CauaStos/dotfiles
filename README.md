@@ -1,4 +1,4 @@
 # Dotfiles
 
-## Disclaimer:
-Personal dots
+## Disclaimer
+dots pessoais kkkkkkkkkkkkkkkk
