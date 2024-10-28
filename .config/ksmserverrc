@@ -1,0 +1,10 @@
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=10145dbd1dd000172964333400000408960002
+count=1
+program1=zen
+restartCommand1=/opt/zen-browser-bin/zen,--sm-client-id,10145dbd1dd000172964333400000408960002
+restartStyleHint1=0
+userId1=astro

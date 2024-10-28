@@ -1,0 +1,11 @@
+[ExtractDialog]
+2 screens: Window-Maximized=true
+DirHistory[$e]=$HOME/Documents/Spotify Local Songs/,$HOME/Downloads/,$HOME/Jogos/Subnautica Modded/
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+StatusBar=Disabled
+ToolBarsMovable=Disabled
