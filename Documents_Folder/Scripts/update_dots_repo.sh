@@ -13,7 +13,7 @@ rsync -av "${include[@]}" ~/Documents/ ~/Documents/dotfiles/Documents_Folder
 
 #.config Folders Copy
 
-include=(--include 'hypr/' --include 'waybar/' --include 'qt5ct/' --include 'qt6ct/' --exclude '*/' --exclude '*.')
+include=(--include 'hypr/' --include 'waybar/' --include 'qt5ct/' --include 'qt6ct/' --exclude '*/' --exclude '*.*')
 
 rsync -av "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
 
