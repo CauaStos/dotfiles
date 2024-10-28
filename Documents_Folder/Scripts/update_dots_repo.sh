@@ -17,7 +17,6 @@ include=(--include 'hypr/' --include 'waybar/' --include 'qt5ct/' --include 'qt6
 
 rsync -av "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
 
-find ~/Documents/dotfiles/.config -type f -exec rm -f {} +
 
 if [[ $(git status --porcelain) ]]; then
     git add .
