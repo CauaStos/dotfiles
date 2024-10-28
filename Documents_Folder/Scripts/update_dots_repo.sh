@@ -13,9 +13,11 @@ rsync -av "${include[@]}" ~/Documents/ ~/Documents/dotfiles/Documents_Folder
 
 #.config Folders Copy
 
-include=(--include 'hypr/' --include 'waybar/' --include 'qt5ct/' --include 'qt6ct/' --exclude={'*.','*/'})
+include=(--include 'hypr/' --include 'waybar/' --include 'qt5ct/' --include 'qt6ct/' --exclude '*/')
 
 rsync -av "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
+
+find ~/Documents/dotfiles/.config -type f -exec rm -f {} +
 
 if [[ $(git status --porcelain) ]]; then
     git add .
