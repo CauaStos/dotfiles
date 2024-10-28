@@ -16,7 +16,7 @@ cd ~/Documents/dotfiles/ || exit
 #Document Folders Copy
 include=(--include 'Hyprlock Assets/' --include 'Scripts/' --include 'Wallpapers/' --exclude '*/')
 
-rsync -av "${include[@]}" ~/Documents/ ~/Documents/dotfiles/Documents_Folder 
+rsync -av "${include[@]}" ~/Documents/ ~/Documents/dotfiles/Documents/
 
 #.config Folders Copy
 
@@ -36,4 +36,5 @@ else
     echo "no changes to commit"
 fi
 
+echo "Done!"
 exit 0
