@@ -6,7 +6,7 @@
 #-v: Verbose, shows progress.
 #--exclude: Specifies each folder or file to exclude from the copy. 
 #--include: Specifies each folder or file to include from the specified path.
-#
+#--checksum: Checks for minor changes in files instead of timestamps. (Specifically, checks for file size instead of timestamps)
 #
 
 
