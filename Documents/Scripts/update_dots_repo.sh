@@ -18,7 +18,7 @@ include=(--include 'Hyprlock Assets/' --include 'Scripts/' --include 'Wallpapers
 
 echo "Copying document folders..."
 
-rsync -av "${include[@]}" ~/Documents/ ~/Documents/dotfiles/Documents/
+rsync -av --checksum "${include[@]}" ~/Documents/ ~/Documents/dotfiles/Documents/
 
 #.config Folders Copy
 
@@ -26,7 +26,7 @@ echo "Copying .config folders..."
 
 include=(--include 'hypr/' --include 'waybar/' --include 'qt5ct/' --include 'qt6ct/' --include 'kitty/' --exclude '*/')
 
-rsync -av "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
+rsync -av --checksum "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
 
 rm -f ~/Documents/dotfiles/.config/*
 rm -f ~/Documents/dotfiles/.config/.*
