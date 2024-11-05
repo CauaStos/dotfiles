@@ -1,0 +1,18 @@
+[theme]
+background = "#1e1e2e"         # main background
+primary = "#cdd6f4"            #primary color (text)
+secondary = "#cba6f7"          #secondary color (idk)
+title = "#89b4fa"              #Playlist Title
+playing = "#cba6f7"            #now playing
+playing_selected = "#cba6f7"   #now playing selected state
+playing_bg = "#1e1e2e"         #now playing bg
+highlight = "#89b4fa"          #menu titles and selected songs
+highlight_bg = "#1e1e2e"       #menu titles background and selecteed song background
+error = "#f38ba8"              #error color
+error_bg = "#313244"           #error color bg
+statusbar = "#1e1e2e"          #Now Playing Info (Artist, Title, Timer)
+statusbar_progress = "#cba6f7" #Now Playing Progress Bar
+statusbar_bg = "#cba6f7"       #Now Playing Info Background
+cmdline = "#1e1e2e"            #Search background
+cmdline_bg = "#89b4fa"         #Search Text
+search_match = "#f38ba8"       #Search found highlight

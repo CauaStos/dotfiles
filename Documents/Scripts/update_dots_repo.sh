@@ -7,7 +7,7 @@
 #--exclude: Specifies each folder or file to exclude from the copy.
 #--include: Specifies each folder or file to include from the specified path.
 #--checksum: Checks for minor changes in files instead of timestamps. (Specifically, checks for file size instead of timestamps)
-#
+#--mkpath: Creates folders if there are none
 
 
 #cd into the dotfiles directory so the git status --porcelain doesnt return nothing
@@ -19,7 +19,7 @@ include=(--include 'Hyprlock Assets/' --include 'Scripts/' --include 'Wallpapers
 
 echo "Copying document folders..."
 
-rsync -av --checksum "${include[@]}" ~/Documents/ ~/Documents/dotfiles/Documents/
+rsync -av --checksum --mkpath "${include[@]}" ~/Documents/ ~/Documents/dotfiles/Documents/
 
 #.config Folders Copy
 
@@ -27,16 +27,16 @@ echo "Copying .config folders..."
 
 include=(--include 'hypr/' --include 'waybar/' --include 'qt5ct/' --include 'qt6ct/' --include 'kitty/' --exclude '*/')
 
-rsync -av --checksum "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
+rsync -av --checksum --mkpath "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
 
 rm -f ~/Documents/dotfiles/.config/*
 rm -f ~/Documents/dotfiles/.config/.*
 
 echo "Copying config from flatpaks..."
 
-include=(--include 'hypr/' --include 'ncspot/'  --exclude '*/')
+include=(--include 'ncspot/'  --exclude '*/')
 
-rsync -av --checksum "${include[@]}" ~/.var/app/io.github.hrkfdn.ncspot/config/ncspot/ ~/Documents/dotfiles/.var/app/io.github.hrkfdn.ncspot/config/ncspot/
+rsync -av --checksum --mkpath "${include[@]}" ~/.var/app/io.github.hrkfdn.ncspot/config/ncspot/ ~/Documents/dotfiles/.var/app/io.github.hrkfdn.ncspot/config/ncspot/
 
 if [[ $(git status --porcelain) ]]; then
     echo "pushing changes"
