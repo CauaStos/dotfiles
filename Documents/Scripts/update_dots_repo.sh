@@ -34,9 +34,11 @@ rm -f ~/Documents/dotfiles/.config/.*
 
 echo "Copying config from flatpaks..."
 
-include=(--include 'ncspot/config.toml'  --exclude '*/')
+include=(--include 'ncspot/'  --exclude '*/')
 
 rsync -av --checksum --mkpath "${include[@]}" ~/.var/app/io.github.hrkfdn.ncspot/config/ncspot/ ~/Documents/dotfiles/.var/app/io.github.hrkfdn.ncspot/config/ncspot/
+
+rm -f ~/Documents/dotfiles/.var/app/io.github.hrkfdn.ncspot/config/ncspot/userstate.cbor
 
 if [[ $(git status --porcelain) ]]; then
     echo "pushing changes"
