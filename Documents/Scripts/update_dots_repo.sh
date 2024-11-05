@@ -4,7 +4,7 @@
 #
 #-a: Archive mode, which preserves permissions, timestamps, and recursively copies directories.
 #-v: Verbose, shows progress.
-#--exclude: Specifies each folder or file to exclude from the copy. 
+#--exclude: Specifies each folder or file to exclude from the copy.
 #--include: Specifies each folder or file to include from the specified path.
 #--checksum: Checks for minor changes in files instead of timestamps. (Specifically, checks for file size instead of timestamps)
 #
@@ -12,6 +12,7 @@
 
 #cd into the dotfiles directory so the git status --porcelain doesnt return nothing
 cd ~/Documents/dotfiles/ || exit
+
 
 #Document Folders Copy
 include=(--include 'Hyprlock Assets/' --include 'Scripts/' --include 'Wallpapers/' --exclude '*/')
@@ -31,15 +32,23 @@ rsync -av --checksum "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
 rm -f ~/Documents/dotfiles/.config/*
 rm -f ~/Documents/dotfiles/.config/.*
 
+echo "Copying config from flatpaks..."
+
+include=(--include 'hypr/' --include 'ncspot/config.toml'  --exclude '*/')
+
+rsync -av --checksum "${include[@]}" ~/.var/app/io.github.hrkfdn.ncspot/config/ncspot/ ~/Documents/dotfiles/.var/app/io.github.hrkfdn.ncspot/config/ncspot/
+
 if [[ $(git status --porcelain) ]]; then
     echo "pushing changes"
-    
+
     git add .
     git commit -m "Updating dotfiles"
     git push origin main
-else 
+else
     echo "no changes to commit"
 fi
 
 echo "Done!"
 exit 0
+
+#/home/astro/.var/app/io.github.hrkfdn.ncspot/config/ncspot/
