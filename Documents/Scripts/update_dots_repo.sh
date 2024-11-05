@@ -34,7 +34,7 @@ rm -f ~/Documents/dotfiles/.config/.*
 
 echo "Copying config from flatpaks..."
 
-include=(--include 'hypr/' --include 'ncspot/config.toml'  --exclude '*/')
+include=(--include 'hypr/' --include 'ncspot/'  --exclude '*/')
 
 rsync -av --checksum "${include[@]}" ~/.var/app/io.github.hrkfdn.ncspot/config/ncspot/ ~/Documents/dotfiles/.var/app/io.github.hrkfdn.ncspot/config/ncspot/
 
