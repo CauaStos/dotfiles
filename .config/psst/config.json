@@ -1,0 +1,26 @@
+{
+  "credentials": {
+    "username": "cauatop",
+    "auth_data": "AQCiLioKdToqQLDSdmllDOzce7ajT3vQ1v_2byGzEXiimE1pAOgOotlt2NweThvMA2keDVMnZziuWY-SPZwZDeCR5BJUJhzlyBQFDsl_3acBgPKKCAnyuFZO0tRprap9ifrH_ysYZdO2lxKzc0GhNnxqllzlFDQjfSs8xfMDQhgc6G4OMqXWHRGOXUS5Akug1WDf",
+    "auth_type": 1
+  },
+  "audio_quality": "High",
+  "theme": "Dark",
+  "volume": 1.0,
+  "last_route": "SavedTracks",
+  "queue_behavior": "Sequential",
+  "show_track_cover": false,
+  "window_size": {
+    "width": 945.0,
+    "height": 503.0
+  },
+  "slider_scroll_scale": {
+    "scale": 3.0,
+    "y": 1.0,
+    "x": 1.0
+  },
+  "sort_order": "Ascending",
+  "sort_criteria": "DateAdded",
+  "paginated_limit": 500,
+  "seek_duration": 10
+}

@@ -1,0 +1,28 @@
+2024-11-04 20:01:05.318 [info] Extension host with pid 563139 started
+2024-11-04 20:01:05.395 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-11-04 20:01:05.417 [info] ExtensionService#_doActivateExtension mads-hartmann.bash-ide-vscode, startup: false, activationEvent: 'onLanguage:shellscript'
+2024-11-04 20:01:05.466 [info] ExtensionService#_doActivateExtension timonwong.shellcheck, startup: false, activationEvent: 'onLanguage:shellscript'
+2024-11-04 20:01:05.842 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-11-04 20:01:05.846 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-11-04 20:01:05.941 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-11-04 20:01:05.994 [info] Eager extensions activated
+2024-11-04 20:01:06.009 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-11-04 20:01:06.010 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-11-04 20:01:06.026 [info] ExtensionService#_doActivateExtension Catppuccin.catppuccin-vsc, startup: false, activationEvent: 'onStartupFinished'
+2024-11-04 20:01:06.030 [info] ExtensionService#_doActivateExtension Catppuccin.catppuccin-vsc-icons, startup: false, activationEvent: 'onStartupFinished'
+2024-11-04 20:01:06.107 [info] ExtensionService#_doActivateExtension formulahendry.code-runner, startup: false, activationEvent: 'onStartupFinished'
+2024-11-04 20:01:06.125 [info] Extension host terminating: renderer closed the MessagePort
+2024-11-04 20:01:06.129 [error] An error occurred when deactivating the extension 'mads-hartmann.bash-ide-vscode':
+2024-11-04 20:01:06.131 [error] TypeError: Cannot read properties of undefined (reading 'stop')
+	at Object.deactivate (/home/astro/.vscode-oss/extensions/mads-hartmann.bash-ide-vscode-1.38.0-universal/out/extension.js:63:19)
+	at z_.eb (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:11724)
+	at file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9874
+	at Array.map (<anonymous>)
+	at z_.$ (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:9862)
+	at z_.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:118:10105)
+	at EC.terminate (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:119:1424)
+	at Zi (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:15063)
+	at MessagePortMain.<anonymous> (file:///usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:174:11611)
+	at MessagePortMain.emit (node:events:519:28)
+	at MessagePortMain._internalPort.emit (node:electron/js2c/utility_init:2:2949)
+2024-11-04 20:01:06.132 [info] Extension host with pid 563139 exiting with code 0

@@ -1,0 +1,6 @@
+2024/10/22-01:25:33.275 196ab Reusing MANIFEST /home/astro/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
+2024/10/22-01:25:33.329 196ab Recovering log #4
+2024/10/22-01:25:33.333 196ab Reusing old log /home/astro/.config/vesktop/sessionData/Local Storage/leveldb/000004.log 
+2024/10/22-01:27:34.628 196ac Level-0 table #8: started
+2024/10/22-01:27:34.629 196ac Level-0 table #8: 96559 bytes OK
+2024/10/22-01:27:34.630 196ac Delete type=0 #4

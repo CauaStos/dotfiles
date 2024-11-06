@@ -1,0 +1,4130 @@
+{
+  "Name": "CurseClient",
+  "Process": "Curse.Agent.Host",
+  "PID": 13713,
+  "Arguments": [
+    "/tmp/.mount_CurseFYJLO39/resources/app.asar.unpacked/plugins/curse/linux/Curse.Agent.Host",
+    "--port=49475",
+    "--to-port=49495",
+    "--pid=13523",
+    "--appDataPath=/home/astro/.config/CurseForge",
+    "--clientId=Overwolf"
+  ],
+  "ProcessStart": "2024-10-26T03:41:24.2058802Z",
+  "Version": "1.259.1.20166",
+  "BuildDate": "2000-01-02T13:12:12Z",
+  "Start": "2024-10-26T00:41:24.8617184-03:00",
+  "Log": [
+{
+  "timestamp": "2024-10-26T00:41:24.8514416-03:00",
+  "level": "Warn",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Failed to modified BuiltInConverters: Cannot set initonly static field 'BuiltInConverters' after type 'Newtonsoft.Json.Serialization.DefaultContractResolver' is initialized."
+},
+{
+  "timestamp": "2024-10-26T00:41:24.8579094-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Startup Name: CurseForge, Version: 1.259.1.20166"
+},
+{
+  "timestamp": "2024-10-26T00:41:24.8587399-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Running Mods Agent with args: --port=49475,--to-port=49495,--pid=13523,--appDataPath=/home/astro/.config/CurseForge,--clientId=Overwolf"
+},
+{
+  "timestamp": "2024-10-26T00:41:24.8620694-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "start monitor process: 13523"
+},
+{
+  "timestamp": "2024-10-26T00:41:25.6683071-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Unable to load game instances from disk. No file was found at: /home/astro/.config/CurseForge/agent/GameInstances/ModpackGameInstances.json"
+},
+{
+  "timestamp": "2024-10-26T00:41:25.7900847-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Mods Agent server started on port 49475"
+},
+{
+  "timestamp": "2024-10-26T00:41:25.8657555-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Web Socket session connected"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.0553384-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Update simultaneous downloads '1' => '3'"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.0589332-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "UpdateOverrideLauncher"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.0607093-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Initializing Curse Mods Agent"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.0643083-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "update client Info ''..."
+},
+{
+  "timestamp": "2024-10-26T00:41:26.1085126-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Network connected and internet available"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.1319912-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "AddonServiceClient - CfCore Url: https://api.curseforge.com"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.4852129-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Attempt #1 of 2 on GameDatabase -> GetRemoteItems"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.4860583-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Getting Games from server"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.5217749-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Loaded 26 games from the server"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.5219648-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Saving games to local cache at /home/astro/.config/CurseForge/agent/gamesCache.json"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.5521161-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[GameRepository] Completed download of cache",
+  "data": {
+    "name": "Games",
+    "elapsedTime": "59.00"
+  }
+},
+{
+  "timestamp": "2024-10-26T00:41:26.571948-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Initializing local databases..."
+},
+{
+  "timestamp": "2024-10-26T00:41:26.5724965-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Initializing game instances."
+},
+{
+  "timestamp": "2024-10-26T00:41:26.5973424-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Found RegisterType on Type: 'Curse.Radium.Addons.AddonGameInstance'"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.597854-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Found RegisterType on Type: 'Curse.Games.Minecraft.MinecraftGameInstance'"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.5981518-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Initializing game instance of type Curse.Radium.Addons.AddonGameInstance"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.6259445-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[AddonGameInstance] LoadInstancesFromDisk loaded 0 instances"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.6260657-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Initializing game instance of type Curse.Games.Minecraft.MinecraftGameInstance"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.6656192-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] LoadInstancesFromDisk loaded 0 instances"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.6683928-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Game instances initialization completed. Operation took 94 ms"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.6687799-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Initializing Modpack instances."
+},
+{
+  "timestamp": "2024-10-26T00:41:26.6698463-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Running startup game detection"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.6746702-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Performing quick game detection for 26 games..."
+},
+{
+  "timestamp": "2024-10-26T00:41:26.6811212-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Game instance count is 0, so we will scan all storage drives for games."
+},
+{
+  "timestamp": "2024-10-26T00:41:26.6811651-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Discovering games from search...",
+  "data": {
+    "Comprehensive": false,
+    "GamesInstancesCount": 0
+  }
+},
+{
+  "timestamp": "2024-10-26T00:41:26.6989542-03:00",
+  "level": "Warn",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "An error occurred while looking for installed in games on the '/sys/fs/pstore' volume.",
+  "error": {
+    "message": "Access to the path '/sys/fs/pstore' is denied.",
+    "type": "System.UnauthorizedAccessException",
+    "stack": [
+      "System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String,Boolean)",
+      "System.IO.Enumeration.FileSystemEnumerator`1.Init()",
+      "System.IO.Enumeration.FileSystemEnumerator`1..ctor(String,Boolean,EnumerationOptions)",
+      "System.IO.Enumeration.FileSystemEnumerable`1+DelegateEnumerator..ctor(FileSystemEnumerable`1,Boolean)",
+      "System.IO.Enumeration.FileSystemEnumerable`1..ctor(String,FindTransform,EnumerationOptions,Boolean)",
+      "System.IO.Enumeration.FileSystemEnumerableFactory.DirectoryInfos(String,String,EnumerationOptions,Boolean)",
+      "System.IO.DirectoryInfo.InternalEnumerateInfos(String,String,SearchTarget,EnumerationOptions)",
+      "System.IO.DirectoryInfo.GetDirectories(String,EnumerationOptions)",
+      "System.IO.DirectoryInfo.GetDirectories()",
+      "Curse.Platform.Adapter.Detection.ScanFoldersResolver.Resolve(DriveInfo)",
+      "Curse.Radium.Games.GameService.DiscoverGamesFromSearch(Boolean,IEnumerable`1)",
+      "Curse.Radium.Games.GameService.DetectGames(Boolean,IEnumerable`1)",
+      "Curse.Radium.Games.GameService.DetectGames(Boolean,StorageDriveModel[])",
+      "Curse.Plugin.App.CurseAppWrapper.RunStartupGameDetection()",
+      "Curse.Plugin.App.CurseAppWrapper+<Init>d__27.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()",
+      "Curse.Radium.Addons.BaseAddonServiceDatabase`3+<InitializeAsync>d__8.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()",
+      "Curse.Radium.Addons.BaseAddonServiceDatabase`3+<UpdateCacheAsync>d__14.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.TechService.Games.GameRepository+<GetRemoteItemsAsync>d__17.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.Radium.Utilities.Retry+<DoAsync>d__5`1.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.TechService.Games.GameRepository+<<GetRemoteItemsAsync>b__17_0>d.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.TechService.AddonServiceClient+<GetGamesAsync>d__30.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.Server.Communication.BaseWebServiceClient+<GetAsync>d__14`1.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.HttpClient+<<SendAsync>g__Core|83_0>d.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.DecompressionHandler+<SendAsync>d__16.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.RedirectHandler+<SendAsync>d__4.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.HttpConnectionPool+<SendWithVersionDetectionAndRetryAsync>d__89.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.HttpConnection+<SendAsync>d__57.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.ThreadPool+<>c.<.cctor>b__52_0(Object)",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SignalCompletion()",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SetResult(TResult)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox.SetResult(TResult)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Security.SslStream+<ReadAsyncInternal>d__163`1.MoveNext()",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox`1.MoveNext()",
+      "System.Threading.ThreadPool+<>c.<.cctor>b__52_0(Object)",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SignalCompletion()",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SetResult(TResult)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox.SetResult(TResult)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Security.SslStream+<EnsureFullTlsFrameAsync>d__161`1.MoveNext()",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox`1.MoveNext()",
+      "System.Threading.ThreadPool+<>c.<.cctor>b__52_0(Object)",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SignalCompletion()",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SetResult(TResult)",
+      "System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs)",
+      "System.Net.Sockets.SocketAsyncEventArgs.OnCompletedInternal()",
+      "System.Net.Sockets.SocketAsyncEventArgs.FinishOperationAsyncSuccess(Int32,SocketFlags)",
+      "System.Net.Sockets.SocketAsyncEventArgs.CompletionCallback(Int32,SocketFlags,SocketError)",
+      "System.Net.Sockets.SocketAsyncEventArgs.TransferCompletionCallbackCore(Int32,Memory`1,SocketFlags,SocketError)",
+      "System.Net.Sockets.SocketAsyncContext+BufferMemoryReceiveOperation.InvokeCallback(Boolean)",
+      "System.Net.Sockets.SocketAsyncContext+OperationQueue`1.ProcessAsyncOperation(TOperation)",
+      "System.Net.Sockets.SocketAsyncContext.ProcessAsyncReadOperation(ReadOperation)",
+      "System.Net.Sockets.SocketAsyncContext+ReadOperation.System.Threading.IThreadPoolWorkItem.Execute()",
+      "System.Net.Sockets.SocketAsyncContext+AsyncOperation.Process()",
+      "System.Net.Sockets.SocketAsyncContext.HandleEvents(SocketEvents)",
+      "System.Net.Sockets.SocketAsyncEngine.System.Threading.IThreadPoolWorkItem.Execute()",
+      "System.Threading.ThreadPoolWorkQueue.DispatchWorkItem(Object,Thread)",
+      "System.Threading.ThreadPoolWorkQueue.Dispatch()",
+      "System.Threading.PortableThreadPool+WorkerThread.WorkerDoWork(PortableThreadPool,Boolean&)",
+      "System.Threading.PortableThreadPool+WorkerThread.WorkerThreadStart()",
+      "System.Threading.Thread+StartHelper.RunWorker()",
+      "System.Threading.Thread+StartHelper.Run()",
+      "System.Threading.Thread.StartCallback()"
+    ],
+    "innerError": {
+      "message": "Permission denied",
+      "type": "System.IO.IOException"
+    }
+  }
+},
+{
+  "timestamp": "2024-10-26T00:41:26.7178527-03:00",
+  "level": "Warn",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "An error occurred while looking for installed in games on the '/sys/fs/bpf' volume.",
+  "error": {
+    "message": "Access to the path '/sys/fs/bpf' is denied.",
+    "type": "System.UnauthorizedAccessException",
+    "stack": [
+      "System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String,Boolean)",
+      "System.IO.Enumeration.FileSystemEnumerator`1.Init()",
+      "System.IO.Enumeration.FileSystemEnumerator`1..ctor(String,Boolean,EnumerationOptions)",
+      "System.IO.Enumeration.FileSystemEnumerable`1+DelegateEnumerator..ctor(FileSystemEnumerable`1,Boolean)",
+      "System.IO.Enumeration.FileSystemEnumerable`1..ctor(String,FindTransform,EnumerationOptions,Boolean)",
+      "System.IO.Enumeration.FileSystemEnumerableFactory.DirectoryInfos(String,String,EnumerationOptions,Boolean)",
+      "System.IO.DirectoryInfo.InternalEnumerateInfos(String,String,SearchTarget,EnumerationOptions)",
+      "System.IO.DirectoryInfo.GetDirectories(String,EnumerationOptions)",
+      "System.IO.DirectoryInfo.GetDirectories()",
+      "Curse.Platform.Adapter.Detection.ScanFoldersResolver.Resolve(DriveInfo)",
+      "Curse.Radium.Games.GameService.DiscoverGamesFromSearch(Boolean,IEnumerable`1)",
+      "Curse.Radium.Games.GameService.DetectGames(Boolean,IEnumerable`1)",
+      "Curse.Radium.Games.GameService.DetectGames(Boolean,StorageDriveModel[])",
+      "Curse.Plugin.App.CurseAppWrapper.RunStartupGameDetection()",
+      "Curse.Plugin.App.CurseAppWrapper+<Init>d__27.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()",
+      "Curse.Radium.Addons.BaseAddonServiceDatabase`3+<InitializeAsync>d__8.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()",
+      "Curse.Radium.Addons.BaseAddonServiceDatabase`3+<UpdateCacheAsync>d__14.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.TechService.Games.GameRepository+<GetRemoteItemsAsync>d__17.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.Radium.Utilities.Retry+<DoAsync>d__5`1.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.TechService.Games.GameRepository+<<GetRemoteItemsAsync>b__17_0>d.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.TechService.AddonServiceClient+<GetGamesAsync>d__30.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.Server.Communication.BaseWebServiceClient+<GetAsync>d__14`1.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.HttpClient+<<SendAsync>g__Core|83_0>d.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.DecompressionHandler+<SendAsync>d__16.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.RedirectHandler+<SendAsync>d__4.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.HttpConnectionPool+<SendWithVersionDetectionAndRetryAsync>d__89.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.HttpConnection+<SendAsync>d__57.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.ThreadPool+<>c.<.cctor>b__52_0(Object)",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SignalCompletion()",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SetResult(TResult)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox.SetResult(TResult)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Security.SslStream+<ReadAsyncInternal>d__163`1.MoveNext()",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox`1.MoveNext()",
+      "System.Threading.ThreadPool+<>c.<.cctor>b__52_0(Object)",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SignalCompletion()",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SetResult(TResult)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox.SetResult(TResult)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Security.SslStream+<EnsureFullTlsFrameAsync>d__161`1.MoveNext()",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox`1.MoveNext()",
+      "System.Threading.ThreadPool+<>c.<.cctor>b__52_0(Object)",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SignalCompletion()",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SetResult(TResult)",
+      "System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs)",
+      "System.Net.Sockets.SocketAsyncEventArgs.OnCompletedInternal()",
+      "System.Net.Sockets.SocketAsyncEventArgs.FinishOperationAsyncSuccess(Int32,SocketFlags)",
+      "System.Net.Sockets.SocketAsyncEventArgs.CompletionCallback(Int32,SocketFlags,SocketError)",
+      "System.Net.Sockets.SocketAsyncEventArgs.TransferCompletionCallbackCore(Int32,Memory`1,SocketFlags,SocketError)",
+      "System.Net.Sockets.SocketAsyncContext+BufferMemoryReceiveOperation.InvokeCallback(Boolean)",
+      "System.Net.Sockets.SocketAsyncContext+OperationQueue`1.ProcessAsyncOperation(TOperation)",
+      "System.Net.Sockets.SocketAsyncContext.ProcessAsyncReadOperation(ReadOperation)",
+      "System.Net.Sockets.SocketAsyncContext+ReadOperation.System.Threading.IThreadPoolWorkItem.Execute()",
+      "System.Net.Sockets.SocketAsyncContext+AsyncOperation.Process()",
+      "System.Net.Sockets.SocketAsyncContext.HandleEvents(SocketEvents)",
+      "System.Net.Sockets.SocketAsyncEngine.System.Threading.IThreadPoolWorkItem.Execute()",
+      "System.Threading.ThreadPoolWorkQueue.DispatchWorkItem(Object,Thread)",
+      "System.Threading.ThreadPoolWorkQueue.Dispatch()",
+      "System.Threading.PortableThreadPool+WorkerThread.WorkerDoWork(PortableThreadPool,Boolean&)",
+      "System.Threading.PortableThreadPool+WorkerThread.WorkerThreadStart()",
+      "System.Threading.Thread+StartHelper.RunWorker()",
+      "System.Threading.Thread+StartHelper.Run()",
+      "System.Threading.Thread.StartCallback()"
+    ],
+    "innerError": {
+      "message": "Permission denied",
+      "type": "System.IO.IOException"
+    }
+  }
+},
+{
+  "timestamp": "2024-10-26T00:41:26.7185745-03:00",
+  "level": "Warn",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "An error occurred while looking for installed in games on the '/sys/kernel/tracing' volume.",
+  "error": {
+    "message": "Access to the path '/sys/kernel/tracing' is denied.",
+    "type": "System.UnauthorizedAccessException",
+    "stack": [
+      "System.IO.Enumeration.FileSystemEnumerator`1.CreateDirectoryHandle(String,Boolean)",
+      "System.IO.Enumeration.FileSystemEnumerator`1.Init()",
+      "System.IO.Enumeration.FileSystemEnumerator`1..ctor(String,Boolean,EnumerationOptions)",
+      "System.IO.Enumeration.FileSystemEnumerable`1+DelegateEnumerator..ctor(FileSystemEnumerable`1,Boolean)",
+      "System.IO.Enumeration.FileSystemEnumerable`1..ctor(String,FindTransform,EnumerationOptions,Boolean)",
+      "System.IO.Enumeration.FileSystemEnumerableFactory.DirectoryInfos(String,String,EnumerationOptions,Boolean)",
+      "System.IO.DirectoryInfo.InternalEnumerateInfos(String,String,SearchTarget,EnumerationOptions)",
+      "System.IO.DirectoryInfo.GetDirectories(String,EnumerationOptions)",
+      "System.IO.DirectoryInfo.GetDirectories()",
+      "Curse.Platform.Adapter.Detection.ScanFoldersResolver.Resolve(DriveInfo)",
+      "Curse.Radium.Games.GameService.DiscoverGamesFromSearch(Boolean,IEnumerable`1)",
+      "Curse.Radium.Games.GameService.DetectGames(Boolean,IEnumerable`1)",
+      "Curse.Radium.Games.GameService.DetectGames(Boolean,StorageDriveModel[])",
+      "Curse.Plugin.App.CurseAppWrapper.RunStartupGameDetection()",
+      "Curse.Plugin.App.CurseAppWrapper+<Init>d__27.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()",
+      "Curse.Radium.Addons.BaseAddonServiceDatabase`3+<InitializeAsync>d__8.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder.SetResult()",
+      "Curse.Radium.Addons.BaseAddonServiceDatabase`3+<UpdateCacheAsync>d__14.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.TechService.Games.GameRepository+<GetRemoteItemsAsync>d__17.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.Radium.Utilities.Retry+<DoAsync>d__5`1.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.TechService.Games.GameRepository+<<GetRemoteItemsAsync>b__17_0>d.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.TechService.AddonServiceClient+<GetGamesAsync>d__30.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "Curse.Server.Communication.BaseWebServiceClient+<GetAsync>d__14`1.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.HttpClient+<<SendAsync>g__Core|83_0>d.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.DecompressionHandler+<SendAsync>d__16.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.RedirectHandler+<SendAsync>d__4.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.HttpConnectionPool+<SendWithVersionDetectionAndRetryAsync>d__89.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.Tasks.AwaitTaskContinuation.RunOrScheduleAction(IAsyncStateMachineBox,Boolean)",
+      "System.Threading.Tasks.Task.RunContinuations(Object)",
+      "System.Threading.Tasks.Task.FinishContinuations()",
+      "System.Threading.Tasks.Task`1.TrySetResult(TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetExistingTaskResult(Task`1,TResult)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Http.HttpConnection+<SendAsync>d__57.MoveNext()",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext(Thread)",
+      "System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1.MoveNext()",
+      "System.Threading.ThreadPool+<>c.<.cctor>b__52_0(Object)",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SignalCompletion()",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SetResult(TResult)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox.SetResult(TResult)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Security.SslStream+<ReadAsyncInternal>d__163`1.MoveNext()",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox`1.MoveNext()",
+      "System.Threading.ThreadPool+<>c.<.cctor>b__52_0(Object)",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SignalCompletion()",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SetResult(TResult)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox.SetResult(TResult)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.SetResult(TResult)",
+      "System.Net.Security.SslStream+<EnsureFullTlsFrameAsync>d__161`1.MoveNext()",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox`1.ExecutionContextCallback(Object)",
+      "System.Threading.ExecutionContext.RunInternal(ExecutionContext,ContextCallback,Object)",
+      "System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1+StateMachineBox`1.MoveNext()",
+      "System.Threading.ThreadPool+<>c.<.cctor>b__52_0(Object)",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SignalCompletion()",
+      "System.Threading.Tasks.Sources.ManualResetValueTaskSourceCore`1.SetResult(TResult)",
+      "System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.OnCompleted(SocketAsyncEventArgs)",
+      "System.Net.Sockets.SocketAsyncEventArgs.OnCompletedInternal()",
+      "System.Net.Sockets.SocketAsyncEventArgs.FinishOperationAsyncSuccess(Int32,SocketFlags)",
+      "System.Net.Sockets.SocketAsyncEventArgs.CompletionCallback(Int32,SocketFlags,SocketError)",
+      "System.Net.Sockets.SocketAsyncEventArgs.TransferCompletionCallbackCore(Int32,Memory`1,SocketFlags,SocketError)",
+      "System.Net.Sockets.SocketAsyncContext+BufferMemoryReceiveOperation.InvokeCallback(Boolean)",
+      "System.Net.Sockets.SocketAsyncContext+OperationQueue`1.ProcessAsyncOperation(TOperation)",
+      "System.Net.Sockets.SocketAsyncContext.ProcessAsyncReadOperation(ReadOperation)",
+      "System.Net.Sockets.SocketAsyncContext+ReadOperation.System.Threading.IThreadPoolWorkItem.Execute()",
+      "System.Net.Sockets.SocketAsyncContext+AsyncOperation.Process()",
+      "System.Net.Sockets.SocketAsyncContext.HandleEvents(SocketEvents)",
+      "System.Net.Sockets.SocketAsyncEngine.System.Threading.IThreadPoolWorkItem.Execute()",
+      "System.Threading.ThreadPoolWorkQueue.DispatchWorkItem(Object,Thread)",
+      "System.Threading.ThreadPoolWorkQueue.Dispatch()",
+      "System.Threading.PortableThreadPool+WorkerThread.WorkerDoWork(PortableThreadPool,Boolean&)",
+      "System.Threading.PortableThreadPool+WorkerThread.WorkerThreadStart()",
+      "System.Threading.Thread+StartHelper.RunWorker()",
+      "System.Threading.Thread+StartHelper.Run()",
+      "System.Threading.Thread.StartCallback()"
+    ],
+    "innerError": {
+      "message": "Permission denied",
+      "type": "System.IO.IOException"
+    }
+  }
+},
+{
+  "timestamp": "2024-10-26T00:41:26.7238783-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Completed startup game detection. We have a total of 0 detected game instances. Operation took 54 ms"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.7255321-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.7264239-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T00:41:26.7267156-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Beginning initialization of InstanceManager"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.7273459-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Setting file watcher on instance directory /home/astro/Documents/curseforge/minecraft/Instances"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.7312899-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "InstanceManager initialized."
+},
+{
+  "timestamp": "2024-10-26T00:41:26.7321796-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "Refreshing Minecraft instances list"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.732287-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Initializing tasks"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.7330008-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Initializing Periodic Tasks"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.7347539-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Resolving Minecraft instances list from /home/astro/Documents/curseforge/minecraft/Instances"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.7489759-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T00:41:26.7490011-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T00:41:26.8337851-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "[ModLoaderDatabase] Completed download of cache",
+  "data": {
+    "name": "Minecraft Modloaders",
+    "elapsedTime": "98.00"
+  }
+},
+{
+  "timestamp": "2024-10-26T00:41:26.8678557-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "[MinecraftVersionDatabase] Completed download of cache",
+  "data": {
+    "name": "Minecraft Versions",
+    "elapsedTime": "19.00"
+  }
+},
+{
+  "timestamp": "2024-10-26T00:41:27.2438333-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T00:41:27.2439009-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T00:41:27.4156664-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T00:41:27.4157026-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T00:41:27.5199639-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T00:41:27.520002-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T00:45:46.3192055-03:00",
+  "level": "Info",
+  "thread": 13,
+  "memory": 0.0,
+  "message": "Attempt #1 of 2 on InstalledAddonDatabase -> FetchAddonWithRetries"
+},
+{
+  "timestamp": "2024-10-26T00:45:46.6742432-03:00",
+  "level": "Info",
+  "thread": 13,
+  "memory": 0.0,
+  "message": "Creating new instance at: /home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized/"
+},
+{
+  "timestamp": "2024-10-26T00:45:46.6810327-03:00",
+  "level": "Info",
+  "thread": 13,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddonFileById"
+},
+{
+  "timestamp": "2024-10-26T00:45:46.8216912-03:00",
+  "level": "Info",
+  "thread": 13,
+  "memory": 0.0,
+  "message": "[Minecraft Install Flow] Installing file - FileId: 5803235, FileName: Fabulously.Optimized-6.2.0.zip, DownloadURL: https://edge.forgecdn.net/files/5803/235/Fabulously.Optimized-6.2.0.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:46.8925669-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Starting modpack 'Fabulously Optimized' install."
+},
+{
+  "timestamp": "2024-10-26T00:45:46.9150172-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5803/235/Fabulously.Optimized-6.2.0.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:46.9311104-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5803/235/Fabulously.Optimized-6.2.0.zip to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/1.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:48.211886-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on UnzipFileInstallTask.Run -> ZipUtils.ExtractZip"
+},
+{
+  "timestamp": "2024-10-26T00:45:48.2399928-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Fabulously Optimized - (396246) in 1325ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:48.2719501-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on DeleteFolderInstallTask.Run -> _folder.Delete"
+},
+{
+  "timestamp": "2024-10-26T00:45:48.7167092-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Verifying Minecraft version: 1.21.1"
+},
+{
+  "timestamp": "2024-10-26T00:45:48.7185631-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Creating version path: 1.21.1"
+},
+{
+  "timestamp": "2024-10-26T00:45:48.7186314-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Creating inheritsPath path: 1.21.1"
+},
+{
+  "timestamp": "2024-10-26T00:45:48.7186752-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T00:45:48.7186891-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T00:45:48.7187009-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Minecraft version 1.21.1 is not installed. Will now install it."
+},
+{
+  "timestamp": "2024-10-26T00:45:48.7208983-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Downloading: https://piston-data.mojang.com/v1/objects/30c73b1c5da787909b2f73340419fdf13b9def88/client.jar to /home/astro/Documents/curseforge/minecraft/Install/versions/1.21.1/1.21.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:48.8331843-03:00",
+  "level": "Info",
+  "thread": 14,
+  "memory": 0.0,
+  "message": "Saving to disk (a)."
+},
+{
+  "timestamp": "2024-10-26T00:45:48.8358248-03:00",
+  "level": "Info",
+  "thread": 14,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 1 items"
+},
+{
+  "timestamp": "2024-10-26T00:45:48.9507339-03:00",
+  "level": "Info",
+  "thread": 14,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 114ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:48.9518257-03:00",
+  "level": "Info",
+  "thread": 14,
+  "memory": 0.0,
+  "message": "[AddonGameInstance] GameInstance.SaveInstancesToDisk: Saving GameInstance DB with 0 items"
+},
+{
+  "timestamp": "2024-10-26T00:45:48.9746387-03:00",
+  "level": "Info",
+  "thread": 14,
+  "memory": 0.0,
+  "message": "[AddonGameInstance] GameInstance.SaveInstancesToDisk: Saved GameInstance DB, which took 22ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:49.2085558-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Downloading: https://piston-meta.mojang.com/v1/packages/94f420093e771cd1e72614184736b044c747a8df/1.21.1.json to /home/astro/Documents/curseforge/minecraft/Install/versions/1.21.1/1.21.1.json"
+},
+{
+  "timestamp": "2024-10-26T00:45:49.2679525-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:45:49.478088-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetModFilesFromServer"
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110349-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110599-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110616-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 568563."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110631-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110647-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 394468."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110661-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 408209."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110697-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 348521."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110709-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110723-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 394468."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110737-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110751-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110768-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 667299."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.611078-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110793-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110809-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110824-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110844-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110855-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 348521."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.611087-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.611091-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 394468."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110922-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110938-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 394468."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110952-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110979-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6110996-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 667299."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6111023-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6111045-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6111061-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 308769."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6111076-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6111094-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 667299."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6111106-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6111124-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.611115-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 394468."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6111762-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6111782-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 348521."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.6111797-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 308769."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.611181-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:45:49.614899-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:45:49.7576551-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Downloading: https://fabricmc.forgecdn.net/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar to /home/astro/Documents/curseforge/minecraft/Install/libraries/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.1890229-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Downloading: https://fabricmc.forgecdn.net/org/ow2/asm/asm-analysis/9.7.1/asm-analysis-9.7.1.jar to /home/astro/Documents/curseforge/minecraft/Install/libraries/org/ow2/asm/asm-analysis/9.7.1/asm-analysis-9.7.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.2103825-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Downloading: https://fabricmc.forgecdn.net/org/ow2/asm/asm-commons/9.7.1/asm-commons-9.7.1.jar to /home/astro/Documents/curseforge/minecraft/Install/libraries/org/ow2/asm/asm-commons/9.7.1/asm-commons-9.7.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.2321483-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Downloading: https://fabricmc.forgecdn.net/org/ow2/asm/asm-tree/9.7.1/asm-tree-9.7.1.jar to /home/astro/Documents/curseforge/minecraft/Install/libraries/org/ow2/asm/asm-tree/9.7.1/asm-tree-9.7.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.2525081-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Downloading: https://fabricmc.forgecdn.net/org/ow2/asm/asm-util/9.7.1/asm-util-9.7.1.jar to /home/astro/Documents/curseforge/minecraft/Install/libraries/org/ow2/asm/asm-util/9.7.1/asm-util-9.7.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.2745808-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Downloading: https://fabricmc.forgecdn.net/net/fabricmc/sponge-mixin/0.15.3+mixin.0.8.7/sponge-mixin-0.15.3+mixin.0.8.7.jar to /home/astro/Documents/curseforge/minecraft/Install/libraries/net/fabricmc/sponge-mixin/0.15.3+mixin.0.8.7/sponge-mixin-0.15.3+mixin.0.8.7.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.3268491-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Downloading: https://fabricmc.forgecdn.net/net/fabricmc/intermediary/1.21.1/intermediary-1.21.1.jar to /home/astro/Documents/curseforge/minecraft/Install/libraries/net/fabricmc/intermediary/1.21.1/intermediary-1.21.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.362131-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Downloading: https://fabricmc.forgecdn.net/net/fabricmc/fabric-loader/0.16.7/fabric-loader-0.16.7.jar to /home/astro/Documents/curseforge/minecraft/Install/libraries/net/fabricmc/fabric-loader/0.16.7/fabric-loader-0.16.7.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.4455848-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on DeleteFolderInstallTask.Run -> _folder.Delete"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.4520251-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.6257099-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "fabricskyboxes-0.7.4+mc1.21.jar - (408209/5424365) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.6263457-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5424/365/fabricskyboxes-0.7.4%2bmc1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.6267586-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5424/365/fabricskyboxes-0.7.4%2bmc1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/4.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.7920884-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project FabricSkyboxes - (408209) in 165ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.7954744-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "morechathistory-1.3.1.jar - (518319/5286193) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.795679-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5286/193/morechathistory-1.3.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.7958157-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5286/193/morechathistory-1.3.1.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/6.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.9493331-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project More Chat History - (518319) in 153ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.9508256-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "continuity-3.0.0-beta.5+1.21.jar - (531351/5425853) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.9510772-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5425/853/continuity-3.0.0-beta.5%2b1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:50.9511956-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5425/853/continuity-3.0.0-beta.5%2b1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/8.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:51.1371757-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Continuity - (531351) in 186ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:51.1512431-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "citresewn-1.2.1+1.21.jar - (521427/5739340) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:51.1515193-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5739/340/citresewn-1.2.1%2b1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:51.1517072-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5739/340/citresewn-1.2.1%2b1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/10.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:51.7961744-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project CIT Resewn - (521427) in 644ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:51.7972273-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddonFileById"
+},
+{
+  "timestamp": "2024-10-26T00:45:51.9231027-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "iris-1.7.3+mc1.21.jar - (455508/5490877) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:51.9235386-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5490/877/iris-1.7.3%2bmc1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:51.9236442-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5490/877/iris-1.7.3%2bmc1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/12.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.1366529-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Iris Shaders - (455508) in 213ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.1412616-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddonFileById"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.2690173-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "entity_model_features_fabric_1.21-2.2.6.jar - (844662/5722728) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.2694577-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5722/728/entity_model_features_fabric_1.21-2.2.6.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.2695738-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5722/728/entity_model_features_fabric_1.21-2.2.6.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/14.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.4392074-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project [EMF] Entity Model Features [Fabric & Forge] - (844662) in 169ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.4412982-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "dynamic-fps-3.7.3+minecraft-1.21.0-fabric.jar - (335493/5743181) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.4416139-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5743/181/dynamic-fps-3.7.3%2bminecraft-1.21.0-fabric.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.4417157-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5743/181/dynamic-fps-3.7.3%2bminecraft-1.21.0-fabric.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/16.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.6036525-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Dynamic FPS - (335493) in 162ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.6043587-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddonFileById"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.7326955-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "fabrishot-1.14.1.jar - (404870/5642852) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.7329182-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5642/852/fabrishot-1.14.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.7330053-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5642/852/fabrishot-1.14.1.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/18.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.8906779-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Fabrishot - (404870) in 157ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.8918-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "reeses_sodium_options-1.7.3+mc1.21.jar - (511319/5538413) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.8920249-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5538/413/reeses_sodium_options-1.7.3%2bmc1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:52.8920976-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5538/413/reeses_sodium_options-1.7.3%2bmc1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/20.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.0489559-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Reese's Sodium Options - (511319) in 156ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.0501685-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "fsb-interop-1.4.0+mc1.21-build.54.jar - (697845/5424446) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.0503828-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5424/446/fsb-interop-1.4.0%2bmc1.21-build.54.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.0504796-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5424/446/fsb-interop-1.4.0%2bmc1.21-build.54.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/22.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.2088607-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project FabricSkyBoxes Interop - (697845) in 158ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.2126334-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "yosbr-0.1.2.jar - (374274/4581910) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.212833-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/4581/910/yosbr-0.1.2.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.2129279-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/4581/910/yosbr-0.1.2.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/24.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.364418-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Your Options Shall Be Respected (YOSBR) - (374274) in 151ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.3685506-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "entity_texture_features_fabric_1.21-6.2.5.jar - (568563/5734431) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.3689005-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5734/431/entity_texture_features_fabric_1.21-6.2.5.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.3689786-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5734/431/entity_texture_features_fabric_1.21-6.2.5.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/26.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.5416213-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project [ETF] Entity Texture Features - [Fabric & Forge] - (568563) in 172ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.5443437-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "fastquit-3.0.0+1.20.6.jar - (708967/5310199) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.5446246-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5310/199/fastquit-3.0.0%2b1.20.6.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.544701-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5310/199/fastquit-3.0.0%2b1.20.6.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/28.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.700218-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project FastQuit - (708967) in 155ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.701415-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "indium-1.0.35+mc1.21.jar - (459496/5632454) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.7016321-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5632/454/indium-1.0.35%2bmc1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.7017175-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5632/454/indium-1.0.35%2bmc1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/30.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.8629385-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Indium - (459496) in 161ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.8637277-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "modmenu-11.0.2.jar - (308702/5662774) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.8638751-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5662/774/modmenu-11.0.2.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:53.8639315-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5662/774/modmenu-11.0.2.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/32.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.0424143-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Mod Menu - (308702) in 178ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.0456588-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "ferritecore-7.0.0-fabric.jar - (459857/5434182) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.0460603-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5434/182/ferritecore-7.0.0-fabric.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.0461428-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5434/182/ferritecore-7.0.0-fabric.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/34.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.2040825-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project FerriteCore (Fabric) - (459857) in 158ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.2060957-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Controlify-2.0.0-beta.14+1.21-fabric.jar - (835847/5524319) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.206284-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5524/319/Controlify-2.0.0-beta.14%2b1.21-fabric.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.2063584-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5524/319/Controlify-2.0.0-beta.14%2b1.21-fabric.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/36.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.4213521-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Controlify - (835847) in 215ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.4247954-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Chat Reporting Helper.zip - (855981/5788976) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.4248965-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5788/976/Chat%20Reporting%20Helper.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.4249471-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5788/976/Chat%20Reporting%20Helper.zip to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/38.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.5813873-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Chat Reporting Helper - (855981) in 156ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.5831112-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "entityculling-fabric-1.7.0-mc1.21.jar - (448233/5672104) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.5833478-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5672/104/entityculling-fabric-1.7.0-mc1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.5834154-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5672/104/entityculling-fabric-1.7.0-mc1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/40.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.7389581-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Entity Culling Fabric/Forge - (448233) in 155ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.7401445-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "puzzle-fabric-2.0.1+1.21.jar - (563977/5753409) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.7403823-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5753/409/puzzle-fabric-2.0.1%2b1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.7404508-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5753/409/puzzle-fabric-2.0.1%2b1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/42.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.9003325-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Puzzle - (563977) in 159ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.9016295-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "cloth-config-15.0.140-fabric.jar - (348521/5729125) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.901814-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5729/125/cloth-config-15.0.140-fabric.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:54.9018807-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5729/125/cloth-config-15.0.140-fabric.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/44.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.1185162-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Cloth Config API (Fabric/Forge/NeoForge) - (348521) in 216ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.1220103-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "main-menu-credits-1.2.0.jar - (618812/5287107) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.1221734-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5287/107/main-menu-credits-1.2.0.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.1222417-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5287/107/main-menu-credits-1.2.0.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/46.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.2742937-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Main Menu Credits - (618812) in 152ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.2753882-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Debugify-1.21.1+1.0.jar - (596224/5691544) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.2756024-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5691/544/Debugify-1.21.1%2b1.0.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.2756646-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5691/544/Debugify-1.21.1%2b1.0.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/48.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.4408793-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Debugify - (596224) in 165ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.4425209-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "e4mc_minecraft-fabric-5.2.1.jar - (849519/5745588) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.4455191-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5745/588/e4mc_minecraft-fabric-5.2.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.4455877-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5745/588/e4mc_minecraft-fabric-5.2.1.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/50.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.6278159-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project e4mc - (849519) in 182ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.6309177-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "mixintrace-1.1.1+1.17.jar - (433447/3831043) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.6311224-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/3831/43/mixintrace-1.1.1%2b1.17.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.6311984-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/3831/43/mixintrace-1.1.1%2b1.17.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/52.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.787855-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project MixinTrace - (433447) in 156ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.7903841-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "language-reload-1.6.1+1.21.jar - (527334/5424831) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.790581-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5424/831/language-reload-1.6.1%2b1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.7906442-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5424/831/language-reload-1.6.1%2b1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/54.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.9470158-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Language Reload - (527334) in 156ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.9481176-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "optigui-2.3.0-beta.5+1.21.jar - (619986/5747217) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.9483736-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5747/217/optigui-2.3.0-beta.5%2b1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:55.9484391-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5747/217/optigui-2.3.0-beta.5%2b1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/56.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.1223314-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project OptiGUI - (619986) in 173ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.1235912-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddonFileById"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.2537182-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "modelfix-1.21-1.6-fabric.jar - (676136/5446920) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.2540109-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5446/920/modelfix-1.21-1.6-fabric.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.2540815-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5446/920/modelfix-1.21-1.6-fabric.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/58.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.4076883-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Model Gap Fix - (676136) in 153ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.4087299-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "polytone-1.21-2.3.8-fabric.jar - (958094/5652566) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.4090023-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5652/566/polytone-1.21-2.3.8-fabric.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.4090737-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5652/566/polytone-1.21-2.3.8-fabric.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/60.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.5782603-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Polytone - (958094) in 169ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.5804222-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Zoomify-2.14.0+1.21.jar - (574741/5439652) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.5828551-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5439/652/Zoomify-2.14.0%2b1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.5829413-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5439/652/Zoomify-2.14.0%2b1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/62.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.7585003-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Zoomify - (574741) in 175ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.7600679-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddonFileById"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.8892116-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "enhancedblockentities-0.10.1+1.21.jar - (452046/5425018) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.8894261-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5425/18/enhancedblockentities-0.10.1%2b1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:56.8894955-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5425/18/enhancedblockentities-0.10.1%2b1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/64.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.0517954-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Enhanced Block Entities - (452046) in 162ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.0530658-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "lambdynamiclights-3.0.1+1.21.1.jar - (393442/5798757) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.0533983-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5798/757/lambdynamiclights-3.0.1%2b1.21.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.0534717-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5798/757/lambdynamiclights-3.0.1%2b1.21.1.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/66.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.2278625-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project LambDynamicLights - (393442) in 174ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.2295538-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddonFileById"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.3581306-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "bettermounthud-1.2.4.jar - (475358/5502650) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.3583431-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5502/650/bettermounthud-1.2.4.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.358419-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5502/650/bettermounthud-1.2.4.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/68.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.5128739-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Better Mount HUD - (475358) in 154ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.5138746-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Fast Better Grass.zip - (819030/5416060) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.5139828-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5416/60/Fast%20Better%20Grass.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.5140438-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5416/60/Fast%20Better%20Grass.zip to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/70.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.664798-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Fast Better Grass - (819030) in 150ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.6664027-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "fabric-api-0.105.0+1.21.1.jar - (306612/5750140) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.6666284-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5750/140/fabric-api-0.105.0%2b1.21.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.6667028-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5750/140/fabric-api-0.105.0%2b1.21.1.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/72.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.8654593-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Fabric API - (306612) in 198ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:57.8694264-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddonFileById"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.0009174-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "SodiumTranslations.zip - (867964/5784184) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.0010239-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5784/184/SodiumTranslations.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.0010839-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5784/184/SodiumTranslations.zip to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/74.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.1643754-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Translations for Sodium - (867964) in 163ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.166129-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "paginatedadvancements-2.5.1.jar - (618770/5679657) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.1663242-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5679/657/paginatedadvancements-2.5.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.1663853-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5679/657/paginatedadvancements-2.5.1.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/76.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.3203009-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Paginated Advancements & Custom Frames - (618770) in 153ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.3233619-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "NoChatReports-FABRIC-1.21-v2.8.0.jar - (634062/5441248) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.3235514-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5441/248/NoChatReports-FABRIC-1.21-v2.8.0.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.3236137-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5441/248/NoChatReports-FABRIC-1.21-v2.8.0.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/78.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.488828-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project No Chat Reports - (634062) in 165ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.4903822-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "modernfix-fabric-5.19.3+mc1.21.1.jar - (790626/5659983) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.4906707-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5659/983/modernfix-fabric-5.19.3%2bmc1.21.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.4907492-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5659/983/modernfix-fabric-5.19.3%2bmc1.21.1.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/80.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.6567183-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project ModernFix - (790626) in 166ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.6585582-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "ImmediatelyFast-Fabric-1.2.21+1.21.1.jar - (686911/5672346) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.6588365-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5672/346/ImmediatelyFast-Fabric-1.2.21%2b1.21.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:58.6589005-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5672/346/ImmediatelyFast-Fabric-1.2.21%2b1.21.1.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/82.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:59.3181054-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project ImmediatelyFast - (686911) in 659ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:59.3188951-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddonFileById"
+},
+{
+  "timestamp": "2024-10-26T00:45:59.6765161-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "YetAnotherConfigLib-3.5.0+1.21-fabric.jar - (667299/5424169) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:59.6767683-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5424/169/YetAnotherConfigLib-3.5.0%2b1.21-fabric.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:59.6768322-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5424/169/YetAnotherConfigLib-3.5.0%2b1.21-fabric.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/84.zip"
+},
+{
+  "timestamp": "2024-10-26T00:45:59.8596827-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project YetAnotherConfigLib - (667299) in 182ms"
+},
+{
+  "timestamp": "2024-10-26T00:45:59.8618907-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddonFileById"
+},
+{
+  "timestamp": "2024-10-26T00:45:59.9894191-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "fabric-language-kotlin-1.12.3+kotlin.2.0.21.jar - (308769/5802211) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:45:59.9896-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5802/211/fabric-language-kotlin-1.12.3%2bkotlin.2.0.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:45:59.989676-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5802/211/fabric-language-kotlin-1.12.3%2bkotlin.2.0.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/86.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:00.3766888-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Fabric Language Kotlin - (308769) in 387ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:00.3900602-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "cubes-without-borders-2.1.1+1.21.jar - (975120/5546110) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:46:00.3902362-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5546/110/cubes-without-borders-2.1.1%2b1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:46:00.3902912-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5546/110/cubes-without-borders-2.1.1%2b1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/88.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:00.5503337-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Cubes Without Borders - (975120) in 160ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:00.5533195-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "lithium-fabric-mc1.21.1-0.13.1.jar - (360438/5739940) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:46:00.5535388-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5739/940/lithium-fabric-mc1.21.1-0.13.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:46:00.5536144-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5739/940/lithium-fabric-mc1.21.1-0.13.1.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/90.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:00.7251471-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Lithium (Fabric/NeoForge) - (360438) in 171ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:00.7274294-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "sodium-fabric-0.5.11+mc1.21.jar - (394468/5485657) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:46:00.7276312-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5485/657/sodium-fabric-0.5.11%2bmc1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:46:00.7277017-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5485/657/sodium-fabric-0.5.11%2bmc1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/92.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:00.9056198-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Sodium - (394468) in 177ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:00.9075191-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddonFileById"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.038516-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "animatica-0.6.1+1.21.jar - (533006/5426917) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.0386906-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5426/917/animatica-0.6.1%2b1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.0387531-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5426/917/animatica-0.6.1%2b1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/94.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.1950306-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Animatica - (533006) in 156ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.1959798-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "sodium-extra-0.5.7+mc1.21.jar - (447673/5426339) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.1961509-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5426/339/sodium-extra-0.5.7%2bmc1.21.jar"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.1962224-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5426/339/sodium-extra-0.5.7%2bmc1.21.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/96.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.3607914-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Sodium Extra - (447673) in 164ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.3624014-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "rrls-5.0.8+mc1.21.1-fabric.jar - (833233/5756410) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.3626186-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5756/410/rrls-5.0.8%2bmc1.21.1-fabric.jar"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.3626782-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5756/410/rrls-5.0.8%2bmc1.21.1-fabric.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/98.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.7482193-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Remove Reloading Screen - (833233) in 385ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.7494876-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "capes-1.5.4+1.21-fabric.jar - (408481/5431212) is not in the current Manifest mod file id list"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.7496685-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5431/212/capes-1.5.4%2b1.21-fabric.jar"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.7497261-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5431/212/capes-1.5.4%2b1.21-fabric.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/100.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.9058523-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Capes [Fabric/Forge] - (408481) in 156ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:01.9994198-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 1 items"
+},
+{
+  "timestamp": "2024-10-26T00:46:02.0215585-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 22ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:02.0368249-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Starting Game Instance Fabulously Optimized scan"
+},
+{
+  "timestamp": "2024-10-26T00:46:02.0408559-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Processed invalid installed mods for Fabulously Optimized. Operation took 2 ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:02.0409756-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Performing a full scan of Fabulously Optimized"
+},
+{
+  "timestamp": "2024-10-26T00:46:02.0584688-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Section Modpacks directory doesn't exist. Skipping mods scan for this section."
+},
+{
+  "timestamp": "2024-10-26T00:46:02.5275224-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Section Customization directory doesn't exist. Skipping mods scan for this section."
+},
+{
+  "timestamp": "2024-10-26T00:46:02.5275264-03:00",
+  "level": "Warn",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Section Shaders directory doesn't exist. Skipping mods scan for this section."
+},
+{
+  "timestamp": "2024-10-26T00:46:02.5289561-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Staring game instance Fabulously Optimized mod files scan. Scanning 0 folders using 6 logical cores."
+},
+{
+  "timestamp": "2024-10-26T00:46:02.5330793-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Completed scanning 0 folders from Fabulously Optimized category section /home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized/saves. Operation took 00:00:00.0030158."
+},
+{
+  "timestamp": "2024-10-26T00:46:02.5330828-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Completed fingerprinting local mods for Fabulously Optimized. Operation took 490 ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:02.53953-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on GameInst.ProcMatches -> GetFingerprints"
+},
+{
+  "timestamp": "2024-10-26T00:46:02.6822999-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:46:02.8130531-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:46:02.9903011-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on GameInst.ProcMatches -> GetFingerprints"
+},
+{
+  "timestamp": "2024-10-26T00:46:03.1439408-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:46:03.4212816-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Checking for game instance Fabulously Optimized updates"
+},
+{
+  "timestamp": "2024-10-26T00:46:03.4226537-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:46:03.5923194-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Completed checking for updates in instance Fabulously Optimized. Operation took 171 ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:03.5939447-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Completed game instance Fabulously Optimized scan. Operation took 1557 ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:57.8596666-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[Minecraft Install Flow] Starting modpack 'Fabulously Optimized' update."
+},
+{
+  "timestamp": "2024-10-26T00:46:57.8609993-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddonFileById"
+},
+{
+  "timestamp": "2024-10-26T00:46:57.8689333-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[Minecraft Install Flow] Installing file - FileId: 5803235, FileName: Fabulously.Optimized-6.2.0.zip, DownloadURL: https://edge.forgecdn.net/files/5803/235/Fabulously.Optimized-6.2.0.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:57.8995185-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on MinecraftGameInstance.DeserializeFromFile -> File.ReadAllText"
+},
+{
+  "timestamp": "2024-10-26T00:46:58.0037566-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5803/235/Fabulously.Optimized-6.2.0.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:58.0037999-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5803/235/Fabulously.Optimized-6.2.0.zip to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/102.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:58.263848-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on UnzipFileInstallTask.Run -> ZipUtils.ExtractZip"
+},
+{
+  "timestamp": "2024-10-26T00:46:58.2797954-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Fabulously Optimized - (396246) in 276ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:58.2862166-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on DeleteFolderInstallTask.Run -> _folder.Delete"
+},
+{
+  "timestamp": "2024-10-26T00:46:58.6489773-03:00",
+  "level": "Info",
+  "thread": 15,
+  "memory": 0.0,
+  "message": "Verifying Minecraft version: 1.21.1"
+},
+{
+  "timestamp": "2024-10-26T00:46:58.6492124-03:00",
+  "level": "Info",
+  "thread": 15,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T00:46:58.6492204-03:00",
+  "level": "Info",
+  "thread": 15,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.6492361-03:00",
+  "level": "Info",
+  "thread": 15,
+  "memory": 0.0,
+  "message": "Minecraft version 1.21.1 already exists... Skipping installation."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.6493616-03:00",
+  "level": "Info",
+  "thread": 15,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8648705-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8648745-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8648769-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 394468."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8648786-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 568563."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8648804-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8648824-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8648857-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 394468."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8648877-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 408209."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8648901-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 348521."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8648914-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8648931-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 394468."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8648967-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.864899-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 667299."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649003-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649025-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649041-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649064-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 667299."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.864909-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649107-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.864914-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649158-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.864917-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 308769."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649186-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649202-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649219-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 667299."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649232-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649263-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.864929-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 394468."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649325-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649338-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 348521."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649355-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649375-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649416-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 394468."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649429-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649443-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 348521."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649458-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 308769."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.864947-03:00",
+  "level": "Warn",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftModpackInstallerProvider] Detected circular dependency reference. Will not fetch mod 306612."
+},
+{
+  "timestamp": "2024-10-26T00:46:58.8649899-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:46:58.9938899-03:00",
+  "level": "Info",
+  "thread": 15,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on DeleteFolderInstallTask.Run -> _folder.Delete"
+},
+{
+  "timestamp": "2024-10-26T00:46:58.9944918-03:00",
+  "level": "Info",
+  "thread": 15,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.2106502-03:00",
+  "level": "Warn",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Could not verify file Hash. File was not found at /home/astro/Documents/curseforge/minecraft/Backups/Fabulously Optimized/mods/Chat Reporting Helper.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.2117904-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5788/976/Chat%20Reporting%20Helper.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.2118523-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5788/976/Chat%20Reporting%20Helper.zip to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/122.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.3658479-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Chat Reporting Helper - (855981) in 154ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.4088654-03:00",
+  "level": "Warn",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Could not verify file Hash. File was not found at /home/astro/Documents/curseforge/minecraft/Backups/Fabulously Optimized/mods/Fast Better Grass.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.4089702-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5416/60/Fast%20Better%20Grass.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.4090438-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5416/60/Fast%20Better%20Grass.zip to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/139.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.5596716-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Fast Better Grass - (819030) in 150ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.5686631-03:00",
+  "level": "Warn",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Could not verify file Hash. File was not found at /home/astro/Documents/curseforge/minecraft/Backups/Fabulously Optimized/mods/SodiumTranslations.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.5687809-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5784/184/SodiumTranslations.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.5688524-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5784/184/SodiumTranslations.zip to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/142.zip"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.7318706-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Translations for Sodium - (867964) in 163ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.7772925-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 1 items"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.8055493-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 28ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.8086143-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 1 items"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.8311903-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 22ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.8324109-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Starting Game Instance Fabulously Optimized scan"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.8326569-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Processed invalid installed mods for Fabulously Optimized. Operation took 0 ms"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.8326577-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Performing a full scan of Fabulously Optimized"
+},
+{
+  "timestamp": "2024-10-26T00:46:59.8391306-03:00",
+  "level": "Warn",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Section Modpacks directory doesn't exist. Skipping mods scan for this section."
+},
+{
+  "timestamp": "2024-10-26T00:47:00.3228119-03:00",
+  "level": "Warn",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Section Customization directory doesn't exist. Skipping mods scan for this section."
+},
+{
+  "timestamp": "2024-10-26T00:47:00.322815-03:00",
+  "level": "Warn",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Section Shaders directory doesn't exist. Skipping mods scan for this section."
+},
+{
+  "timestamp": "2024-10-26T00:47:00.3230523-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Staring game instance Fabulously Optimized mod files scan. Scanning 0 folders using 6 logical cores."
+},
+{
+  "timestamp": "2024-10-26T00:47:00.3230608-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Completed scanning 0 folders from Fabulously Optimized category section /home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized/saves. Operation took 00:00:00.0000038."
+},
+{
+  "timestamp": "2024-10-26T00:47:00.3230633-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Completed fingerprinting local mods for Fabulously Optimized. Operation took 490 ms"
+},
+{
+  "timestamp": "2024-10-26T00:47:00.3233934-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on GameInst.ProcMatches -> GetFingerprints"
+},
+{
+  "timestamp": "2024-10-26T00:47:00.4487155-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:47:00.5774404-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on GameInst.ProcMatches -> GetFingerprints"
+},
+{
+  "timestamp": "2024-10-26T00:47:00.7280318-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:47:00.8885457-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Checking for game instance Fabulously Optimized updates"
+},
+{
+  "timestamp": "2024-10-26T00:47:00.8886425-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:47:01.0682154-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Completed checking for updates in instance Fabulously Optimized. Operation took 179 ms"
+},
+{
+  "timestamp": "2024-10-26T00:47:01.0683823-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Completed game instance Fabulously Optimized scan. Operation took 1235 ms"
+},
+{
+  "timestamp": "2024-10-26T00:47:04.8810378-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Cloning all files from Minecraft instance at: /home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized/"
+},
+{
+  "timestamp": "2024-10-26T00:47:04.9272851-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "Refreshing Minecraft instances list"
+},
+{
+  "timestamp": "2024-10-26T00:47:04.9273435-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Resolving Minecraft instances list from /home/astro/Documents/curseforge/minecraft/Instances"
+},
+{
+  "timestamp": "2024-10-26T00:47:04.9274615-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Minecraft game instance at /home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized (1) was not found in database. Will attempt to import it."
+},
+{
+  "timestamp": "2024-10-26T00:47:04.9306406-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Attempting to import existing instance at /home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized (1)/minecraftinstance.json"
+},
+{
+  "timestamp": "2024-10-26T00:47:04.9306487-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on MinecraftInstanceManager.ImportInstance -> FileEx.ReadAllText"
+},
+{
+  "timestamp": "2024-10-26T00:47:04.9413629-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Prior instance found... duplicating"
+},
+{
+  "timestamp": "2024-10-26T00:47:04.9468578-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:47:05.1114821-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Minecraft Instance successfully imported"
+},
+{
+  "timestamp": "2024-10-26T00:47:05.1115338-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Starting Game Instance Fabulously Optimized (1) scan"
+},
+{
+  "timestamp": "2024-10-26T00:47:05.1119891-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Processed invalid installed mods for Fabulously Optimized (1). Operation took 0 ms"
+},
+{
+  "timestamp": "2024-10-26T00:47:05.1119913-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Performing a full scan of Fabulously Optimized (1)"
+},
+{
+  "timestamp": "2024-10-26T00:47:05.120875-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Skipping existing minecraft game instance at /home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized"
+},
+{
+  "timestamp": "2024-10-26T00:47:05.1215733-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:47:05.1321095-03:00",
+  "level": "Warn",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Section Modpacks directory doesn't exist. Skipping mods scan for this section."
+},
+{
+  "timestamp": "2024-10-26T00:47:05.2457222-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:47:05.6245982-03:00",
+  "level": "Warn",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Section Customization directory doesn't exist. Skipping mods scan for this section."
+},
+{
+  "timestamp": "2024-10-26T00:47:05.6246009-03:00",
+  "level": "Warn",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Section Shaders directory doesn't exist. Skipping mods scan for this section."
+},
+{
+  "timestamp": "2024-10-26T00:47:05.624603-03:00",
+  "level": "Warn",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Section Worlds directory doesn't exist. Skipping mods scan for this section."
+},
+{
+  "timestamp": "2024-10-26T00:47:05.6246074-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Completed fingerprinting local mods for Fabulously Optimized (1). Operation took 512 ms"
+},
+{
+  "timestamp": "2024-10-26T00:47:05.6248711-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on GameInst.ProcMatches -> GetFingerprints"
+},
+{
+  "timestamp": "2024-10-26T00:47:05.7522591-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:47:05.8727812-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on GameInst.ProcMatches -> GetFingerprints"
+},
+{
+  "timestamp": "2024-10-26T00:47:06.026672-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:47:06.1940752-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Checking for game instance Fabulously Optimized (1) updates"
+},
+{
+  "timestamp": "2024-10-26T00:47:06.1941138-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T00:47:06.3838756-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "Completed checking for updates in instance Fabulously Optimized (1). Operation took 189 ms"
+},
+{
+  "timestamp": "2024-10-26T00:47:06.3839511-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "Completed game instance Fabulously Optimized (1) scan. Operation took 1272 ms"
+},
+{
+  "timestamp": "2024-10-26T00:47:07.1123665-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Saving to disk (a)."
+},
+{
+  "timestamp": "2024-10-26T00:47:07.1126774-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 2 items"
+},
+{
+  "timestamp": "2024-10-26T00:47:07.1629155-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 50ms"
+},
+{
+  "timestamp": "2024-10-26T00:47:07.1633033-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[AddonGameInstance] GameInstance.SaveInstancesToDisk: Saving GameInstance DB with 0 items"
+},
+{
+  "timestamp": "2024-10-26T00:47:07.1637973-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[AddonGameInstance] GameInstance.SaveInstancesToDisk: Saved GameInstance DB, which took 0ms"
+},
+{
+  "timestamp": "2024-10-26T00:47:12.4480512-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 2 items"
+},
+{
+  "timestamp": "2024-10-26T00:47:12.4929352-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 44ms"
+},
+{
+  "timestamp": "2024-10-26T00:47:27.0847071-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "Attempt #1 of 2 on InstalledAddonDatabase -> FetchAddonWithRetries"
+},
+{
+  "timestamp": "2024-10-26T00:47:27.2367748-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "Downloading project file from https://edge.forgecdn.net/files/5836/359/wynntils-2.3.19-fabric%2bMC-1.21.1.jar"
+},
+{
+  "timestamp": "2024-10-26T00:47:27.2368626-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "Downloading: https://edge.forgecdn.net/files/5836/359/wynntils-2.3.19-fabric%2bMC-1.21.1.jar to /tmp/CF/MCrMpgt5k2K56bHdyEaQ/157.zip"
+},
+{
+  "timestamp": "2024-10-26T00:47:27.7089975-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "Downloaded full file for project Wynntils - (303451) in 472ms"
+},
+{
+  "timestamp": "2024-10-26T00:47:27.7610661-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 2 items"
+},
+{
+  "timestamp": "2024-10-26T00:47:27.8035249-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 42ms"
+},
+{
+  "timestamp": "2024-10-26T00:48:17.7864475-03:00",
+  "level": "Info",
+  "thread": 21,
+  "memory": 0.0,
+  "message": "Web Socket session disconnected"
+},
+{
+  "timestamp": "2024-10-26T00:48:17.7868109-03:00",
+  "level": "Warn",
+  "thread": 21,
+  "memory": 0.0,
+  "message": "Client disconnected from server"
+},
+{
+  "timestamp": "2024-10-26T00:48:17.8058157-03:00",
+  "level": "Warn",
+  "thread": 5,
+  "memory": 0.0,
+  "message": "Parent process is no longer active. Mods Agent will shutdown."
+},
+{
+  "timestamp": "2024-10-26T00:48:17.8058949-03:00",
+  "level": "Warn",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Parent process exit. Shutting down..."
+},
+{
+  "timestamp": "2024-10-26T00:48:17.8344896-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Curse Mods Agent is shutting down"
+},
+{
+  "timestamp": "2024-10-26T00:48:17.8346554-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Shutting down periodic tasks"
+},
+{
+  "timestamp": "2024-10-26T00:48:17.83482-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Disabling periodic timers"
+},
+{
+  "timestamp": "2024-10-26T00:48:17.836568-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[InstallTaskManager] Install Manager Shutting Down"
+},
+{
+  "timestamp": "2024-10-26T00:48:17.8365801-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[InstallTaskManager] Install Manager Shutting Down"
+},
+{
+  "timestamp": "2024-10-26T00:48:17.8365814-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[InstallTaskManager] Install Manager Shutting Down"
+},
+{
+  "timestamp": "2024-10-26T00:48:17.8367152-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Shutdown game instances."
+},
+{
+  "timestamp": "2024-10-26T00:48:17.8368471-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 2 items"
+},
+{
+  "timestamp": "2024-10-26T00:48:17.8906708-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 53ms"
+},
+{
+  "timestamp": "2024-10-26T00:48:17.8908817-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[AddonGameInstance] GameInstance.SaveInstancesToDisk: Saving GameInstance DB with 0 items"
+},
+{
+  "timestamp": "2024-10-26T00:48:17.8913414-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[AddonGameInstance] GameInstance.SaveInstancesToDisk: Saved GameInstance DB, which took 0ms"
+},
+{
+  "timestamp": "2024-10-26T00:48:17.9146401-03:00",
+  "level": "Info",
+  "thread": 2,
+  "memory": 0.0,
+  "message": "Shutting down the logger"
+},
+{
+  "timestamp": "2024-10-26T00:48:17.9834939-03:00",
+  "level": "Info",
+  "thread": 2,
+  "memory": 0.0,
+  "message": "Logging worker finished"
+}
+]}

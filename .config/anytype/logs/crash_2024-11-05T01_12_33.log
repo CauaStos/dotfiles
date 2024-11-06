@@ -1,0 +1,38 @@
+{"level":"INFO","ts":"2024-11-04T22:12:05.380-0300","logger":"common.commonspace.headsync","msg":"sync done:","spaceId":"bafyreihl7vu5f7o7xdtkft2qhwwkfr3kdzjsd5ajfhcxnbpzelqbe3chge.3itymsbyiqnz1","newIds":0,"changedIds":0,"removedIds":151,"already deleted ids":0,"peerId":"12D3KooWExP12Vrmcdk5zexmUgQP18SAVWQiyqYsVXqDJmLrwGAc"}
+
+{"level":"INFO","ts":"2024-11-04T22:12:05.759-0300","logger":"common.commonspace.headsync","msg":"sync done:","spaceId":"bafyreigvbhpxhlvmwotkmz3zpdg5fa6o62lfj4xr37tgstucqvy5na2nvm.3itymsbyiqnz1","newIds":0,"changedIds":0,"removedIds":1,"already deleted ids":0,"peerId":"12D3KooWKtaDnWNAb6DHHZBCEyB3tEQjLTcRFUSpRsjeSRq34Sgp"}
+
+2024-11-04T22:12:14.091-0300	DEBUG	payments	returning subscription status from cache	{"cachedStatus": "error:<> data:<tier:1 status:StatusActive > "}
+
+{"level":"INFO","ts":"2024-11-04T22:12:20.995-0300","logger":"common.commonspace.headsync","msg":"sync done:","spaceId":"bafyreife4gteps57vy4eh6obzwo3cl5xlh4vnv6lu2dyfgrea3yyzjw5ea.3itymsbyiqnz1","newIds":0,"changedIds":0,"removedIds":151,"already deleted ids":0,"peerId":"12D3KooWKtaDnWNAb6DHHZBCEyB3tEQjLTcRFUSpRsjeSRq34Sgp"}
+
+2024-11-04T22:12:24.092-0300	DEBUG	payments	returning subscription status from cache	{"cachedStatus": "error:<> data:<tier:1 status:StatusActive > "}
+
+{"level":"INFO","ts":"2024-11-04T22:12:25.885-0300","logger":"common.commonspace.headsync","msg":"sync done:","spaceId":"bafyreihl7vu5f7o7xdtkft2qhwwkfr3kdzjsd5ajfhcxnbpzelqbe3chge.3itymsbyiqnz1","newIds":0,"changedIds":0,"removedIds":151,"already deleted ids":0,"peerId":"12D3KooWExP12Vrmcdk5zexmUgQP18SAVWQiyqYsVXqDJmLrwGAc"}
+
+{"level":"INFO","ts":"2024-11-04T22:12:26.400-0300","logger":"common.commonspace.headsync","msg":"sync done:","spaceId":"bafyreigvbhpxhlvmwotkmz3zpdg5fa6o62lfj4xr37tgstucqvy5na2nvm.3itymsbyiqnz1","newIds":0,"changedIds":0,"removedIds":1,"already deleted ids":0,"peerId":"12D3KooWKtaDnWNAb6DHHZBCEyB3tEQjLTcRFUSpRsjeSRq34Sgp"}
+
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal SIGSEGV: segmentation violation code=0x1 addr=0x0 pc=0x1a172f2]
+
+goroutine 78607 [running]:
+github.com/anyproto/anytype-heart/pkg/lib/pb/model.(*Block).GetBookmark(...)
+	/Users/user1/actions-runner4/_work/anytype-heart/anytype-heart/pkg/lib/pb/model/models.pb.go:2767
+
+github.com/anyproto/anytype-heart/core/block/simple/bookmark.NewBookmark(0xc0012a88c0?)
+	/Users/user1/actions-runner4/_work/anytype-heart/anytype-heart/core/block/simple/bookmark/bookmark.go:27 +0x32
+github.com/anyproto/anytype-heart/core/block/simple.New(0xc0012a88c0)
+	/Users/user1/actions-runner4/_work/anytype-heart/anytype-heart/core/block/simple/simple.go:73 +0xb6
+github.com/anyproto/anytype-heart/core/block/editor/state.NewDocFromSnapshot({0xc002c0b900, 0x3b}, 0xc008489710, {0xc000d7ce50, 0x1, 0x0?})
+
+	/Users/user1/actions-runner4/_work/anytype-heart/anytype-heart/core/block/editor/state/change.go:69 +0x125
+github.com/anyproto/anytype-heart/core/block/import/common/objectcreator.(*ObjectCreator).Create(0xc0008e4d80, 0xc007ebc640, 0xc0084896e0)
+	/Users/user1/actions-runner4/_work/anytype-heart/anytype-heart/core/block/import/common/objectcreator/objectcreator.go:98 +0x1aa
+github.com/anyproto/anytype-heart/core/block/import/common/objectcreator.(*Task).Execute(0xc0071baf9c?, {0x2e18e80?, 0xc007ebc640?})
+	/Users/user1/actions-runner4/_work/anytype-heart/anytype-heart/core/block/import/common/objectcreator/task.go:55 +0x46
+github.com/anyproto/anytype-heart/core/block/import/common/workerpool.(*WorkerPool).works(0xc0099089c0, {0x2e18e80, 0xc007ebc640}, 0x47895b?)
+	/Users/user1/actions-runner4/_work/anytype-heart/anytype-heart/core/block/import/common/workerpool/workerpool.go:55 +0xe8
+github.com/anyproto/anytype-heart/core/block/import/common/workerpool.(*WorkerPool).Start.func1(0x0?)
+	/Users/user1/actions-runner4/_work/anytype-heart/anytype-heart/core/block/import/common/workerpool/workerpool.go:42 +0x25
+created by github.com/anyproto/anytype-heart/core/block/import/common/workerpool.(*WorkerPool).Start in goroutine 78606
+	/Users/user1/actions-runner4/_work/anytype-heart/anytype-heart/core/block/import/common/workerpool/workerpool.go:41 +0x48

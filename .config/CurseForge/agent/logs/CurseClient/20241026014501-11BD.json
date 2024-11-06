@@ -1,0 +1,1573 @@
+{
+  "Name": "CurseClient",
+  "Process": "Curse.Agent.Host",
+  "PID": 4541,
+  "Arguments": [
+    "/tmp/.mount_CurseFyp4NUO/resources/app.asar.unpacked/plugins/curse/linux/Curse.Agent.Host",
+    "--port=53143",
+    "--to-port=53163",
+    "--pid=4380",
+    "--appDataPath=/home/astro/.config/CurseForge",
+    "--clientId=Overwolf"
+  ],
+  "ProcessStart": "2024-10-26T04:45:01.2135204Z",
+  "Version": "1.259.1.20166",
+  "BuildDate": "2000-01-02T13:12:12Z",
+  "Start": "2024-10-26T01:45:01.877947-03:00",
+  "Log": [
+{
+  "timestamp": "2024-10-26T01:45:01.8677705-03:00",
+  "level": "Warn",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Failed to modified BuiltInConverters: Cannot set initonly static field 'BuiltInConverters' after type 'Newtonsoft.Json.Serialization.DefaultContractResolver' is initialized."
+},
+{
+  "timestamp": "2024-10-26T01:45:01.8746365-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Startup Name: CurseForge, Version: 1.259.1.20166"
+},
+{
+  "timestamp": "2024-10-26T01:45:01.8753599-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Running Mods Agent with args: --port=53143,--to-port=53163,--pid=4380,--appDataPath=/home/astro/.config/CurseForge,--clientId=Overwolf"
+},
+{
+  "timestamp": "2024-10-26T01:45:01.8787263-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "start monitor process: 4380"
+},
+{
+  "timestamp": "2024-10-26T01:45:02.7161082-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Unable to load game instances from disk. No file was found at: /home/astro/.config/CurseForge/agent/GameInstances/ModpackGameInstances.json"
+},
+{
+  "timestamp": "2024-10-26T01:45:02.8472918-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Mods Agent server started on port 53143"
+},
+{
+  "timestamp": "2024-10-26T01:45:02.9095942-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Web Socket session connected"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.1015721-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Update simultaneous downloads '1' => '3'"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.1038592-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "UpdateOverrideLauncher"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.1050617-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Initializing Curse Mods Agent"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.1073347-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "update client Info ''..."
+},
+{
+  "timestamp": "2024-10-26T01:45:03.1622241-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Network connected and internet available"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.1775811-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "AddonServiceClient - CfCore Url: https://api.curseforge.com"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.589168-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Attempt #1 of 2 on GameDatabase -> GetRemoteItems"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.5901158-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Getting Games from server"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.6373895-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Loaded 26 games from the server"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.6375794-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Saving games to local cache at /home/astro/.config/CurseForge/agent/gamesCache.json"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.6714811-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "[GameRepository] Completed download of cache",
+  "data": {
+    "name": "Games",
+    "elapsedTime": "74.00"
+  }
+},
+{
+  "timestamp": "2024-10-26T01:45:03.7001769-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Initializing local databases..."
+},
+{
+  "timestamp": "2024-10-26T01:45:03.7006775-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Initializing game instances."
+},
+{
+  "timestamp": "2024-10-26T01:45:03.7204535-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Found RegisterType on Type: 'Curse.Radium.Addons.AddonGameInstance'"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.7209728-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Found RegisterType on Type: 'Curse.Games.Minecraft.MinecraftGameInstance'"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.7212743-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Initializing game instance of type Curse.Radium.Addons.AddonGameInstance"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.7533621-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "[AddonGameInstance] LoadInstancesFromDisk loaded 0 instances"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.7534965-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Initializing game instance of type Curse.Games.Minecraft.MinecraftGameInstance"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.9564433-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] LoadInstancesFromDisk loaded 2 instances"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.9663569-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Game Minecraft (Id: 432) was detected at /home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized/"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.9795786-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Initialized game Fabulously Optimized instance"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.9796282-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Game Minecraft (Id: 432) was detected at /home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized (1)/"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.9801842-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Initialized game wynncraft instance"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.98241-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Game instances initialization completed. Operation took 280 ms"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.9828602-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Initializing Modpack instances."
+},
+{
+  "timestamp": "2024-10-26T01:45:03.9841603-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Running startup game detection"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.9883542-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Performing quick game detection for 26 games..."
+},
+{
+  "timestamp": "2024-10-26T01:45:03.9968789-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Completed startup game detection. We have a total of 2 detected game instances. Operation took 12 ms"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.9986494-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T01:45:03.9993675-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T01:45:03.9995871-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Beginning initialization of InstanceManager"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.0001692-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Setting file watcher on instance directory /home/astro/Documents/curseforge/minecraft/Instances"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.0036808-03:00",
+  "level": "Info",
+  "thread": 15,
+  "memory": 0.0,
+  "message": "Pre-Fetching latest files for instance: Fabulously Optimized"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.0079344-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "InstanceManager initialized."
+},
+{
+  "timestamp": "2024-10-26T01:45:04.008804-03:00",
+  "level": "Info",
+  "thread": 14,
+  "memory": 0.0,
+  "message": "Refreshing Minecraft instances list"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.0088275-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Initializing tasks"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.0094142-03:00",
+  "level": "Info",
+  "thread": 8,
+  "memory": 0.0,
+  "message": "Initializing Periodic Tasks"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.0103565-03:00",
+  "level": "Info",
+  "thread": 13,
+  "memory": 0.0,
+  "message": "Resolving Minecraft instances list from /home/astro/Documents/curseforge/minecraft/Instances"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.0117332-03:00",
+  "level": "Info",
+  "thread": 13,
+  "memory": 0.0,
+  "message": "Skipping existing minecraft game instance at /home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized (1)"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.0117781-03:00",
+  "level": "Info",
+  "thread": 13,
+  "memory": 0.0,
+  "message": "Skipping existing minecraft game instance at /home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.01666-03:00",
+  "level": "Info",
+  "thread": 13,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.0471089-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.0471474-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T01:45:04.1358363-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "[ModLoaderDatabase] Completed download of cache",
+  "data": {
+    "name": "Minecraft Modloaders",
+    "elapsedTime": "126.00"
+  }
+},
+{
+  "timestamp": "2024-10-26T01:45:04.180467-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "[MinecraftVersionDatabase] Completed download of cache",
+  "data": {
+    "name": "Minecraft Versions",
+    "elapsedTime": "25.00"
+  }
+},
+{
+  "timestamp": "2024-10-26T01:45:04.267197-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.2818577-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetModFilesFromServer"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.4442613-03:00",
+  "level": "Info",
+  "thread": 14,
+  "memory": 0.0,
+  "message": "Pre-Fetching latest files for instance: wynncraft"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.542914-03:00",
+  "level": "Info",
+  "thread": 16,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.5429526-03:00",
+  "level": "Info",
+  "thread": 16,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T01:45:04.6607681-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetModFilesFromServer"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.7103283-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.7103625-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T01:45:04.8915575-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T01:45:04.8915834-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T01:48:34.0840954-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "InstallTask 6e16978e-9797-4ba7-a148-efc24cde6714 LaunchMinecraftTask started..."
+},
+{
+  "timestamp": "2024-10-26T01:48:34.0864956-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Validate required Minecraft version prior to launch"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.0959523-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Verifying Minecraft version: 1.21"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.100228-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.1002502-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T01:48:34.1004014-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Minecraft version 1.21 already exists... Skipping installation."
+},
+{
+  "timestamp": "2024-10-26T01:48:34.101453-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Installing Fabric mod loader fabric-0.16.7-1.21."
+},
+{
+  "timestamp": "2024-10-26T01:48:34.1201195-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on MinecraftVersionInstallTask.Run -> _instance.SaveToDisk"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.2307375-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 2 items"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.3340975-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 103ms"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.3369094-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Launching Minecraft instance: wynncraft"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.3506923-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Setting minecraft version.json asset index"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.3511732-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[Minecraft] loading version.json from /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.3519462-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[Minecraft] Saving version.json to /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.3524656-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Setting Minecraft version.json jar location"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.3527129-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[Minecraft] loading version.json from /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.3535929-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "[Minecraft] Saving version.json to /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.3583596-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Reading launcher_profiles.json from /home/astro/Documents/curseforge/minecraft/Install/launcher_profiles.json"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.3673295-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Launcher args determined as: -Xmx6112m -Xms256m -Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInvalidMinecraftCertificates=true -Duser.language=en -Duser.country=US -DlibraryDirectory=\"/home/astro/Documents/curseforge/minecraft/Install/libraries\""
+},
+{
+  "timestamp": "2024-10-26T01:48:34.3682067-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Inserting pre-launch profile (version format 3)",
+  "data": {
+    "name": "wynncraft",
+    "gameDir": "/home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized (1)/",
+    "lastVersionId": "fabric-loader-0.16.7-1.21",
+    "javaArgs": "-Xmx6112m -Xms256m -Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInvalidMinecraftCertificates=true -Duser.language=en -Duser.country=US -DlibraryDirectory=\"/home/astro/Documents/curseforge/minecraft/Install/libraries\"",
+    "resolution": {
+      "height": 768,
+      "width": 1024
+    },
+    "type": "custom",
+    "created": "2024-10-26T04:48:34.3668357Z",
+    "lastUsed": "2024-10-26T04:48:34.3668556Z"
+  }
+},
+{
+  "timestamp": "2024-10-26T01:48:34.3699511-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Saving launcher_profiles.json"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.3728903-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Writing profile to: /home/astro/Documents/curseforge/minecraft/Install/launcher_profiles.json"
+},
+{
+  "timestamp": "2024-10-26T01:48:34.478766-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Process start '/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher' args determined: --workDir \"/home/astro/Documents/curseforge/minecraft/Install\""
+},
+{
+  "timestamp": "2024-10-26T01:48:34.4787995-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "Starting Process..."
+},
+{
+  "timestamp": "2024-10-26T01:48:36.0884361-03:00",
+  "level": "Info",
+  "thread": 17,
+  "memory": 0.0,
+  "message": "InstallTask 6e16978e-9797-4ba7-a148-efc24cde6714 LaunchMinecraftTask completed"
+},
+{
+  "timestamp": "2024-10-26T01:48:39.4848061-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 2 items"
+},
+{
+  "timestamp": "2024-10-26T01:48:39.5398289-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 55ms"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6339127-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "InstallTask 92cfb167-2fa5-45fd-9139-56af8069b4d6 LaunchMinecraftTask started..."
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6339169-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Validate required Minecraft version prior to launch"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6348624-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Verifying Minecraft version: 1.21"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6350627-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6350675-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6350769-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Minecraft version 1.21 already exists... Skipping installation."
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6350866-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Installing Fabric mod loader fabric-0.16.7-1.21."
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6360372-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on MinecraftVersionInstallTask.Run -> _instance.SaveToDisk"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6383521-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 2 items"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6835189-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 45ms"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6839591-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Launching Minecraft instance: wynncraft"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6960395-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Setting minecraft version.json asset index"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6961277-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[Minecraft] loading version.json from /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6962581-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[Minecraft] Saving version.json to /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6964027-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Setting Minecraft version.json jar location"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.696487-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[Minecraft] loading version.json from /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6966913-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[Minecraft] Saving version.json to /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6971091-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Reading launcher_profiles.json from /home/astro/Documents/curseforge/minecraft/Install/launcher_profiles.json"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6972371-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Launcher args determined as: -Xmx6112m -Xms256m -Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInvalidMinecraftCertificates=true -Duser.language=en -Duser.country=US -DlibraryDirectory=\"/home/astro/Documents/curseforge/minecraft/Install/libraries\""
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6972402-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Inserting pre-launch profile (version format 3)",
+  "data": {
+    "name": "wynncraft",
+    "gameDir": "/home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized (1)/",
+    "lastVersionId": "fabric-loader-0.16.7-1.21",
+    "javaArgs": "-Xmx6112m -Xms256m -Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInvalidMinecraftCertificates=true -Duser.language=en -Duser.country=US -DlibraryDirectory=\"/home/astro/Documents/curseforge/minecraft/Install/libraries\"",
+    "resolution": {
+      "height": 768,
+      "width": 1024
+    },
+    "type": "custom",
+    "created": "2024-10-26T04:55:51.6972267Z",
+    "lastUsed": "2024-10-26T04:55:51.6972268Z"
+  }
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6972555-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Saving launcher_profiles.json"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.6972942-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Writing profile to: /home/astro/Documents/curseforge/minecraft/Install/launcher_profiles.json"
+},
+{
+  "timestamp": "2024-10-26T01:55:51.7978621-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Process start '/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher' args determined: --workDir \"/home/astro/Documents/curseforge/minecraft/Install\""
+},
+{
+  "timestamp": "2024-10-26T01:55:51.797871-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Starting Process..."
+},
+{
+  "timestamp": "2024-10-26T01:55:53.6349865-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "InstallTask 92cfb167-2fa5-45fd-9139-56af8069b4d6 LaunchMinecraftTask completed"
+},
+{
+  "timestamp": "2024-10-26T01:55:56.8023544-03:00",
+  "level": "Info",
+  "thread": 18,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 2 items"
+},
+{
+  "timestamp": "2024-10-26T01:55:56.845664-03:00",
+  "level": "Info",
+  "thread": 18,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 43ms"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.0761478-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "InstallTask 59d3e89c-152c-4d26-9567-be3bd733f4fb LaunchMinecraftTask started..."
+},
+{
+  "timestamp": "2024-10-26T01:56:07.0761515-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Validate required Minecraft version prior to launch"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.076225-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Verifying Minecraft version: 1.21"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.0763847-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.0763888-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T01:56:07.0763976-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Minecraft version 1.21 already exists... Skipping installation."
+},
+{
+  "timestamp": "2024-10-26T01:56:07.0764031-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Installing Fabric mod loader fabric-0.16.7-1.21."
+},
+{
+  "timestamp": "2024-10-26T01:56:07.0770989-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on MinecraftVersionInstallTask.Run -> _instance.SaveToDisk"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.0803952-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 2 items"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.1227459-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 42ms"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.1231417-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Launching Minecraft instance: wynncraft"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.1311847-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Setting minecraft version.json asset index"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.1312718-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[Minecraft] loading version.json from /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.1314028-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[Minecraft] Saving version.json to /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.131552-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Setting Minecraft version.json jar location"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.1316044-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[Minecraft] loading version.json from /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.1317855-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "[Minecraft] Saving version.json to /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.1321847-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Reading launcher_profiles.json from /home/astro/Documents/curseforge/minecraft/Install/launcher_profiles.json"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.1322677-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Launcher args determined as: -Xmx6112m -Xms256m -Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInvalidMinecraftCertificates=true -Duser.language=en -Duser.country=US -DlibraryDirectory=\"/home/astro/Documents/curseforge/minecraft/Install/libraries\""
+},
+{
+  "timestamp": "2024-10-26T01:56:07.1322714-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Inserting pre-launch profile (version format 3)",
+  "data": {
+    "name": "wynncraft",
+    "gameDir": "/home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized (1)/",
+    "lastVersionId": "fabric-loader-0.16.7-1.21",
+    "javaArgs": "-Xmx6112m -Xms256m -Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInvalidMinecraftCertificates=true -Duser.language=en -Duser.country=US -DlibraryDirectory=\"/home/astro/Documents/curseforge/minecraft/Install/libraries\"",
+    "resolution": {
+      "height": 768,
+      "width": 1024
+    },
+    "type": "custom",
+    "created": "2024-10-26T04:56:07.1322569Z",
+    "lastUsed": "2024-10-26T04:56:07.132257Z"
+  }
+},
+{
+  "timestamp": "2024-10-26T01:56:07.1322899-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Saving launcher_profiles.json"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.1323095-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Writing profile to: /home/astro/Documents/curseforge/minecraft/Install/launcher_profiles.json"
+},
+{
+  "timestamp": "2024-10-26T01:56:07.2327645-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Process start '/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher' args determined: --workDir \"/home/astro/Documents/curseforge/minecraft/Install\""
+},
+{
+  "timestamp": "2024-10-26T01:56:07.2327748-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Starting Process..."
+},
+{
+  "timestamp": "2024-10-26T01:56:09.0767847-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "InstallTask 59d3e89c-152c-4d26-9567-be3bd733f4fb LaunchMinecraftTask completed"
+},
+{
+  "timestamp": "2024-10-26T01:56:12.2362569-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 2 items"
+},
+{
+  "timestamp": "2024-10-26T01:56:12.2885709-03:00",
+  "level": "Info",
+  "thread": 10,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 52ms"
+},
+{
+  "timestamp": "2024-10-26T01:58:39.908692-03:00",
+  "level": "Info",
+  "thread": 18,
+  "memory": 0.0,
+  "message": "Starting Game Instance wynncraft scan"
+},
+{
+  "timestamp": "2024-10-26T01:58:39.9104605-03:00",
+  "level": "Info",
+  "thread": 18,
+  "memory": 0.0,
+  "message": "Processed invalid installed mods for wynncraft. Operation took 1 ms"
+},
+{
+  "timestamp": "2024-10-26T01:58:39.9105141-03:00",
+  "level": "Info",
+  "thread": 18,
+  "memory": 0.0,
+  "message": "Performing a full scan of wynncraft"
+},
+{
+  "timestamp": "2024-10-26T01:58:41.1663794-03:00",
+  "level": "Info",
+  "thread": 18,
+  "memory": 0.0,
+  "message": "Staring game instance wynncraft mod files scan. Scanning 0 folders using 6 logical cores."
+},
+{
+  "timestamp": "2024-10-26T01:58:41.1706689-03:00",
+  "level": "Info",
+  "thread": 18,
+  "memory": 0.0,
+  "message": "Completed scanning 0 folders from wynncraft category section /home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized (1)/saves. Operation took 00:00:00.0031083."
+},
+{
+  "timestamp": "2024-10-26T01:58:41.1706727-03:00",
+  "level": "Info",
+  "thread": 18,
+  "memory": 0.0,
+  "message": "Completed fingerprinting local mods for wynncraft. Operation took 1259 ms"
+},
+{
+  "timestamp": "2024-10-26T01:58:41.1764671-03:00",
+  "level": "Info",
+  "thread": 18,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on GameInst.ProcMatches -> GetFingerprints"
+},
+{
+  "timestamp": "2024-10-26T01:58:41.4594706-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T01:58:41.5927444-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on GameInst.ProcMatches -> GetFingerprints"
+},
+{
+  "timestamp": "2024-10-26T01:58:41.742937-03:00",
+  "level": "Info",
+  "thread": 12,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T01:58:41.9241281-03:00",
+  "level": "Info",
+  "thread": 22,
+  "memory": 0.0,
+  "message": "Checking for game instance wynncraft updates"
+},
+{
+  "timestamp": "2024-10-26T01:58:41.9245218-03:00",
+  "level": "Info",
+  "thread": 22,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T01:58:42.0813515-03:00",
+  "level": "Info",
+  "thread": 22,
+  "memory": 0.0,
+  "message": "Completed checking for updates in instance wynncraft. Operation took 157 ms"
+},
+{
+  "timestamp": "2024-10-26T01:58:42.0833063-03:00",
+  "level": "Info",
+  "thread": 22,
+  "memory": 0.0,
+  "message": "Completed game instance wynncraft scan. Operation took 2174 ms"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.3837166-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "InstallTask dd5fa0f8-0115-4a25-84db-9908323b039f LaunchMinecraftTask started..."
+},
+{
+  "timestamp": "2024-10-26T01:58:48.3837215-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Validate required Minecraft version prior to launch"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.3838322-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Verifying Minecraft version: 1.21"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.3840678-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Validating Minecraft installation"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.3840753-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher found."
+},
+{
+  "timestamp": "2024-10-26T01:58:48.384095-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Minecraft version 1.21 already exists... Skipping installation."
+},
+{
+  "timestamp": "2024-10-26T01:58:48.3841022-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Installing Fabric mod loader fabric-0.16.7-1.21."
+},
+{
+  "timestamp": "2024-10-26T01:58:48.3855742-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on MinecraftVersionInstallTask.Run -> _instance.SaveToDisk"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.3921268-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 2 items"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.4462352-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 54ms"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.4465967-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Launching Minecraft instance: wynncraft"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.4538864-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Setting minecraft version.json asset index"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.4539633-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "[Minecraft] loading version.json from /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.4540454-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "[Minecraft] Saving version.json to /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.4541647-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Setting Minecraft version.json jar location"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.4542124-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "[Minecraft] loading version.json from /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.4543779-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "[Minecraft] Saving version.json to /home/astro/Documents/curseforge/minecraft/Install/versions/fabric-loader-0.16.7-1.21/fabric-loader-0.16.7-1.21.json"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.4546917-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Reading launcher_profiles.json from /home/astro/Documents/curseforge/minecraft/Install/launcher_profiles.json"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.4547511-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Launcher args determined as: -Xmx6112m -Xms256m -Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInvalidMinecraftCertificates=true -Duser.language=en -Duser.country=US -DlibraryDirectory=\"/home/astro/Documents/curseforge/minecraft/Install/libraries\""
+},
+{
+  "timestamp": "2024-10-26T01:58:48.4547536-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Inserting pre-launch profile (version format 3)",
+  "data": {
+    "name": "wynncraft",
+    "gameDir": "/home/astro/Documents/curseforge/minecraft/Instances/Fabulously Optimized (1)/",
+    "lastVersionId": "fabric-loader-0.16.7-1.21",
+    "javaArgs": "-Xmx6112m -Xms256m -Dfml.ignorePatchDiscrepancies=true -Dfml.ignoreInvalidMinecraftCertificates=true -Duser.language=en -Duser.country=US -DlibraryDirectory=\"/home/astro/Documents/curseforge/minecraft/Install/libraries\"",
+    "resolution": {
+      "height": 768,
+      "width": 1024
+    },
+    "type": "custom",
+    "created": "2024-10-26T04:58:48.4547409Z",
+    "lastUsed": "2024-10-26T04:58:48.454741Z"
+  }
+},
+{
+  "timestamp": "2024-10-26T01:58:48.4547686-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Saving launcher_profiles.json"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.454789-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Writing profile to: /home/astro/Documents/curseforge/minecraft/Install/launcher_profiles.json"
+},
+{
+  "timestamp": "2024-10-26T01:58:48.5551878-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Process start '/home/astro/Documents/curseforge/minecraft/Install/minecraft-launcher' args determined: --workDir \"/home/astro/Documents/curseforge/minecraft/Install\""
+},
+{
+  "timestamp": "2024-10-26T01:58:48.5551944-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "Starting Process..."
+},
+{
+  "timestamp": "2024-10-26T01:58:50.384032-03:00",
+  "level": "Info",
+  "thread": 20,
+  "memory": 0.0,
+  "message": "InstallTask dd5fa0f8-0115-4a25-84db-9908323b039f LaunchMinecraftTask completed"
+},
+{
+  "timestamp": "2024-10-26T01:58:53.5607675-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 2 items"
+},
+{
+  "timestamp": "2024-10-26T01:58:53.6074437-03:00",
+  "level": "Info",
+  "thread": 3,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 46ms"
+},
+{
+  "timestamp": "2024-10-26T02:45:03.2090581-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "ModPack update interval of 60 minutes has elapsed. Checking for modpack updates..."
+},
+{
+  "timestamp": "2024-10-26T02:45:03.2113336-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T02:45:03.4511734-03:00",
+  "level": "Info",
+  "thread": 15,
+  "memory": 0.0,
+  "message": "Mods update interval of 60 minutes has elapsed. Checking for mod updates..."
+},
+{
+  "timestamp": "2024-10-26T03:45:03.6453117-03:00",
+  "level": "Info",
+  "thread": 30,
+  "memory": 0.0,
+  "message": "ModPack update interval of 60 minutes has elapsed. Checking for modpack updates..."
+},
+{
+  "timestamp": "2024-10-26T03:45:03.6465866-03:00",
+  "level": "Info",
+  "thread": 30,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T03:45:03.9203374-03:00",
+  "level": "Info",
+  "thread": 30,
+  "memory": 0.0,
+  "message": "Mods update interval of 60 minutes has elapsed. Checking for mod updates..."
+},
+{
+  "timestamp": "2024-10-26T04:45:04.117377-03:00",
+  "level": "Info",
+  "thread": 28,
+  "memory": 0.0,
+  "message": "ModPack update interval of 60 minutes has elapsed. Checking for modpack updates..."
+},
+{
+  "timestamp": "2024-10-26T04:45:04.1175872-03:00",
+  "level": "Info",
+  "thread": 28,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T04:45:04.3632368-03:00",
+  "level": "Info",
+  "thread": 29,
+  "memory": 0.0,
+  "message": "Mods update interval of 60 minutes has elapsed. Checking for mod updates..."
+},
+{
+  "timestamp": "2024-10-26T05:45:04.4695142-03:00",
+  "level": "Info",
+  "thread": 13,
+  "memory": 0.0,
+  "message": "ModPack update interval of 60 minutes has elapsed. Checking for modpack updates..."
+},
+{
+  "timestamp": "2024-10-26T05:45:04.4697135-03:00",
+  "level": "Info",
+  "thread": 13,
+  "memory": 0.0,
+  "message": "Attempt #1 of 3 on InstalledAddonDatabase -> GetAddons"
+},
+{
+  "timestamp": "2024-10-26T05:45:04.6943671-03:00",
+  "level": "Info",
+  "thread": 6,
+  "memory": 0.0,
+  "message": "Mods update interval of 60 minutes has elapsed. Checking for mod updates..."
+},
+{
+  "timestamp": "2024-10-26T05:58:07.0053596-03:00",
+  "level": "Info",
+  "thread": 14,
+  "memory": 0.0,
+  "message": "Web Socket session disconnected"
+},
+{
+  "timestamp": "2024-10-26T05:58:07.0065817-03:00",
+  "level": "Warn",
+  "thread": 14,
+  "memory": 0.0,
+  "message": "Client disconnected from server"
+},
+{
+  "timestamp": "2024-10-26T05:58:07.0178543-03:00",
+  "level": "Warn",
+  "thread": 5,
+  "memory": 0.0,
+  "message": "Parent process is no longer active. Mods Agent will shutdown."
+},
+{
+  "timestamp": "2024-10-26T05:58:07.0179696-03:00",
+  "level": "Warn",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Parent process exit. Shutting down..."
+},
+{
+  "timestamp": "2024-10-26T05:58:07.0237997-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Curse Mods Agent is shutting down"
+},
+{
+  "timestamp": "2024-10-26T05:58:07.0239534-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Shutting down periodic tasks"
+},
+{
+  "timestamp": "2024-10-26T05:58:07.0240679-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Disabling periodic timers"
+},
+{
+  "timestamp": "2024-10-26T05:58:07.0251933-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "[InstallTaskManager] Install Manager Shutting Down"
+},
+{
+  "timestamp": "2024-10-26T05:58:07.0254053-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "[InstallTaskManager] Install Manager Shutting Down"
+},
+{
+  "timestamp": "2024-10-26T05:58:07.025407-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "[InstallTaskManager] Install Manager Shutting Down"
+},
+{
+  "timestamp": "2024-10-26T05:58:07.025516-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "Shutdown game instances."
+},
+{
+  "timestamp": "2024-10-26T05:58:07.0261432-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saving MinecraftGameInstance DB with 2 items"
+},
+{
+  "timestamp": "2024-10-26T05:58:07.0793166-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "[MinecraftGameInstance] GameInstance.SaveInstancesToDisk: Saved MinecraftGameInstance DB, which took 53ms"
+},
+{
+  "timestamp": "2024-10-26T05:58:07.0798551-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "[AddonGameInstance] GameInstance.SaveInstancesToDisk: Saving GameInstance DB with 0 items"
+},
+{
+  "timestamp": "2024-10-26T05:58:07.0991864-03:00",
+  "level": "Info",
+  "thread": 1,
+  "memory": 0.0,
+  "message": "[AddonGameInstance] GameInstance.SaveInstancesToDisk: Saved GameInstance DB, which took 19ms"
+},
+{
+  "timestamp": "2024-10-26T05:58:07.1137036-03:00",
+  "level": "Info",
+  "thread": 2,
+  "memory": 0.0,
+  "message": "Shutting down the logger"
+},
+{
+  "timestamp": "2024-10-26T05:58:07.2142445-03:00",
+  "level": "Info",
+  "thread": 2,
+  "memory": 0.0,
+  "message": "Logging worker finished"
+}
+]}
