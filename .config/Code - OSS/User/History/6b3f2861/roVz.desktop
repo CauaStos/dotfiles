@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=ShadPS4
-Exec=env LD_LIBRARY_PATH=/lib ./ShadPS4.AppImage  
-Icon=Shadps4
-Type=Application
-Categories=Games;PS4

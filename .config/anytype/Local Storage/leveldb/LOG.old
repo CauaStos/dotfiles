@@ -1,6 +1,0 @@
-2024/11/04-22:08:01.127 9ac75 Reusing MANIFEST /home/astro/.config/anytype/Local Storage/leveldb/MANIFEST-000001
-2024/11/04-22:08:01.181 9ac75 Recovering log #8
-2024/11/04-22:08:01.181 9ac75 Reusing old log /home/astro/.config/anytype/Local Storage/leveldb/000008.log 
-2024/11/04-22:12:03.035 9ac75 Level-0 table #11: started
-2024/11/04-22:12:03.037 9ac75 Level-0 table #11: 17764 bytes OK
-2024/11/04-22:12:03.037 9ac75 Delete type=0 #8

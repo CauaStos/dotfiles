@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Wine NXM Handler
-Exec= env WINEPREFIX="/home/astro/.wine" wine C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Black\\ Tree\\ Gaming\\ Ltd\\\\Vortex.lnk %u
-Type=Application
-NoDisplay=true
-MimeType=x-scheme-handler/nxm;
