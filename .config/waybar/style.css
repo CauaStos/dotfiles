@@ -22,7 +22,7 @@ tooltip {
 
 #workspaces button {
     box-shadow: none;
-	text-shadow: none;
+    text-shadow: none;
     padding: 0px;
     border-radius: 9px;
     margin-top: 3px;
@@ -37,25 +37,25 @@ tooltip {
 
 #workspaces button.active {
     background: @surface0;
-    color: @lavender;
+    color: @mauve;
     margin-left: 3px;
     padding-left: 12px;
     padding-right: 12px;
     margin-right: 3px;
     animation: ws_active 20s ease-in-out 1;
-    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
+    transition: all 0.4s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 
 #workspaces button:hover {
     background: @surface0;
     color: @wb-hvr-fg;
     animation: ws_hover 20s ease-in-out 1;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+    transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 
 #taskbar button {
     box-shadow: none;
-	text-shadow: none;
+    text-shadow: none;
     padding: 0px;
     border-radius: 9px;
     margin-top: 3px;
@@ -74,21 +74,21 @@ tooltip {
     padding-right: 12px;
     margin-right: 3px;
     animation: tb_active 20s ease-in-out 1;
-    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
+    transition: all 0.4s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 
 #taskbar button:hover {
     background: @surface0;
     animation: tb_hover 20s ease-in-out 1;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+    transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 
 #tray menu * {
-    min-height: 16px
+    min-height: 16px;
 }
 
 #tray menu separator {
-    min-height: 10px
+    min-height: 10px;
 }
 
 #backlight,
