@@ -58,16 +58,30 @@
       ]
     },
     "1": {
-      "left": [],
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
       "middle": [],
-      "right": []
+      "right": [
+        "media"
+      ]
     },
     "2": {
-      "left": [],
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle"
+      ],
       "middle": [],
-      "right": []
+      "right": [
+        "media"
+      ]
     }
   },
   "theme.bar.buttons.opacity": 95,
-  "theme.notification.opacity": 100
+  "theme.notification.opacity": 100,
+  "theme.bar.border.width": "0.15em",
+  "theme.bar.border.location": "none"
 }
