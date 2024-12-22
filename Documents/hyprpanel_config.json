@@ -27,8 +27,8 @@
   "menus.dashboard.shortcuts.enabled": false,
   "bar.customModules.cpu.pollingInterval": 100,
   "menus.power.showLabel": true,
-  "theme.font.name": "Inconsolata Nerd Font Mono",
-  "theme.font.size": "1.3rem",
+  "theme.font.name": "CaskaydiaCove Nerd Font Mono",
+  "theme.font.size": "1.2rem",
   "bar.network.label": false,
   "bar.volume.label": true,
   "theme.matugen": false,
@@ -68,5 +68,6 @@
       "right": []
     }
   },
-  "theme.bar.buttons.opacity": 95
+  "theme.bar.buttons.opacity": 95,
+  "theme.notification.opacity": 100
 }
