@@ -25,7 +25,7 @@ rsync -av --checksum --mkpath "${include[@]}" ~/Documents/ ~/Documents/dotfiles/
 
 echo "Copying .config folders..."
 
-include=(--include 'hypr/' --include 'foot/' --include 'macchina/' --include 'macchina/themes/' --include 'qt5ct/' --include 'qt5ct/colors/' --include 'qt6ct/' --include 'qt6ct/colors/' --exclude '*/')
+include=(--include 'hypr/' --include 'foot/' --include 'macchina/' --include 'macchina/themes/' --include 'qt5ct/' --include 'qt5ct/colors/' --include 'qt6ct/' --include 'qt6ct/colors/' --include 'hyprlauncher/' --exclude '*/')
 
 rsync -av --checksum --mkpath "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
 
