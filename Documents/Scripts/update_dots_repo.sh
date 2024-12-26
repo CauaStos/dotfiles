@@ -55,6 +55,11 @@ rm -f ~/Documents/dotfiles/.config/.*
 
 #rm -f ~/Documents/dotfiles/.var/app/io.github.hrkfdn.ncspot/config/ncspot/userstate.cbor
 
+#Moving install_dots.sh to project root.
+
+cp ./Documents/Scripts/install_dots.sh ./
+
+
 if [[ $(git status --porcelain) ]]; then
     echo "pushing changes"
 
