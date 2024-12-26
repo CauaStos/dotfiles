@@ -12,7 +12,7 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 
 echo "Installing necessary packages (pacman)"
 
-sudo pacman -S hyprland sddm polkit-gnome hyprpaper hypridle spotify-launcher nwg-look hyprlock foot zed thunar hyprpicker hyprlauncher papirus-icon-theme macchina neofetch zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh
+sudo pacman -S hyprland sddm polkit-gnome hyprpaper hypridle spotify-launcher nwg-look hyprlock foot zed thunar hyprpicker papirus-icon-theme macchina neofetch zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh
 
 #AUR packages installation
 
@@ -51,11 +51,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 #Copying folders to home
 
 echo "Moving files to home. '~/'"
-rsync -av --checksum ./Documents ./.config ./home/.zshrc ~/
+rsync -av --checksum --mkpath ./Documents ./.config ./home/.zshrc ~/
 
 echo "Moving specific files."
 
-rsync -av --checksum ./.local/share/zed/extensions/ ~/.local/share/zed/extensions/
+rsync -av --checksum --mkpath ./.local/share/zed/extensions/ ~/.local/share/zed/extensions/
 
 #Enabling Services
 
