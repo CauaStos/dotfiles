@@ -6,19 +6,19 @@
 
 echo "Installing AUR Helper (YAY)"
 
-sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si && cd .. #we 'cd ..' since we are inside of yay-bin
+sudo pacman -S --needed --noconfirm git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si && cd .. #we 'cd ..' since we are inside of yay-bin
 
 #arch packages installation
 
 echo "Installing necessary packages (pacman)"
 
-sudo pacman -S hyprland sddm polkit-gnome hyprpaper hypridle spotify-launcher nwg-look hyprlock foot zed thunar hyprpicker papirus-icon-theme macchina neofetch zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh
+sudo pacman -S --noconfirm hyprland sddm polkit-gnome hyprpaper hypridle spotify-launcher nwg-look hyprlock foot zed thunar hyprpicker papirus-icon-theme macchina neofetch zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh
 
 #AUR packages installation
 
 echo "Installing necessary packages (AUR)"
 
-yay -S ags-hyprpanel-git hyprsunset zen-browser-bin spotify vesktop opentabletdriver catppuccin-gtk-theme-mocha catppuccin-cursors-mocha mission-center hyprshot
+yay -S --noconfirm ags-hyprpanel-git hyprsunset zen-browser-bin spotify vesktop opentabletdriver catppuccin-gtk-theme-mocha catppuccin-cursors-mocha mission-center hyprshot
 
 #Installing Catppuccin Icons
 echo "Installing Catppuccin Papirus icons (Mocha flavor, Mauve accent)"
