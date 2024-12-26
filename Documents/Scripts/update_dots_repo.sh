@@ -55,7 +55,8 @@ rm -f ~/Documents/dotfiles/.config/.*
 
 #rm -f ~/Documents/dotfiles/.var/app/io.github.hrkfdn.ncspot/config/ncspot/userstate.cbor
 
-#Moving install_dots.sh to project root.
+#Moving install_dots.sh to project's root.
+echo "Moving install script to project's root"
 
 cp ./Documents/Scripts/install_dots.sh ./
 
