@@ -13,19 +13,36 @@
 #cd into the dotfiles directory so the git status --porcelain doesnt return nothing
 cd ~/Documents/dotfiles/ || exit
 
+#Document Folders Copy
+include=(--include 'Hyprlock Assets/' --include 'Scripts/' --include 'Wallpapers/' --exclude '*/')
+
+echo "Copying 'Documents' folders..."
+
+rsync -av --checksum --mkpath "${include[@]}" ~/Documents/ ~/Documents/dotfiles/Documents/
+
+
+#Specific Folders Copy
+echo "Copying specific folders and files..."
+
+rsync -av --checksum --mkpath ~/.zshrc ~/Documents/dotfiles/home/
+
+rsync -av --checksum --mkpath ~/.local/share/zed/extensions/ ~/Documents/dotfiles/.local/share/zed/extensions
+
+
+
 
 #Document Folders Copy
 include=(--include 'Hyprlock Assets/' --include 'Scripts/' --include 'Wallpapers/' --exclude '*/')
 
-echo "Copying document folders..."
+echo "Copying 'Documents' folders..."
 
 rsync -av --checksum --mkpath "${include[@]}" ~/Documents/ ~/Documents/dotfiles/Documents/
 
 #.config Folders Copy
 
-echo "Copying .config folders..."
+echo "Copying '.config' folders..."
 
-include=(--include 'hypr/' --include 'foot/' --include 'macchina/' --include 'macchina/themes/' --include 'qt5ct/' --include 'qt5ct/colors/' --include 'qt6ct/' --include 'qt6ct/colors/' --include 'hyprlauncher/' --include 'nwg-dock-hyprland/' --include 'hyprpanel' --exclude '*/')
+include=(--include 'hypr/' --include 'foot/' --include 'macchina/' --include 'macchina/themes/' --include 'qt5ct/' --include 'qt5ct/colors/' --include 'qt6ct/' --include 'qt6ct/colors/' --include 'hyprlauncher/' --include 'nwg-dock-hyprland/' --include 'hyprpanel/' --include 'zed/' --exclude '*/')
 
 rsync -av --checksum --mkpath "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
 

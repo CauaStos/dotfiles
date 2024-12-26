@@ -12,19 +12,56 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 
 echo "Installing necessary packages (pacman)"
 
-sudo pacman -S hyprland sddm polkit-gnome hyprpaper hypridle spotify-launcher nwg-look hyprlock foot zed thunar hyprpicker
+sudo pacman -S hyprland sddm polkit-gnome hyprpaper hypridle spotify-launcher nwg-look hyprlock foot zed thunar hyprpicker hyprlauncher papirus-icon-theme macchina neofetch zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh
 
 #AUR packages installation
 
 echo "Installing necessary packages (AUR)"
 
-yay -S ags-hyprpanel-git hyprsunset zen-browser-bin spotify vesktop opentabletdriver catppuccin-gtk-theme-mocha catppuccin-cursors-mocha mission-center hyprshot hyprlauncher
+yay -S ags-hyprpanel-git hyprsunset zen-browser-bin spotify vesktop opentabletdriver catppuccin-gtk-theme-mocha catppuccin-cursors-mocha mission-center hyprshot
+
+#Installing Catppuccin Icons
+echo "Installing Catppuccin Papirus icons (Mocha flavor, Mauve accent)"
+
+#Not using AUR package cuz it's not working
+
+git clone https://github.com/catppuccin/papirus-folders.git
+cd papirus-folders
+sudo cp -r src/* /usr/share/icons/Papirus
+curl -LO https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-folders/master/papirus-folders && chmod +x ./papirus-folders
+./papirus-folders -C cat-mocha-mauve --theme Papirus-Dark
+
+
+#Installing Oh-My-Zsh
+
+echo "Installing Oh-My-Zsh"
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+
+#Installing ZSH Extensions
+
+echo "Installing Zsh extensions (zsh-autosuggestions, zsh-syntax-highlighting)"
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 
 #Copying folders to home
 
 echo "Moving files to home. '~/'"
-rsync -av --checksum ./Documents ./.config ~/
+rsync -av --checksum ./Documents ./.config ./home/.zshrc ~/
+
+echo "Moving specific files."
+
+rsync -av --checksum ./.local/share/zed/extensions/ ~/.local/share/zed/extensions/
+
+#Enabling Services
+
+echo "Enabling necessary services. (Just a precaution)"
+
+systemctl enable sddm
 
 echo "Done!"
 exit 0
