@@ -16,5 +16,6 @@
     "mode": "system",
     "light": "Catppuccin Mocha",
     "dark": "One Dark"
-  }
+  },
+  "soft_wrap": "editor_width"
 }

@@ -12,13 +12,13 @@ sudo pacman -S --needed --noconfirm git base-devel && git clone https://aur.arch
 
 echo "Installing necessary packages (pacman)"
 
-sudo pacman -S --noconfirm hyprland sddm polkit-gnome hyprpaper hypridle spotify-launcher nwg-look hyprlock foot zed thunar hyprpicker papirus-icon-theme macchina neofetch zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh
+sudo pacman -S --noconfirm hyprland sddm polkit-gnome hyprpaper hypridle spotify-launcher nwg-look hyprlock foot zed thunar hyprpicker papirus-icon-theme macchina neofetch zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh rsync
 
 #AUR packages installation
 
 echo "Installing necessary packages (AUR)"
 
-yay -S --noconfirm ags-hyprpanel-git hyprsunset zen-browser-bin spotify vesktop opentabletdriver catppuccin-gtk-theme-mocha catppuccin-cursors-mocha mission-center hyprshot
+yay -S --noconfirm ags-hyprpanel-git hyprsunset zen-browser-bin spotify vesktop opentabletdriver catppuccin-gtk-theme-mocha catppuccin-cursors-mocha mission-center hyprshot all-repository-fonts hyprlauncher
 
 #Installing Catppuccin Icons
 echo "Installing Catppuccin Papirus icons (Mocha flavor, Mauve accent)"
@@ -34,10 +34,11 @@ curl -LO https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-folder
 
 #Installing Oh-My-Zsh
 
-echo "Installing Oh-My-Zsh"
+echo "Installing Oh-My-Zsh and making Zsh the default shell."
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
+chsh -s /usr/bin/zsh
 
 #Installing ZSH Extensions
 
