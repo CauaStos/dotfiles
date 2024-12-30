@@ -23,8 +23,8 @@
   "menus.volume.raiseMaximumVolume": false,
   "menus.clock.time.military": false,
   "menus.clock.time.hideSeconds": false,
-  "menus.dashboard.powermenu.avatar.image": "/home/astro/Downloads/rainbowsheep.gif",
-  "menus.dashboard.shortcuts.enabled": false,
+  "menus.dashboard.powermenu.avatar.image": "/home/astro/Documents/Hyprlock Assets/profile-picture.png",
+  "menus.dashboard.shortcuts.enabled": true,
   "bar.customModules.cpu.pollingInterval": 100,
   "menus.power.showLabel": true,
   "theme.font.name": "CaskaydiaCove Nerd Font Mono",
@@ -128,5 +128,14 @@
   "theme.bar.menus.menu.dashboard.monitors.disk.bar": "#caa6f7",
   "theme.bar.menus.menu.dashboard.monitors.disk.icon": "#caa6f7",
   "theme.bar.menus.menu.dashboard.monitors.disk.label": "#caa6f7",
-  "theme.bar.buttons.workspaces.enableBorder": false
+  "theme.bar.buttons.workspaces.enableBorder": false,
+  "menus.dashboard.shortcuts.left.shortcut4.command": "fuzzel",
+  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Zen Browser",
+  "menus.dashboard.shortcuts.left.shortcut1.command": "zen-browser",
+  "menus.dashboard.shortcuts.left.shortcut1.icon": "",
+  "menus.dashboard.shortcuts.left.shortcut4.icon": "⋮",
+  "menus.dashboard.shortcuts.left.shortcut3.command": "vesktop",
+  "menus.dashboard.shortcuts.left.shortcut2.command": "spotify",
+  "menus.dashboard.shortcuts.right.shortcut3.command": "hyprshot -m region",
+  "menus.dashboard.shortcuts.right.shortcut1.command": "sleep 0.75 && hyprpicker -a"
 }
