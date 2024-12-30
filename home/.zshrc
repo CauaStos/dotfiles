@@ -12,4 +12,3 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 macchina
-[ -s "/home/astro/.jabba/jabba.sh" ] && source "/home/astro/.jabba/jabba.sh"
