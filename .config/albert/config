@@ -7,6 +7,7 @@ enabled=true
 terminal=foot
 
 [calculator_qalculate]
+angle_unit=2
 enabled=true
 
 [clipboard]
@@ -15,6 +16,7 @@ persistent=false
 
 [datetime]
 enabled=true
+show_date_on_empty_query=true
 
 [files]
 enabled=false
