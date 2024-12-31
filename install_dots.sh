@@ -12,13 +12,13 @@ sudo pacman -S --needed --noconfirm git base-devel && git clone https://aur.arch
 
 echo "Installing necessary packages (pacman)"
 
-sudo pacman -S --noconfirm hyprland sddm polkit-gnome hyprpaper hypridle spotify-launcher nwg-look hyprlock foot zed thunar hyprpicker papirus-icon-theme macchina neofetch zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh rsync fuzzel
+sudo pacman -S --noconfirm hyprland sddm polkit-gnome hyprpaper hypridle spotify-launcher nwg-look hyprlock foot zed thunar hyprpicker papirus-icon-theme macchina neofetch zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh rsync fuzzel qt5ct qt6ct gnome-keyring
 
 #AUR packages installation
 
 echo "Installing necessary packages (AUR)"
 
-yay -S --noconfirm ags-hyprpanel-git hyprsunset zen-browser-bin spotify vesktop opentabletdriver catppuccin-gtk-theme-mocha catppuccin-cursors-mocha mission-center hyprshot all-repository-fonts
+yay -S --noconfirm ags-hyprpanel-git hyprsunset zen-browser-bin spotify vesktop opentabletdriver catppuccin-gtk-theme-mocha catppuccin-cursors-mocha mission-center hyprshot all-repository-fonts albert apple-fonts appimagelauncher
 
 #Installing Catppuccin Icons
 echo "Installing Catppuccin Papirus icons (Mocha flavor, Mauve accent)"
