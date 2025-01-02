@@ -61,6 +61,7 @@ keybind = ctrl+t=new_tab
 
 keybind = ctrl+shift+c=unbind
 keybind = ctrl+shift+v=unbind
+keybind = ctrl+alt+c=copy_to_clipboard
 
 # tabs
 #keybind = ctrl+t=new_tab

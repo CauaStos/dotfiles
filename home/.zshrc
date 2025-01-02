@@ -9,8 +9,8 @@ bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
 
 #eu odeio com todas as forças do meu ser key sequences
-bindkey "^;6u" copy-region-as-kill
-bindkey "8" yank
+bindkey "^[[99;6u" copy-region-as-kill
+bindkey "^[[118;6u" yank
 
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
