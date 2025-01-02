@@ -8,6 +8,10 @@ alias zed=zeditor
 bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
 
+#eu odeio com todas as forças do meu ser key sequences
+bindkey "^;6u" copy-region-as-kill
+bindkey "8" yank
+
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
@@ -61,11 +65,6 @@ function shift-select::select-and-invoke() {
 	fi
 	zle ${WIDGET#shift-select::} -w
 }
-
-#eu odeio com todas as forças do meu ser key sequences
-bindkey "^;6u" copy-region-as-kill
-bindkey "8" yank
-
 
 function {
 	emulate -L zsh
