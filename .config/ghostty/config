@@ -8,6 +8,8 @@ window-padding-balance = true
 gtk-tabs-location = hidden
 gtk-single-instance = true
 window-decoration = false
+resize-overlay = never
+resize-overlay-position = top-right
 
 #shell
 shell-integration = zsh
