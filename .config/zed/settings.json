@@ -18,7 +18,7 @@
   "theme": {
     "mode": "system",
     "light": "Catppuccin Mocha",
-    "dark": "One Dark"
+    "dark": "Catppuccin Mocha"
   },
   "soft_wrap": "editor_width"
 }
