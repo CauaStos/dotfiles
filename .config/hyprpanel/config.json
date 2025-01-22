@@ -58,6 +58,7 @@
     "0": {
       "left": [
         "dashboard",
+        "bluetooth",
         "workspaces",
         "windowtitle"
       ],

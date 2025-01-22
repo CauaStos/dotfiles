@@ -2,6 +2,9 @@
 showTray=false
 telemetry=false
 
+[albert]
+global_handler_enabled=false
+
 [applications]
 enabled=true
 terminal=foot

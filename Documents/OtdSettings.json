@@ -26,12 +26,12 @@
           "Path": "TabletDriverFilters.Hawku.Smoothing",
           "Settings": [
             {
-              "Property": "Frequency",
-              "Value": 250.0
+              "Property": "Latency",
+              "Value": 1.0
             },
             {
-              "Property": "Latency",
-              "Value": 3.0
+              "Property": "Frequency",
+              "Value": 1000.0
             }
           ],
           "Enable": true
@@ -46,10 +46,10 @@
           "Rotation": 0.0
         },
         "Tablet": {
-          "Width": 81.4,
-          "Height": 45.787502,
-          "X": 80.349434,
-          "Y": 55.230114,
+          "Width": 70.4,
+          "Height": 43.0,
+          "X": 75.73012,
+          "Y": 52.519882,
           "Rotation": 180.0
         },
         "EnableClipping": true,
