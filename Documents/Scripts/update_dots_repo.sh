@@ -26,7 +26,7 @@ echo "Copying specific folders and files..."
 
 rsync -av --checksum --mkpath ~/.zshrc ~/Documents/dotfiles/home/
 
-rsync -av --checksum --mkpath ~/.local/share/zed/extensions/ ~/Documents/dotfiles/.local/share/zed/extensions
+rsync -av --checksum --mkpath ~/.local/share/zed/extensions/ ~/Documents/dotfiles/home/.local/share/zed/extensions/
 
 rsync -av --checksum --mkpath ~/.local/share/themes/Material ~/Documents/dotfiles/home/.local/share/themes/
 
