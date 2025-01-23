@@ -49,9 +49,9 @@ rsync -av --checksum --mkpath "${include[@]}" ~/.config/ ~/Documents/dotfiles/.c
 rm -f ~/Documents/dotfiles/.config/*
 rm -f ~/Documents/dotfiles/.config/.*
 
-echo "Copying SDDM theme..."
+#echo "Copying SDDM theme..."
 
-rsync -av --checksum --mkpath /usr/share/sddm/themes/where_is_my_sddm_theme/ ~/Documents/dotfiles/sddm/themes/where_is_my_sddm_theme/
+#rsync -av --checksum --mkpath /usr/share/sddm/themes/where_is_my_sddm_theme/ ~/Documents/dotfiles/sddm/themes/where_is_my_sddm_theme/
 
 #Moving install_dots.sh to project's root.
 echo "Moving install script to project's root"

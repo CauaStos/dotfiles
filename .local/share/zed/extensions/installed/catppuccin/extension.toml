@@ -1,6 +1,6 @@
 id = "catppuccin"
 name = "Catppuccin"
-version = "0.2.18"
+version = "0.2.19"
 schema_version = 1
 description = "🦀 Soothing pastel theme for Zed"
 repository = "https://github.com/catppuccin/zed"

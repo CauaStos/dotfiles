@@ -1,6 +1,6 @@
 id = "html"
 name = "HTML"
-version = "0.1.4"
+version = "0.1.5"
 schema_version = 1
 description = "HTML support."
 repository = "https://github.com/zed-industries/zed"
@@ -21,8 +21,8 @@ language = "HTML"
 languages = []
 
 [language_servers.vscode-html-language-server.language_ids]
-CSS = "css"
 HTML = "html"
+CSS = "css"
 
 [context_servers]
 
