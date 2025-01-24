@@ -30,5 +30,14 @@ output_path = '~/Documents/Scripts/icon_color_input.txt'
 post_hook = "~/Documents/Scripts/icon_color_change.sh; gsettings set org.gnome.desktop.interface color-scheme ''; gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
 
 [templates.zed]
-input_path = '~/.config/matugen/templates/material.json'
+input_path = '~/.config/matugen/templates/zed.json'
 output_path = '~/.config/zed/themes/material.json'
+
+[templates.vesktop]
+input_path = '~/.config/matugen/templates/discord.css'
+output_path = '~/.config/vesktop/themes/material.css'
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+post_hook = 'hyprctl reload'
