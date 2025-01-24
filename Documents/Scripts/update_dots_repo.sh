@@ -49,12 +49,12 @@ include=(--include 'hypr/' --include 'ghostty/' --include 'macchina/' --include 
 
 rsync -av --checksum --mkpath "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
 
+rm -f ~/Documents/dotfiles/.config/*
+rm -f ~/Documents/dotfiles/.config/.*
+
 echo "Copying '.config' files"
 
 cp ~/.config/electron-flags.conf  ~/Documents/dotfiles/.config/
-
-rm -f ~/Documents/dotfiles/.config/*
-rm -f ~/Documents/dotfiles/.config/.*
 
 #echo "Copying SDDM theme..."
 
