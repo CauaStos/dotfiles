@@ -475,7 +475,7 @@
             "font_weight": null
           },
           "punctuation.bracket": {
-            "color": "{{colors.surface_container_highest.default.hex}}",
+            "color": "{{colors.tertiary_fixed_dim.default.hex}}",
             "font_style": null,
             "font_weight": null
           },
@@ -495,7 +495,7 @@
             "font_weight": null
           },
           "comment": {
-            "color": "{{colors.surface_container_highest.default.hex}}",
+            "color": "{{colors.outline.default.hex}}",
             "font_style": "italic",
             "font_weight": null
           },
