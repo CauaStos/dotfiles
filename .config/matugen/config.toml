@@ -28,3 +28,7 @@ post_hook = 'pywalfox update'
 input_path = '~/.config/matugen/templates/icon_color_input.txt'
 output_path = '~/Documents/Scripts/icon_color_input.txt'
 post_hook = "~/Documents/Scripts/icon_color_change.sh; gsettings set org.gnome.desktop.interface color-scheme ''; gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
+
+[templates.zed]
+input_path = '~/.config/matugen/templates/material.json'
+output_path = '~/.config/zed/themes/material.json'

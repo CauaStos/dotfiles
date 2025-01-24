@@ -17,8 +17,8 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "Catppuccin Mocha",
-    "dark": "Catppuccin Mocha"
+    "light": "Material - Matugen",
+    "dark": "Material - Matugen"
   },
   "soft_wrap": "editor_width"
 }
