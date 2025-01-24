@@ -45,9 +45,13 @@ rsync -av --checksum --mkpath "${include[@]}" ~/Documents/ ~/Documents/dotfiles/
 
 echo "Copying '.config' folders..."
 
-include=(--include 'hypr/' --include 'ghostty/' --include 'macchina/' --include 'macchina/themes/' --include 'qt5ct/' --include 'qt5ct/colors/' --include 'qt6ct/' --include 'qt6ct/colors/' --include 'nwg-dock-hyprland/' --include 'hyprpanel/' --include 'zed/' --include 'albert/' --include 'matugen/' --include 'matugen/templates/' --exclude '*/' --include 'electron-flags.conf' )
+include=(--include 'hypr/' --include 'ghostty/' --include 'macchina/' --include 'macchina/themes/' --include 'qt5ct/' --include 'qt5ct/colors/' --include 'qt6ct/' --include 'qt6ct/colors/' --include 'nwg-dock-hyprland/' --include 'hyprpanel/' --include 'zed/' --include 'albert/' --include 'matugen/' --include 'matugen/templates/' --exclude '*/')
 
 rsync -av --checksum --mkpath "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
+
+echo "Copying '.config' files"
+
+cp ~/.config/electron-flags.conf  ~/Documents/dotfiles/.config/
 
 rm -f ~/Documents/dotfiles/.config/*
 rm -f ~/Documents/dotfiles/.config/.*
