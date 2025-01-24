@@ -3,6 +3,7 @@ command = "swww"
 arguments = ["img", "--transition-step", "10", "--transition-fps", "144"]
 set = true
 
+
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk3.css'
 output_path = '~/.local/share/themes/Material/gtk-3.0/gtk.css'
@@ -22,3 +23,8 @@ post_hook = 'pywalfox update'
 #10 - accent primary
 #13 - accent secondary
 #15 - text
+
+[templates.iconchange]
+input_path = '~/.config/matugen/templates/icon_color_input.txt'
+output_path = '~/Documents/Scripts/icon_color_input.txt'
+post_hook = "~/Documents/Scripts/icon_color_change.sh; gsettings set org.gnome.desktop.interface color-scheme ''; gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
