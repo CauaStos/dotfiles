@@ -12,25 +12,19 @@ sudo pacman -S --needed --noconfirm git base-devel && git clone https://aur.arch
 
 echo "Installing necessary packages (pacman)"
 
-sudo pacman -S --noconfirm hyprland sddm polkit-gnome hyprpaper hypridle spotify-launcher nwg-look hyprlock foot zed thunar hyprpicker papirus-icon-theme macchina neofetch zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh rsync fuzzel qt5ct qt6ct gnome-keyring wtype
+sudo pacman -S --noconfirm hyprland sddm polkit-gnome hyprpaper hypridle nwg-look hyprlock foot zed thunar hyprpicker macchina zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh rsync fuzzel qt5ct qt6ct gnome-keyring wtype wget
 
 #AUR packages installation
 
 echo "Installing necessary packages (AUR)"
 
-yay -S --noconfirm ags-hyprpanel-git hyprsunset zen-browser-bin spotify vesktop opentabletdriver catppuccin-gtk-theme-mocha catppuccin-cursors-mocha mission-center hyprshot all-repository-fonts albert apple-fonts appimagelauncher
+yay -S --noconfirm ags-hyprpanel-git hyprsunset zen-browser-bin spotify vesktop opentabletdriver mission-center hyprshot all-repository-fonts apple-fonts appimagelauncher matugen-bin
 
-#Installing Catppuccin Icons
-echo "Installing Catppuccin Papirus icons (Mocha flavor, Mauve accent)"
+#Installing Papirus Icons
+echo "Installing Papirus icons (Local, not Global)"
 
-#Not using AUR package cuz it's not working
-
-git clone https://github.com/catppuccin/papirus-folders.git
-cd papirus-folders
-sudo cp -r src/* /usr/share/icons/Papirus
-curl -LO https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-folders/master/papirus-folders && chmod +x ./papirus-folders
-./papirus-folders -C cat-mocha-mauve --theme Papirus-Dark
-
+wget -qO- https://git.io/papirus-folders-install | env PREFIX=$HOME/.local sh
+wget -qO- https://git.io/papirus-icon-theme-install | env DESTDIR="$HOME/.local/share/icons" sh
 
 #Installing Oh-My-Zsh
 
@@ -52,17 +46,14 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 #Copying folders to home
 
 echo "Moving files to home. '~/'"
-rsync -av --checksum --mkpath ./Documents ./.config ./home/.zshrc ~/
-
-echo "Moving specific files."
-
-rsync -av --checksum --mkpath ./.local/share/zed/extensions/ ~/.local/share/zed/extensions/
+rsync -av --checksum --mkpath ./Documents ./.config ./home/ ~/
 
 #Enabling Services
 
 echo "Enabling necessary services. (Just a precaution)"
 
 systemctl enable sddm
+systemctl enable NetworkManager
 
 echo "Done!"
 exit 0

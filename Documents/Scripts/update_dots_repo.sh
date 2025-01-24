@@ -56,7 +56,7 @@ echo "Copying '.config' files"
 
 cp ~/.config/electron-flags.conf  ~/Documents/dotfiles/.config/
 
-#echo "Copying SDDM theme..."
+echo "Copying SDDM theme..."
 
 #rsync -av --checksum --mkpath /usr/share/sddm/themes/where_is_my_sddm_theme/ ~/Documents/dotfiles/sddm/themes/where_is_my_sddm_theme/
 
@@ -78,5 +78,3 @@ fi
 
 echo "Done!"
 exit 0
-
-#/home/astro/.var/app/io.github.hrkfdn.ncspot/config/ncspot/
