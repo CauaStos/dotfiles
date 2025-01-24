@@ -112,3 +112,5 @@ function {
 export PATH=/home/astro/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/home/astro/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin
 export PATH=/home/astro/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/home/astro/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin
 export PATH=/home/astro/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/home/astro/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/rustup/bin
+
+export PATH=$PATH:/home/astro/.spicetify
