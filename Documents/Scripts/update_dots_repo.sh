@@ -10,8 +10,9 @@
 #--mkpath: Creates folders if there are none
 
 
-#cd into the dotfiles directory so the git status --porcelain doesnt return nothing
+#cd into the dotfiles directory so git status --porcelain doesnt return nothing
 cd ~/Documents/dotfiles/ || exit
+
 
 #Document Folders Copy
 include=(--include 'Hyprlock Assets/' --include 'Scripts/' --include 'Wallpapers/' --exclude '*/')
@@ -21,7 +22,7 @@ echo "Copying 'Documents' folders..."
 rsync -av --checksum --mkpath "${include[@]}" ~/Documents/ ~/Documents/dotfiles/Documents/
 
 
-#Specific Folders Copy
+#Specific folders and files copy
 echo "Copying specific folders and files..."
 
 rsync -av --checksum --mkpath ~/.zshrc ~/Documents/dotfiles/home/
@@ -30,16 +31,6 @@ rsync -av --checksum --mkpath ~/.local/share/zed/extensions/ ~/Documents/dotfile
 
 rsync -av --checksum --mkpath ~/.local/share/themes/Material ~/Documents/dotfiles/home/.local/share/themes/
 
-
-
-
-
-#Document Folders Copy
-include=(--include 'Hyprlock Assets/' --include 'Scripts/' --include 'Wallpapers/' --exclude '*/')
-
-echo "Copying 'Documents' folders..."
-
-rsync -av --checksum --mkpath "${include[@]}" ~/Documents/ ~/Documents/dotfiles/Documents/
 
 #.config Folders Copy
 
@@ -56,7 +47,7 @@ echo "Copying '.config' files"
 
 cp ~/.config/electron-flags.conf  ~/Documents/dotfiles/.config/
 
-echo "Copying SDDM theme..."
+#echo "Copying SDDM theme..."
 
 #rsync -av --checksum --mkpath /usr/share/sddm/themes/where_is_my_sddm_theme/ ~/Documents/dotfiles/sddm/themes/where_is_my_sddm_theme/
 
