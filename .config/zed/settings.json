@@ -20,5 +20,7 @@
     "light": "Material - Matugen",
     "dark": "Material - Matugen"
   },
-  "soft_wrap": "editor_width"
+  "soft_wrap": "editor_width",
+  "formatter": "prettier",
+  "format_on_save": "on"
 }

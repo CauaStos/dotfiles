@@ -75,8 +75,8 @@
         "editor.wrap_guide": "{{colors.surface_container_highest.default.hex}}",
         "editor.active_wrap_guide": "{{colors.surface_container_highest.default.hex}}",
         "editor.document_highlight.bracket_background": "{{colors.inverse_surface.default.hex}}40",
-        "editor.document_highlight.read_background": "#a6adc829",
-        "editor.document_highlight.write_background": "#a6adc829",
+        "editor.document_highlight.read_background": "{{colors.surface_container_highest.default.hex}}",
+        "editor.document_highlight.write_background": "{{colors.surface_container_highest.default.hex}}",
         "editor.indent_guide": "{{colors.surface_container_high.default.hex}}",
         "editor.indent_guide_active": "{{colors.surface_container_highest.default.hex}}",
         "terminal.background": "{{colors.surface_container.default.hex}}",
@@ -480,7 +480,7 @@
             "font_weight": null
           },
           "punctuation.special": {
-            "color": "{{colors.secondary_container.default.hex}}",
+            "color": "{{colors.primary.default.hex}}",
             "font_style": null,
             "font_weight": null
           },
