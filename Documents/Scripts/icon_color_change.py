@@ -224,7 +224,10 @@ print("_______________________________ \n")
 least_different_color = min(color_distances.items(), key=lambda x: x[1])
 print(f"Most equal color is: {least_different_color[0]} with a difference of {least_different_color[1]}")
 
-set_folder_command = subprocess.run(["papirus-folders", "--color", least_different_color[0]], capture_output=True, text=True)
+#Set folder color. Popen is used here because papirus-folders takes a little bit to change folder color.
+subprocess.Popen(["papirus-folders", "--color", least_different_color[0]])
 
+#Refresh gtk colors
+subprocess.run(["/usr/bin/gsettings", "set", "org.gnome.desktop.interface", "gtk-theme", "''"])
 
-print(F"Output of papirus-folders: {set_folder_command.stdout}")
+subprocess.run(["/usr/bin/gsettings", "set", "org.gnome.desktop.interface", "gtk-theme", "Material"])
