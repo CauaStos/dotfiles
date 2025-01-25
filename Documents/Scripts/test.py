@@ -114,8 +114,24 @@ folder_colors = {
     "yellow": (255, 255, 0),
 }
 
+color_ranking = []
 for available_folder_color in folder_colors:
     print(f"Comparing input color {input_color} to {available_folder_color} ({folder_colors[available_folder_color]})")
 
+    folder_color = folder_colors[available_folder_color]
+
+    input_color_sum = 0
+    comparing_color_sum = 0
+
+
+
     for rgb_value in input_color:
-        print(rgb_value)
+        input_color_sum+=rgb_value
+
+    for rgb_value in folder_color:
+        comparing_color_sum+=rgb_value
+
+    color_difference = input_color_sum - comparing_color_sum
+    color_ranking.append(abs(color_difference))
+
+print(color_ranking)
