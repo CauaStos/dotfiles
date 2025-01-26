@@ -46,6 +46,6 @@ output_path = '~/.config/spicetify/Themes/text/color.ini'
 input_path = '~/.config/matugen/templates/icon_color_input.txt'
 output_path = '~/Documents/Scripts/icon_color_input.txt'
 
-[templates.gauntlet]
-input_path = '~/.config/matugen/templates/gauntlet.toml'
-output_path = '~/gauntlet/theme.toml'
+[templates.fuzzel]
+input_path = '~/.config/matugen/templates/fuzzel.ini'
+output_path = '~/.config/fuzzel/fuzzel.ini'
