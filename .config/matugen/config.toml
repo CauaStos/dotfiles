@@ -49,3 +49,11 @@ output_path = '~/Documents/Scripts/icon_color_input.txt'
 [templates.fuzzel]
 input_path = '~/.config/matugen/templates/fuzzel.ini'
 output_path = '~/.config/fuzzel/fuzzel.ini'
+
+[templates.foot]
+input_path = '~/.config/matugen/templates/foot.ini'
+output_path = '~/.config/foot/foot.ini'
+
+[templates.macchina]
+input_path = '~/.config/matugen/templates/macchina.toml'
+output_path = '~/.config/macchina/themes/Material.toml'

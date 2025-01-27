@@ -4,7 +4,7 @@ long_kernel = false
 current_shell = true
 physical_cores = true
 
-theme = "CatppuccinMocha"
+theme = "Material"
 
 show = [
     "Host",
