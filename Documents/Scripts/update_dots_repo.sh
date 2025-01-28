@@ -31,12 +31,14 @@ rsync -av --checksum --mkpath ~/.local/share/zed/extensions/ ~/Documents/dotfile
 
 rsync -av --checksum --mkpath ~/.local/share/themes/Material ~/Documents/dotfiles/home/.local/share/themes/
 
+rsync -av --checksum --mkpath ~/.config/ags/ ~/Documents/dotfiles/.config
+
 
 #.config Folders Copy
 
 echo "Copying '.config' folders..."
 
-include=(--include 'hypr/' --include 'macchina/' --include 'macchina/themes/' --include 'qt5ct/' --include 'qt5ct/colors/' --include 'qt6ct/' --include 'qt6ct/colors/' --include 'ags/*' --include 'zed/' --include 'matugen/' --include 'matugen/templates/' --exclude '*/')
+include=(--include 'hypr/' --include 'macchina/' --include 'macchina/themes/' --include 'qt5ct/' --include 'qt5ct/colors/' --include 'qt6ct/' --include 'qt6ct/colors/' --include 'zed/' --include 'matugen/' --include 'matugen/templates/' --exclude '*/')
 
 rsync -av --checksum --mkpath "${include[@]}" ~/.config/ ~/Documents/dotfiles/.config
 
