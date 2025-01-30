@@ -7,17 +7,14 @@ window.Bar {
     color: $fg-color;
     font-weight: bold;
 
-    > centerbox {
+    >centerbox {
         background: $bg-color;
+        border-radius: 10px;
+        margin: 8px;
     }
 
     button {
-        min-height: 24px;
         border-radius: 8px;
+        margin: 2px;
     }
-}
-
-.Corners {
-    border-radius: 60px;
-    border: 25px solid #ff0000;
 }

@@ -1,0 +1,7 @@
+@use "../theme.scss";
+
+.Bar {
+    background: theme.$background-color;
+    min-height: theme.$bar-height;
+    padding: theme.$bar-vertical-padding theme.$bar-horizontal-padding;
+}

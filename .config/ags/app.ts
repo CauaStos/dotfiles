@@ -1,10 +1,11 @@
 import { App } from "astal/gtk3";
-import style from "./style.scss";
-import Base from "./widget/Base";
+import style from "./widgets/base.scss";
+import Base from "./widgets/Base";
 
 App.start({
+  icons: "~/.config/ags/icons",
   css: style,
   main() {
-    Base(1);
+    Base(0);
   },
 });

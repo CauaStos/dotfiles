@@ -10,29 +10,32 @@ export default (monitor: number) => {
       <window
         monitor={monitor}
         className="Corners"
+        anchor={BOTTOM | LEFT | RIGHT | TOP}
         exclusivity={Astal.Exclusivity.EXCLUSIVE}
         application={App}
-        clickThrough={true}
-        widthRequest={1965}
-        heightRequest={1090}
+        clickThrough
       />
 
       <window
         monitor={monitor}
+        className="Corner_Fill"
+        exclusivity={Astal.Exclusivity.EXCLUSIVE}
+        application={App}
+        widthRequest={1960} //  width - barheight + borderwidth * 2
+        heightRequest={1120} // If not bar transparent, exclusivity = none and height + borderwidth * 2
+        clickThrough
+      />
+
+      <window
+        visible
+        monitor={monitor}
         className="Bar"
         exclusivity={Astal.Exclusivity.EXCLUSIVE}
-        anchor={BOTTOM | LEFT | RIGHT}
+        anchor={TOP | LEFT | RIGHT}
         application={App}
       >
         <Bar />
       </window>
-      {/* <window
-        className="Inner_Corner"
-        exclusivity={Astal.Exclusivity.EXCLUSIVE}
-        anchor={BOTTOM | LEFT | RIGHT | TOP}
-        application={App}
-        clickThrough={true}
-      /> */}
     </>
   );
 };
