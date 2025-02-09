@@ -162,7 +162,6 @@ input_color_rgb = tuple(hex_to_rgb(color) for color in hex_color_split) ; print(
 
 # Define available colors for Papirus Folders
 folder_colors = {
-    "adwaita": (255, 255, 255),
     "black": (0, 0, 0),
     "blue": (0, 0, 255),
     "bluegrey": (96, 125, 139),

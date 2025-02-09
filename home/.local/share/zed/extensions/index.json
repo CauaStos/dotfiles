@@ -19,8 +19,74 @@
           "themes/catppuccin-no-italics-mauve.json",
           "themes/catppuccin-mauve.json"
         ],
+        "icon_themes": [],
         "languages": [],
         "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "slash_commands": {},
+        "indexed_docs_providers": {},
+        "snippets": null
+      },
+      "dev": false
+    },
+    "git-firefly": {
+      "manifest": {
+        "id": "git-firefly",
+        "name": "Git Firefly",
+        "version": "0.0.3",
+        "schema_version": 1,
+        "description": "Provides Git Syntax Highlighting",
+        "repository": "https://github.com/d1y/git_firefly",
+        "authors": [
+          "d1y <chenhonzho@gmail.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/gitconfig",
+          "languages/diff",
+          "languages/gitcommit",
+          "languages/gitignore",
+          "languages/gitrebase",
+          "languages/gitattributes"
+        ],
+        "grammars": {
+          "diff": {
+            "repository": "https://github.com/the-mikedavis/tree-sitter-diff",
+            "rev": "c165725c28e69b36c5799ff0e458713a844f1aaf",
+            "path": null
+          },
+          "git_commit": {
+            "repository": "https://github.com/the-mikedavis/tree-sitter-git-commit",
+            "rev": "6f193a66e9aa872760823dff020960c6cedc37b3",
+            "path": null
+          },
+          "git_config": {
+            "repository": "https://github.com/the-mikedavis/tree-sitter-git-config",
+            "rev": "9c2a1b7894e6d9eedfe99805b829b4ecd871375e",
+            "path": null
+          },
+          "git_rebase": {
+            "repository": "https://github.com/the-mikedavis/tree-sitter-git-rebase",
+            "rev": "d8a4207ebbc47bd78bacdf48f883db58283f9fd8",
+            "path": null
+          },
+          "gitattributes": {
+            "repository": "https://github.com/tree-sitter-grammars/tree-sitter-gitattributes",
+            "rev": "41940e199ba5763abea1d21b4f717014b45f01ea",
+            "path": null
+          },
+          "gitignore": {
+            "repository": "https://github.com/shunsambongi/tree-sitter-gitignore",
+            "rev": "f4685bf11ac466dd278449bcfe5fd014e94aa504",
+            "path": null
+          }
+        },
         "language_servers": {},
         "context_servers": {},
         "slash_commands": {},
@@ -45,6 +111,7 @@
           "version": "0.1.0"
         },
         "themes": [],
+        "icon_themes": [],
         "languages": [
           "languages/html"
         ],
@@ -60,8 +127,8 @@
             "language": "HTML",
             "languages": [],
             "language_ids": {
-              "CSS": "css",
-              "HTML": "html"
+              "HTML": "html",
+              "CSS": "css"
             },
             "code_action_kinds": null
           }
@@ -89,6 +156,7 @@
           "version": "0.0.6"
         },
         "themes": [],
+        "icon_themes": [],
         "languages": [
           "languages/scss"
         ],
@@ -137,6 +205,7 @@
           "version": "0.1.0"
         },
         "themes": [],
+        "icon_themes": [],
         "languages": [
           "languages/toml"
         ],
@@ -197,7 +266,86 @@
       "path": "themes/catppuccin-no-italics-mauve.json"
     }
   },
+  "icon_themes": {},
   "languages": {
+    "Diff": {
+      "extension": "git-firefly",
+      "path": "languages/diff",
+      "matcher": {
+        "path_suffixes": [
+          "diff"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "diff"
+    },
+    "Git Attributes": {
+      "extension": "git-firefly",
+      "path": "languages/gitattributes",
+      "matcher": {
+        "path_suffixes": [
+          ".gitattributes"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "gitattributes"
+    },
+    "Git Commit": {
+      "extension": "git-firefly",
+      "path": "languages/gitcommit",
+      "matcher": {
+        "path_suffixes": [
+          "TAG_EDITMSG",
+          "MERGE_MSG",
+          "COMMIT_EDITMSG",
+          "NOTES_EDITMSG",
+          "EDIT_DESCRIPTION"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "git_commit"
+    },
+    "Git Config": {
+      "extension": "git-firefly",
+      "path": "languages/gitconfig",
+      "matcher": {
+        "path_suffixes": [
+          ".gitconfig",
+          ".gitmodules"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "git_config"
+    },
+    "Git Ignore": {
+      "extension": "git-firefly",
+      "path": "languages/gitignore",
+      "matcher": {
+        "path_suffixes": [
+          ".gitignore",
+          ".dockerignore"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "gitignore"
+    },
+    "Git Rebase": {
+      "extension": "git-firefly",
+      "path": "languages/gitrebase",
+      "matcher": {
+        "path_suffixes": [
+          "git-rebase-todo"
+        ],
+        "first_line_pattern": null
+      },
+      "hidden": false,
+      "grammar": "git_rebase"
+    },
     "HTML": {
       "extension": "html",
       "path": "languages/html",
