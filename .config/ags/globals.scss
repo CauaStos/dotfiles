@@ -1,0 +1,32 @@
+* {
+    all: unset;
+    font-family: "quicksand", serif;
+    font-weight: 600;
+}
+
+:root {
+    --screen-width: 20px;
+    --screen-height: 20px;
+}
+
+$h1: calc(var(--screen-height) * 0.1);
+$h2: calc(var(--screen-height) * 0.08);
+$h3: calc(var(--screen-height) * 0.06);
+$h4: calc(var(--screen-height) * 0.04);
+$h5: calc(var(--screen-height) * 0.02);
+
+.h1 {
+    font-size: $h1;
+}
+.h2 {
+    font-size: $h2;
+}
+.h3 {
+    font-size: $h3;
+}
+.h4 {
+    font-size: $h4;
+}
+.h5 {
+    font-size: $h5;
+}

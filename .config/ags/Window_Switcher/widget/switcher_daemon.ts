@@ -1,6 +1,7 @@
 import { exec, execAsync, Gio, GLib, interval, Variable } from "astal";
 import AstalHyprland from "gi://AstalHyprland?version=0.1";
 import { App, Gdk } from "astal/gtk4";
+import { hyprland_session } from "./globals";
 
 class SwitcherPosition extends Variable<number> {
   constructor() {
@@ -155,12 +156,14 @@ export function request_cycle_next() {
 }
 
 export function request_switch_window() {
-  try {
-    switch_window();
-    return "Switched to window.";
-  } catch (error) {
-    return `Error: ${error}`;
-  }
+  if (switcherVisible.get())
+    try {
+      switch_window();
+      return "Switched to window.";
+    } catch (error) {
+      return `Error: ${error}`;
+    }
+  return "Switcher is not active. Will not switch window.";
 }
 function switch_window() {
   //hyprctl dispatch focuswindow pid:(pidhere)
@@ -184,7 +187,6 @@ function run_service() {
 
 //variables
 let isFirstRun = true;
-const hyprland_session = AstalHyprland.get_default();
 
 //hooks
 export const previousSwitcherClients = Variable<Client[]>([]);

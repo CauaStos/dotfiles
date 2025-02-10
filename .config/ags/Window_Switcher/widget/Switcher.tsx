@@ -3,17 +3,10 @@ import AstalHyprland from "gi://AstalHyprland?version=0.1";
 import { switcherVisible } from "./switcher_daemon";
 import Grid from "./components/Grid";
 import GdkWayland from "gi://GdkWayland?version=4.0";
+import { apply_resolution_to_css } from "./globals";
 
 export default () => {
-  const monitoractive = AstalHyprland.get_default().get_focused_monitor();
-  const screen_width = monitoractive.get_width();
-  const screen_height = monitoractive.get_height();
-  App.apply_css(`
-    :root{
-    --width: ${screen_width}px;
-    --height: ${screen_height}px;
-    }
-    `);
+  apply_resolution_to_css();
   return (
     <window
       application={App}
