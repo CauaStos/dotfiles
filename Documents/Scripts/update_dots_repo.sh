@@ -31,6 +31,8 @@ rsync -av --checksum --mkpath ~/.local/share/zed/extensions/ ~/Documents/dotfile
 
 rsync -av --checksum --mkpath ~/.local/share/themes/Material ~/Documents/dotfiles/home/.local/share/themes/
 
+rsync -av --checksum --mkpath ~/.wezterm.lua ~/Documents/dotfiles/home/
+
 rsync -av --checksum --mkpath ~/.config/ags ~/Documents/dotfiles/.config
 
 

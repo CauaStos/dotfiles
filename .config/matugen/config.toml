@@ -57,3 +57,11 @@ output_path = '~/.config/foot/foot.ini'
 [templates.macchina]
 input_path = '~/.config/matugen/templates/macchina.toml'
 output_path = '~/.config/macchina/themes/Material.toml'
+
+[templates.ags]
+input_path = '~/.config/matugen/templates/ags.css'
+output_path = '~/.config/ags/colors.css'
+
+[templates.cornercolor]
+input_path = '~/.config/matugen/templates/agscorner.txt'
+output_path = '~/.config/ags/Bar/widget/components/Corners/color.txt'
