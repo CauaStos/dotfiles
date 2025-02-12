@@ -50,9 +50,9 @@ post_hook = "python ~/Documents/Scripts/icon_color_change.py; gsettings set org.
 input_path = '~/.config/matugen/templates/fuzzel.ini'
 output_path = '~/.config/fuzzel/fuzzel.ini'
 
-[templates.foot]
-input_path = '~/.config/matugen/templates/foot.ini'
-output_path = '~/.config/foot/foot.ini'
+[templates.wezterm]
+input_path = '~/.config/matugen/templates/wezterm.lua'
+output_path = '~/.wezterm.lua'
 
 [templates.macchina]
 input_path = '~/.config/matugen/templates/macchina.toml'
