@@ -2,11 +2,14 @@ import { App, Astal, Gtk, Gdk, Widget, astalify } from "astal/gtk4";
 import cairo from "gi://cairo?version=1.0";
 import GObject from "gi://GObject";
 import Gsk from "gi://Gsk";
-import { screen_height, screen_width } from "../../../globals";
 import { exec, Gio, GLib, monitorFile, readFile } from "astal";
 import giCairo from "cairo";
 
-function draw_corners(context: giCairo.Context) {
+function draw_corners(
+  screen_width: number,
+  screen_height: number,
+  context: giCairo.Context,
+) {
   const radius = 10; // Corner radius
   const width = screen_width;
   const height = screen_height * 0.94; //$bar_height: calc($screen-height * 0.06);
@@ -57,47 +60,6 @@ function draw_corners(context: giCairo.Context) {
   context.stroke();
 }
 
-function path_build(snapshot: Gtk.Snapshot) {
-  const radius = 10; // Corner radius
-  const width = screen_width;
-  const height = screen_height * 0.94; //$bar_height: calc($screen-height * 0.06);
-
-  const backgroundColor = new Gdk.RGBA();
-
-  backgroundColor.parse(
-    exec("bash -c 'cat ~/.config/ags/Bar/widget/components/Corners/color.txt'"),
-  ); // background color
-
-  const pathbuilder = new Gsk.PathBuilder();
-
-  // Top-left corner path
-  pathbuilder.move_to(0, 0);
-  pathbuilder.line_to(0, radius);
-  pathbuilder.conic_to(0, 0, radius, 0, 1);
-
-  // Top-right corner path
-  pathbuilder.move_to(width, 0);
-  pathbuilder.line_to(width, radius);
-  pathbuilder.conic_to(width, 0, width - radius, 0, 1);
-
-  // Bottom-left corner path (mirrored)
-  pathbuilder.move_to(0, height);
-  pathbuilder.line_to(0, height - radius);
-  pathbuilder.conic_to(0, height, radius, height, 1);
-
-  // Bottom-right corner path
-  pathbuilder.move_to(width, height);
-  pathbuilder.line_to(width, height - radius);
-  pathbuilder.conic_to(width, height, width - radius, height, 1);
-
-  // Apply the corner fill to all 4 corners
-  snapshot.append_fill(
-    pathbuilder.to_path(),
-    Gsk.FillRule.EVEN_ODD,
-    backgroundColor,
-  );
-}
-
 export default function Corners(gdkmonitor: Gdk.Monitor) {
   const DrawingArea = astalify(Gtk.DrawingArea);
   return (
@@ -121,19 +83,26 @@ export default function Corners(gdkmonitor: Gdk.Monitor) {
           self.queue_draw();
           self.set_visible(true);
         }
-        print(
-          readFile(
-            "/home/astro/.config/ags/Bar/widget/components/Corners/color.txt",
-          ),
-        );
       }}
       application={App}
     >
       <DrawingArea
         setup={(self) => {
-          self.set_draw_func((drawingarea, context) =>
-            draw_corners(context as giCairo.Context),
+          const home = GLib.get_home_dir();
+          monitorFile(
+            `${home}/.config/ags/Bar/widget/components/Corners/color.txt`,
+            () => self.queue_draw(),
           );
+
+          self.set_draw_func((drawingarea, context) => {
+            const screen_width = gdkmonitor.get_geometry().width;
+            const screen_height = gdkmonitor.get_geometry().height;
+            draw_corners(
+              screen_width,
+              screen_height,
+              context as giCairo.Context,
+            );
+          });
         }}
       />
     </window>

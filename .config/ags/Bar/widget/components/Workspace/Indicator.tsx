@@ -33,5 +33,4 @@ export default (props: Props) => {
       />
     </box>
   );
-  x;
 };
