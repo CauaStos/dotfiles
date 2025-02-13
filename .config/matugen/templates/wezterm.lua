@@ -63,7 +63,7 @@ config.keys = {
     {
         key = 'V',
         mods = "CTRL",
-        action = wezterm.action.PasteFrom 'PrimarySelection'
+        action = wezterm.action.PasteFrom 'Clipboard'
     },
     {
           key="LeftArrow",
