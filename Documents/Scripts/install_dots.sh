@@ -12,7 +12,7 @@ sudo pacman -S --needed --noconfirm git base-devel && git clone https://aur.arch
 
 echo "Installing necessary packages (pacman)"
 
-sudo pacman -S --noconfirm hyprland sddm polkit-gnome hyprpaper hypridle nwg-look hyprlock zed thunar hyprpicker macchina zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh rsync fuzzel qt5ct qt6ct gnome-keyring wtype wget
+sudo pacman -S --noconfirm hyprland sddm polkit-gnome swww hypridle nwg-look hyprlock zed thunar hyprpicker macchina zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh rsync fuzzel qt5ct qt6ct gnome-keyring wtype wget
 
 #AUR packages installation
 
