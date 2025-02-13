@@ -12,13 +12,13 @@ sudo pacman -S --needed --noconfirm git base-devel && git clone https://aur.arch
 
 echo "Installing necessary packages (pacman)"
 
-sudo pacman -S --noconfirm hyprland sddm polkit-gnome hyprpaper hypridle nwg-look hyprlock foot zed thunar hyprpicker macchina zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh rsync fuzzel qt5ct qt6ct gnome-keyring wtype wget
+sudo pacman -S --noconfirm hyprland sddm polkit-gnome hyprpaper hypridle nwg-look hyprlock zed thunar hyprpicker macchina zoxide starship pipewire pipewire-pulse pipewire-audio pipewire-alsa zsh rsync fuzzel qt5ct qt6ct gnome-keyring wtype wget
 
 #AUR packages installation
 
 echo "Installing necessary packages (AUR)"
 
-yay -S --noconfirm ags-hyprpanel-git hyprsunset zen-browser-bin spotify vesktop opentabletdriver mission-center hyprshot all-repository-fonts apple-fonts appimagelauncher matugen-bin
+yay -S --noconfirm hyprsunset zen-browser-bin spotify vesktop opentabletdriver mission-center hyprshot quicksand-font appimagelauncher matugen-bin aylurs-gtk-shell-git wezterm-git
 
 #Installing Papirus Icons
 echo "Installing Papirus icons (Local, not Global)"
