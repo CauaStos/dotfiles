@@ -1,10 +1,10 @@
-[09:59:58.361][info] [#0:/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/main.lua:68]: Lua Lsp startup, root: 	/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6
-[09:59:58.361][info] [#0:/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/main.lua:69]: ROOT:	/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6
-[09:59:58.361][info] [#0:/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/main.lua:70]: LOGPATH:	/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/log
-[09:59:58.361][info] [#0:/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/main.lua:71]: METAPATH:	/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta
-[09:59:58.361][info] [#0:/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/main.lua:72]: VERSION:	3.13.6
-[09:59:58.378][info] [#0:script/proto/proto.lua:260]: Listen Mode: stdio
-[09:59:58.378][info] [#0:script/service/service.lua:145]: 
+[03:17:24.828][info] [#0:/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/main.lua:68]: Lua Lsp startup, root: 	/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6
+[03:17:24.828][info] [#0:/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/main.lua:69]: ROOT:	/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6
+[03:17:24.828][info] [#0:/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/main.lua:70]: LOGPATH:	/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/log
+[03:17:24.828][info] [#0:/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/main.lua:71]: METAPATH:	/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta
+[03:17:24.828][info] [#0:/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/main.lua:72]: VERSION:	3.13.6
+[03:17:24.843][info] [#0:script/proto/proto.lua:260]: Listen Mode: stdio
+[03:17:24.843][info] [#0:script/service/service.lua:145]: 
 ========= Medical Examination Report =========
     --------------- Memory ---------------
         Total: 2.258 MB
@@ -26,7 +26,151 @@
         Holdon:   0
         Waiting:  0
 ==============================================
-[09:59:58.482][info] [#0:script/client.lua:657]: Client init	{
+[03:17:24.846][info] [#0:script/proto/proto.lua:260]: Listen Mode: stdio
+[03:17:24.846][info] [#0:script/service/service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 2.258 MB
+        # 00 : 2.258 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[03:17:24.946][info] [#0:script/client.lua:657]: Client init	{
+  capabilities = {
+    experimental = {
+      localDocs = true,
+      serverStatusNotification = true
+    },
+    general = {
+      positionEncodings = { "utf-16" }
+    },
+    textDocument = {
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "refactor", "quickfix", "source" }
+          }
+        },
+        dataSupport = true,
+        resolveSupport = {
+          properties = { "kind", "diagnostics", "isPreferred", "disabled", "edit", "command" }
+        }
+      },
+      completion = {
+        completionItem = {
+          insertReplaceSupport = true,
+          labelDetailsSupport = true,
+          resolveSupport = {
+            properties = { "additionalTextEdits", "command", "documentation" }
+          },
+          snippetSupport = true
+        },
+        completionList = {
+          itemDefaults = { "commitCharacters", "editRange", "insertTextMode", "insertTextFormat", "data" }
+        },
+        contextSupport = true
+      },
+      definition = {
+        linkSupport = true
+      },
+      formatting = {
+        dynamicRegistration = true
+      },
+      hover = {
+        contentFormat = { "markdown" }
+      },
+      inlayHint = {
+        dynamicRegistration = false,
+        resolveSupport = {
+          properties = { "textEdits", "tooltip", "label.tooltip", "label.location", "label.command" }
+        }
+      },
+      onTypeFormatting = {
+        dynamicRegistration = true
+      },
+      publishDiagnostics = {
+        relatedInformation = true
+      },
+      rangeFormatting = {
+        dynamicRegistration = true
+      },
+      rename = {
+        prepareSupport = true
+      },
+      signatureHelp = {
+        signatureInformation = {
+          activeParameterSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true
+      }
+    },
+    window = {
+      showMessage = {},
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      configuration = true,
+      diagnostic = {},
+      didChangeConfiguration = {
+        dynamicRegistration = true
+      },
+      didChangeWatchedFiles = {
+        dynamicRegistration = true,
+        relativePatternSupport = true
+      },
+      fileOperations = {
+        didRename = true,
+        dynamicRegistration = false,
+        willRename = true
+      },
+      inlayHint = {
+        refreshSupport = true
+      },
+      symbol = {},
+      workspaceEdit = {
+        documentChanges = true,
+        resourceOperations = { "create", "rename", "delete" },
+        snippetEditSupport = true
+      },
+      workspaceFolders = true
+    }
+  },
+  clientInfo = {
+    name = "Zed",
+    version = "0.172.11"
+  },
+  rootUri = "file:///home/astro/.config/matugen",
+  workspaceFolders = { {
+      name = "",
+      uri = "file:///home/astro/.config/matugen"
+    } }
+}
+[03:17:24.946][info] [#0:script/language.lua:137]: VSC language: nil
+[03:17:24.946][info] [#0:script/language.lua:138]: LS  language: en-us
+[03:17:24.946][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/astro/.config/matugen
+[03:17:24.946][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/log/file_home_astro_.config_matugen.log
+[03:17:24.950][info] [#0:script/client.lua:657]: Client init	{
   capabilities = {
     experimental = {
       localDocs = true,
@@ -143,284 +287,150 @@
       uri = "file:///home/astro"
     } }
 }
-[09:59:58.482][info] [#0:script/language.lua:137]: VSC language: nil
-[09:59:58.482][info] [#0:script/language.lua:138]: LS  language: en-us
-[09:59:58.482][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/astro
-[09:59:58.482][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/log/file_home_astro.log
-[09:59:58.482][info] [#0:script/workspace/workspace.lua:48]: Workspace create: 	file:///home/astro
-[09:59:58.483][info] [#0:script/client.lua:112]: ShowMessage	Error	Your workspace is set to `/home/astro`. Lua language server refused to load this directory. Please check your configuration.[learn more here](https://luals.github.io/wiki/faq#why-is-the-server-scanning-the-wrong-folder)
-[09:59:58.785][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[09:59:58.785][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[09:59:58.885][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[09:59:58.885][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[09:59:58.885][info] [#0:script/provider/provider.lua:66]: nil
-[09:59:58.885][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[09:59:58.885][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[09:59:58.885][info] [#0:script/provider/provider.lua:66]: nil
-[09:59:59.094][info] [#0:script/library.lua:212]: Init builtin library at:	file:///home/astro
-[09:59:59.101][info] [#0:script/library.lua:212]: Init builtin library at:	nil
-[09:59:59.207][info] [#0:script/workspace/workspace.lua:324]: Preload start:	file:///home/astro
-[09:59:59.209][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/builtin.lua
-[09:59:59.209][info] [#0:script/workspace/workspace.lua:324]: Preload start:	<fallback>
-[09:59:59.213][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/builtin.lua
-[09:59:59.213][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/table.lua
-[09:59:59.213][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/table.lua
-[09:59:59.213][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/debug.lua
-[09:59:59.213][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/debug.lua
-[09:59:59.213][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/package.lua
-[09:59:59.214][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/package.lua
-[09:59:59.214][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/os.lua
-[09:59:59.214][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/os.lua
-[09:59:59.214][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/io.lua
-[09:59:59.214][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/io.lua
-[09:59:59.214][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/basic.lua
-[09:59:59.214][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/basic.lua
-[09:59:59.214][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/math.lua
-[09:59:59.215][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/math.lua
-[09:59:59.215][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/string.lua
-[09:59:59.215][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/string.lua
-[09:59:59.215][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/utf8.lua
-[09:59:59.215][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/utf8.lua
-[09:59:59.215][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
-[09:59:59.215][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
-[09:59:59.316][info] [#0:script/workspace/workspace.lua:379]: Found 11 files at:	file:///home/astro
-[09:59:59.316][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	file:///home/astro
-[09:59:59.316][info] [#0:script/workspace/workspace.lua:379]: Found 11 files at:	<fallback>
-[09:59:59.316][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	<fallback>
-[09:59:59.317][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.590 KB
-[09:59:59.319][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
-[09:59:59.319][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
-[09:59:59.319][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.386 KB
-[09:59:59.320][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/utf8.lua
-[09:59:59.320][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/utf8.lua
-[09:59:59.320][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 6.327 KB
-[09:59:59.323][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/string.lua
-[09:59:59.323][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/string.lua
-[09:59:59.323][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.509 KB
-[09:59:59.328][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/math.lua
-[09:59:59.328][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/math.lua
-[09:59:59.328][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 15.841 KB
-[09:59:59.335][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/basic.lua
-[09:59:59.335][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/basic.lua
-[09:59:59.335][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.364 KB
-[09:59:59.338][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/io.lua
-[09:59:59.338][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/io.lua
-[09:59:59.338][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 5.600 KB
-[09:59:59.340][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/os.lua
-[09:59:59.340][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/os.lua
-[09:59:59.340][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/os.lua
-[09:59:59.340][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.944 KB
-[09:59:59.342][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/package.lua
-[09:59:59.342][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/package.lua
-[09:59:59.342][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/package.lua
-[09:59:59.342][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.637 KB
-[09:59:59.348][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/debug.lua
-[09:59:59.348][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/debug.lua
-[09:59:59.348][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/debug.lua
-[09:59:59.349][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 4.445 KB
-[09:59:59.351][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/table.lua
-[09:59:59.351][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/table.lua
-[09:59:59.351][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/table.lua
-[09:59:59.351][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.302 KB
-[09:59:59.351][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/builtin.lua
-[09:59:59.351][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/builtin.lua
-[09:59:59.351][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/builtin.lua
-[09:59:59.351][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [0.036] sec: file:///home/astro
-[09:59:59.351][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: file:///home/astro
-[09:59:59.351][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	file:///home/astro
-[09:59:59.351][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	file:///home/astro
-[09:59:59.353][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [0.037] sec: <fallback>
-[09:59:59.353][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: <fallback>
-[09:59:59.353][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	<fallback>
-[09:59:59.353][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	<fallback>
-[10:00:00.357][info] [#0:script/provider/diagnostic.lua:560]: Diagnostics scope [file:///home/astro], files count:[12]
-[10:00:00.476][info] [#0:script/provider/diagnostic.lua:577]: Diagnostics scope [file:///home/astro] finished, takes [0.039] sec.
-[10:01:32.290][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:01:32.392][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:01:32.392][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:01:32.392][info] [#0:script/provider/provider.lua:66]: nil
-[10:02:23.294][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:02:23.296][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:02:23.296][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:02:23.296][info] [#0:script/provider/provider.lua:66]: nil
-[10:03:03.495][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:03:03.596][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:03:03.596][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:03:03.596][info] [#0:script/provider/provider.lua:66]: nil
-[10:03:21.696][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:03:21.798][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:03:21.798][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:03:21.798][info] [#0:script/provider/provider.lua:66]: nil
-[10:04:19.010][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:04:19.112][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:04:19.112][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:04:19.112][info] [#0:script/provider/provider.lua:66]: nil
-[10:07:45.732][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:07:45.834][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:07:45.834][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:07:45.834][info] [#0:script/provider/provider.lua:66]: nil
-[10:07:59.717][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:07:59.819][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:07:59.819][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:07:59.819][info] [#0:script/provider/provider.lua:66]: nil
-[10:08:07.302][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:08:07.304][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:08:07.304][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:08:07.304][info] [#0:script/provider/provider.lua:66]: nil
-[10:08:15.019][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:08:15.122][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:08:15.122][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:08:15.122][info] [#0:script/provider/provider.lua:66]: nil
-[10:08:54.222][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:08:54.224][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:08:54.224][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:08:54.224][info] [#0:script/provider/provider.lua:66]: nil
-[10:08:57.629][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:08:57.631][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:08:57.631][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:08:57.631][info] [#0:script/provider/provider.lua:66]: nil
-[10:09:06.122][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:09:06.125][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:09:06.125][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:09:06.125][info] [#0:script/provider/provider.lua:66]: nil
-[10:09:18.123][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:09:18.126][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:09:18.126][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:09:18.126][info] [#0:script/provider/provider.lua:66]: nil
-[10:09:25.623][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:09:25.724][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:09:25.724][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:09:25.724][info] [#0:script/provider/provider.lua:66]: nil
-[10:09:33.583][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:09:33.685][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:09:33.685][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:09:33.685][info] [#0:script/provider/provider.lua:66]: nil
-[10:09:44.634][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:09:44.737][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:09:44.737][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:09:44.737][info] [#0:script/provider/provider.lua:66]: nil
-[10:09:49.649][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:09:49.752][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:09:49.752][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:09:49.752][info] [#0:script/provider/provider.lua:66]: nil
-[10:09:56.447][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:09:56.549][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:09:56.549][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:09:56.549][info] [#0:script/provider/provider.lua:66]: nil
-[10:09:58.424][info] [#0:script/service/service.lua:145]: 
+[03:17:24.950][info] [#0:script/language.lua:137]: VSC language: nil
+[03:17:24.950][info] [#0:script/language.lua:138]: LS  language: en-us
+[03:17:24.950][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/astro
+[03:17:24.950][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/log/file_home_astro.log
+[03:17:24.951][info] [#0:script/workspace/workspace.lua:48]: Workspace create: 	file:///home/astro
+[03:17:24.951][info] [#0:script/client.lua:112]: ShowMessage	Error	Your workspace is set to `/home/astro`. Lua language server refused to load this directory. Please check your configuration.[learn more here](https://luals.github.io/wiki/faq#why-is-the-server-scanning-the-wrong-folder)
+[03:17:25.252][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:17:25.253][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:17:25.353][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:17:25.353][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[03:17:25.353][info] [#0:script/provider/provider.lua:66]: nil
+[03:17:25.353][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:17:25.353][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[03:17:25.353][info] [#0:script/provider/provider.lua:66]: nil
+[03:17:25.561][info] [#0:script/library.lua:212]: Init builtin library at:	file:///home/astro
+[03:17:25.568][info] [#0:script/library.lua:212]: Init builtin library at:	nil
+[03:17:25.674][info] [#0:script/workspace/workspace.lua:324]: Preload start:	file:///home/astro
+[03:17:25.675][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[03:17:25.676][info] [#0:script/workspace/workspace.lua:324]: Preload start:	<fallback>
+[03:17:25.679][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[03:17:25.679][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/table.lua
+[03:17:25.680][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/table.lua
+[03:17:25.680][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[03:17:25.680][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[03:17:25.680][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/package.lua
+[03:17:25.680][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/package.lua
+[03:17:25.680][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/os.lua
+[03:17:25.680][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/os.lua
+[03:17:25.680][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/io.lua
+[03:17:25.681][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/io.lua
+[03:17:25.681][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[03:17:25.681][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[03:17:25.681][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/math.lua
+[03:17:25.681][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/math.lua
+[03:17:25.681][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/string.lua
+[03:17:25.681][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/string.lua
+[03:17:25.681][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[03:17:25.682][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[03:17:25.682][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[03:17:25.682][info] [#0:script/workspace/workspace.lua:353]: Scan library at:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[03:17:25.782][info] [#0:script/workspace/workspace.lua:379]: Found 11 files at:	file:///home/astro
+[03:17:25.782][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	file:///home/astro
+[03:17:25.782][info] [#0:script/workspace/workspace.lua:379]: Found 11 files at:	<fallback>
+[03:17:25.782][info] [#0:script/workspace/loading.lua:160]: Load files from disk:	<fallback>
+[03:17:25.783][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.590 KB
+[03:17:25.785][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[03:17:25.785][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.386 KB
+[03:17:25.786][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[03:17:25.786][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[03:17:25.786][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 6.327 KB
+[03:17:25.789][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/string.lua
+[03:17:25.789][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/string.lua
+[03:17:25.789][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.509 KB
+[03:17:25.794][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/math.lua
+[03:17:25.794][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[03:17:25.794][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/math.lua
+[03:17:25.794][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 15.841 KB
+[03:17:25.801][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[03:17:25.801][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.364 KB
+[03:17:25.803][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/io.lua
+[03:17:25.803][info] [#0:script/workspace/loading.lua:97]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[03:17:25.803][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/io.lua
+[03:17:25.803][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/io.lua
+[03:17:25.803][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 5.600 KB
+[03:17:25.806][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/os.lua
+[03:17:25.806][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/os.lua
+[03:17:25.806][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/os.lua
+[03:17:25.806][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.944 KB
+[03:17:25.807][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/package.lua
+[03:17:25.807][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/package.lua
+[03:17:25.807][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/package.lua
+[03:17:25.807][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.637 KB
+[03:17:25.813][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[03:17:25.813][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[03:17:25.813][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[03:17:25.813][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 4.445 KB
+[03:17:25.815][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/table.lua
+[03:17:25.815][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/table.lua
+[03:17:25.815][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/table.lua
+[03:17:25.815][info] [#0:script/workspace/loading.lua:100]: Preload file at: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[03:17:25.815][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[03:17:25.815][info] [#0:script/workspace/loading.lua:88]: Skip loaded file: file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[03:17:25.815][info] [#0:script/workspace/loading.lua:112]: ++++As library of:	file:///home/astro/.local/share/zed/extensions/work/lua/lua-language-server-3.13.6/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[03:17:25.815][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [0.033] sec: file:///home/astro
+[03:17:25.815][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: file:///home/astro
+[03:17:25.815][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	file:///home/astro
+[03:17:25.815][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	file:///home/astro
+[03:17:25.817][info] [#0:script/workspace/loading.lua:172]: Loaded files takes [0.035] sec: <fallback>
+[03:17:25.817][info] [#0:script/workspace/loading.lua:181]: Compile files takes [0.000] sec: <fallback>
+[03:17:25.817][info] [#0:script/workspace/loading.lua:182]: Loaded finish:	<fallback>
+[03:17:25.817][info] [#0:script/workspace/workspace.lua:381]: Preload finish at:	<fallback>
+[03:17:26.821][info] [#0:script/provider/diagnostic.lua:560]: Diagnostics scope [file:///home/astro], files count:[12]
+[03:17:26.941][info] [#0:script/provider/diagnostic.lua:577]: Diagnostics scope [file:///home/astro] finished, takes [0.037] sec.
+[03:17:33.752][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:17:33.854][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:17:33.854][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[03:17:33.854][info] [#0:script/provider/provider.lua:66]: nil
+[03:19:09.653][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:19:09.755][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:19:09.756][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[03:19:09.756][info] [#0:script/provider/provider.lua:66]: nil
+[03:19:27.638][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:19:27.739][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:19:27.739][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[03:19:27.739][info] [#0:script/provider/provider.lua:66]: nil
+[03:25:01.381][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:25:01.484][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:25:01.484][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[03:25:01.484][info] [#0:script/provider/provider.lua:66]: nil
+[03:27:24.890][info] [#0:script/service/service.lua:145]: 
 ========= Medical Examination Report =========
     --------------- Memory ---------------
-        Total: 8.637 MB
-        # 00 : 8.284 MB
+        Total: 9.007 MB
+        # 00 : 8.647 MB
         # 01 : 0.053 MB
         # 02 : 0.053 MB
-        # 03 : 0.120 MB
-        # 04 : 0.127 MB
+        # 03 : 0.134 MB
+        # 04 : 0.120 MB
     --------------- Coroutine ---------------
-        Total:     138
+        Total:     108
         Running:   0
         Suspended: 0
         Normal:    0
-        Dead:      138
+        Dead:      108
     --------------- Cache ---------------
-        Total: 5
-        Dead:  4
+        Total: 4
+        Dead:  3
     ---------------  RPC  ---------------
         Holdon:   0
         Waiting:  0
 ==============================================
-[10:11:37.615][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:11:37.717][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:11:37.717][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:11:37.717][info] [#0:script/provider/provider.lua:66]: nil
-[10:12:16.351][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:12:16.452][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:12:16.452][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:12:16.452][info] [#0:script/provider/provider.lua:66]: nil
-[10:12:27.552][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:12:27.552][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:12:27.552][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:12:27.552][info] [#0:script/provider/provider.lua:66]: nil
-[10:12:52.077][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:12:52.178][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:12:52.178][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:12:52.178][info] [#0:script/provider/provider.lua:66]: nil
-[10:13:51.175][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:13:51.177][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:13:51.177][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:13:51.177][info] [#0:script/provider/provider.lua:66]: nil
-[10:14:12.145][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:14:12.155][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:14:12.156][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:14:12.156][info] [#0:script/provider/provider.lua:66]: nil
-[10:14:55.345][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:14:55.447][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:14:55.447][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:14:55.447][info] [#0:script/provider/provider.lua:66]: nil
-[10:15:15.083][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:15:15.197][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:15:15.197][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:15:15.197][info] [#0:script/provider/provider.lua:66]: nil
-[10:15:29.665][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:15:29.766][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:15:29.766][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:15:29.766][info] [#0:script/provider/provider.lua:66]: nil
-[10:16:04.959][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:16:04.962][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:16:04.962][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:16:04.962][info] [#0:script/provider/provider.lua:66]: nil
-[10:18:02.462][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:18:02.564][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:18:02.564][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:18:02.564][info] [#0:script/provider/provider.lua:66]: nil
-[10:18:28.025][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:18:28.128][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:18:28.128][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:18:28.128][info] [#0:script/provider/provider.lua:66]: nil
-[10:18:35.648][info] [#0:script/provider/diagnostic.lua:171]: clearDiagnostics	file:///home/astro/.wezterm.lua
-[10:18:35.649][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:18:35.649][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:18:35.649][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:18:35.649][info] [#0:script/provider/provider.lua:66]: nil
-[10:19:04.365][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:19:04.467][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:19:04.467][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:19:04.467][info] [#0:script/provider/provider.lua:66]: nil
-[10:19:21.466][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:19:21.468][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:19:21.468][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:19:21.468][info] [#0:script/provider/provider.lua:66]: nil
-[10:19:58.468][info] [#0:script/service/service.lua:145]: 
-========= Medical Examination Report =========
-    --------------- Memory ---------------
-        Total: 7.777 MB
-        # 00 : 7.424 MB
-        # 01 : 0.053 MB
-        # 02 : 0.053 MB
-        # 03 : 0.120 MB
-        # 04 : 0.127 MB
-    --------------- Coroutine ---------------
-        Total:     35
-        Running:   0
-        Suspended: 0
-        Normal:    0
-        Dead:      35
-    --------------- Cache ---------------
-        Total: 3
-        Dead:  2
-    ---------------  RPC  ---------------
-        Holdon:   0
-        Waiting:  0
-==============================================
-[10:21:12.093][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:21:12.196][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:21:12.196][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:21:12.196][info] [#0:script/provider/provider.lua:66]: nil
-[10:21:40.487][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:21:40.488][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:21:40.488][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:21:40.488][info] [#0:script/provider/provider.lua:66]: nil
-[10:23:00.500][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:23:00.602][warn] [#0:script/config/loader.lua:116]: No config?	{}
-[10:23:00.602][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
-[10:23:00.602][info] [#0:script/provider/provider.lua:66]: nil
+[03:27:53.799][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:27:53.801][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:27:53.801][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[03:27:53.801][info] [#0:script/provider/provider.lua:66]: nil
+[03:28:25.553][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:28:25.657][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:28:25.657][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[03:28:25.657][info] [#0:script/provider/provider.lua:66]: nil
+[03:29:05.198][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:29:05.301][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:29:05.301][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[03:29:05.301][info] [#0:script/provider/provider.lua:66]: nil
+[03:30:11.805][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:30:11.807][warn] [#0:script/config/loader.lua:116]: No config?	{}
+[03:30:11.807][info] [#0:script/provider/provider.lua:65]: Load config from client	fallback
+[03:30:11.807][info] [#0:script/provider/provider.lua:66]: nil
