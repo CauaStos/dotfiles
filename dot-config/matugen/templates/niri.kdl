@@ -1,182 +1,3 @@
-// This config is in the KDL format: https://kdl.dev
-// "/-" comments out the following node.
-// Check the wiki for a full description of the configuration:
-// https://github.com/YaLTeR/niri/wiki/Configuration:-Introduction
-
-// Input device configuration.
-// Find the full list of options on the wiki:
-// https://github.com/YaLTeR/niri/wiki/Configuration:-Input
-input {
-    keyboard {
-        xkb {
-            layout "br"
-        }
-    }
-
-    touchpad {
-        // off
-        tap
-        // dwt
-        // dwtp
-        // drag false
-        // drag-lock
-        natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "two-finger"
-        // disabled-on-external-mouse
-    }
-
-    mouse {
-        accel-profile "flat"
-    }
-
-    trackpoint {
-        // off
-        // natural-scroll
-        // accel-speed 0.2
-        // accel-profile "flat"
-        // scroll-method "on-button-down"
-        // scroll-button 273
-        // middle-emulation
-    }
-
-    focus-follows-mouse 
-}
-
-
-output "DP-3" {
-    mode "1920x1080@144"
-    transform "normal"
-    position x=0 y=0
-}
-
-output "HDMI-A-1" {
-  mode "1366x768@60.00"
-  transform "90"
-  position x=1920 y=0
-}
-
-layout {
-    gaps 8
-
-    // When to center a column when changing focus, options are:
-    // - "never", default behavior, focusing an off-screen column will keep at the left
-    //   or right edge of the screen.
-    // - "always", the focused column will always be centered.
-    // - "on-overflow", focusing a column will center it if it doesn't fit
-    //   together with the previously focused column.
-    center-focused-column "never"
-
-    // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
-    preset-column-widths {
-        // Proportion sets the width as a fraction of the output width, taking gaps into account.
-        // For example, you can perfectly fit four windows sized "proportion 0.25" on an output.
-        // The default preset widths are 1/3, 1/2 and 2/3 of the output.
-        proportion 0.33333
-        proportion 0.5
-        proportion 0.66667
-
-        // Fixed sets the width in logical pixels exactly.
-        // fixed 1920
-    }
-
-    // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
-    // preset-window-heights { }
-
-    // You can change the default width of the new windows.
-    // If you leave the brackets empty, the windows themselves will decide their initial width.
-    // default-column-width {}
-
-    // By default focus ring and border are rendered as a solid background rectangle
-    // behind windows. That is, they will show up through semitransparent windows.
-    // This is because windows using client-side decorations can have an arbitrary shape.
-    //
-    // If you don't like that, you should uncomment `prefer-no-csd` below.
-    // Niri will draw focus ring and border *around* windows that agree to omit their
-    // client-side decorations.
-    //
-    // Alternatively, you can override it with a window rule called
-    // `draw-border-with-background`.
-
-    // You can change how the focus ring looks.
-    focus-ring {
-        // Uncomment this line to disable the focus ring.
-        // off
-
-        // How many logical pixels the ring extends out from the windows.
-        width 1
-
-        // Colors can be set in a variety of ways:
-        // - CSS named colors: "red"
-        // - RGB hex: "#rgb", "#rgba", "#rrggbb", "#rrggbbaa"
-        // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
-
-        // Color of the ring on the active monitor.
-        active-color {{colors.primary.default.hex}}
-
-        // Color of the ring on inactive monitors.
-        inactive-color "#505050"
-
-        // You can also use gradients. They take precedence over solid colors.
-        // Gradients are rendered the same as CSS linear-gradient(angle, from, to).
-        // The angle is the same as in linear-gradient, and is optional,
-        // defaulting to 180 (top-to-bottom gradient).
-        // You can use any CSS linear-gradient tool on the web to set these up.
-        // Changing the color space is also supported, check the wiki for more info.
-        //
-        // active-gradient from="#80c8ff" to="#bbddff" angle=45
-
-        // You can also color the gradient relative to the entire view
-        // of the workspace, rather than relative to just the window itself.
-        // To do that, set relative-to="workspace-view".
-        //
-        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
-    }
-
-    // You can also add a border. It's similar to the focus ring, but always visible.
-    border {
-        // The settings are the same as for the focus ring.
-        // If you enable the border, you probably want to disable the focus ring.
-        off
-
-        width 4
-        active-color "#ffc87f"
-        inactive-color "#505050"
-
-        // Color of the border around windows that request your attention.
-        urgent-color "#9b0000"
-
-        // active-gradient from="#ffbb66" to="#ffc880" angle=45 relative-to="workspace-view"
-        // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
-    }
-
-    // You can enable drop shadows for windows.
-    shadow {
-        on
-        draw-behind-window true
-
-        softness 30
-
-        spread 5
-
-        offset x=0 y=5
-
-        color "#0007"
-    }
-
-    // Struts shrink the area occupied by windows, similarly to layer-shell panels.
-    // You can think of them as a kind of outer gaps. They are set in logical pixels.
-    // Left and right struts will cause the next window to the side to always be visible.
-    // Top and bottom struts will simply add outer gaps in addition to the area occupied by
-    // layer-shell panels and regular gaps.
-    struts {
-        left 8 
-        right 8 
-        top 8 
-        bottom 8
-    }
-}
 
 
 // █  ▄▀█ █ █ █▄ █ █▀▀ █ █
@@ -192,6 +13,95 @@ spawn-at-startup "steam" "-silent"
 spawn-at-startup "zen-browser"
 spawn-at-startup "spicetify" "watch" "-s"
 spawn-at-startup "vesktop" "--start-minimized"
+
+
+
+// █ █▄ █ █▀█ █ █ ▀█▀
+// █ █ ▀█ █▀▀ █▄█  █
+
+input {
+
+    mod-key "Super"
+    mod-key-nested "Alt"
+
+    keyboard {
+        xkb {
+            layout "br"
+        }
+    }
+
+    touchpad {
+        tap
+        dwt
+        natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        scroll-method "two-finger"
+        scroll-factor 0.4
+    }
+
+    mouse {
+        accel-profile "flat"
+    }
+
+    focus-follows-mouse 
+}
+
+
+
+// █▀█ █ █ ▀█▀ █▀█ █ █ ▀█▀ █▀
+// █▄█ █▄█  █  █▀▀ █▄█  █  ▄█
+
+output "DP-3" {
+    mode "1920x1080@144"
+    transform "normal"
+    position x=0 y=0
+    variable-refresh-rate on-demand=true
+    focus-at-startup
+}
+
+output "HDMI-A-1" {
+  mode "1366x768@60.00"
+  transform "90"
+  position x=1920 y=0
+}
+
+
+
+// █  ▄▀█ █ █ █▀█ █ █ ▀█▀
+// █▄ █▀█  █  █▄█ █▄█  █
+
+layout {
+    gaps 8
+
+    center-focused-column "never"
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+
+    focus-ring {
+      off
+    }
+
+    border {
+        width 1
+        active-color "{{colors.outline.default.hex}}"
+        inactive-color "{{colors.outline_variant.default.hex}}"
+        urgent-color "{{colors.tertiary.default.hex}}"
+    }
+
+    shadow {
+        draw-behind-window true
+        softness 50
+        spread 4
+        offset x=5 y=5
+        color "#000016"
+    }
+}
+
 
 
 // █▀▀ █▄ █ █ █ █ █▀█ █▀█ █▄ █ █▀▄▀█ █▀▀ █▄ █ ▀█▀   █ █ ▄▀█ █▀█ █ ▄▀█ █▄▄ █  █▀▀ █▀
@@ -222,8 +132,6 @@ cursor {
     xcursor-theme "Bibata-Modern-Classic"
     xcursor-size 24
 
-    hide-when-typing
-    hide-after-inactive-ms 1000
 }
 
 overview {
@@ -234,34 +142,85 @@ overview {
         // off
         softness 40
         spread 10
-        offset x=0 y=10
-        color "#00000050"
+        offset x=5 y=5
+        color "#000"
     }
 }
 
 screenshot-path "~/Pictures/Screenshots/%d-%m-%Y__%H-%M-%S.png"
 
 
-window-rule {
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
-    open-floating true
-}
 
-window-rule {
-    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
-
-    block-out-from "screen-capture"
-
-}
+// █ █ █ █ █▄ █ █▀▄ █▀█ █ █ █   █▀█ █ █ █  █▀▀ █▀
+// █▄▀▄█ █ █ ▀█ █▄▀ █▄█ █▄▀▄█   █▀▄ █▄█ █▄ ██▄ ▄█
 
 window-rule {
     geometry-corner-radius 10
     clip-to-geometry true
     draw-border-with-background false
+    //opacity 0.95 //not until blur
+}
+
+window-rule {
+    match app-id="zen"
+    open-maximized true
+}
+
+window-rule {
+    match app-id="^[Ss]potify"
+    open-on-output "HDMI-A-1"
+}
+
+window-rule {
+    match title="^Picture-in-Picture$"
+    open-floating true
 }
 
 
+window-rule {
+
+    match title="^About Mozilla Firefox$"
+    match app-id="^firefox$"
+    match app-id="^foot$"
+    match app-id="^vlc$"
+    match app-id="^kvantummanager$"
+    match app-id="^qt5ct$"
+    match app-id="^qt6ct$"
+    match app-id="^nwg-look$"
+    match app-id="^org.kde.ark$"
+    match app-id="^pavucontrol-qt$"
+    match app-id="^blueman-manager$"
+    match app-id="^nm-applet$"
+    match app-id="^nm-connection-editor$"
+    match app-id="^org.kde.polkit-kde-authentication-agent-1$"
+    match app-id="^Mission Center$"
+    match app-id="^Signal$"
+    match app-id="^com.github.rafostar.Clapper$"
+    match app-id="^app.drey.Warp$"
+    match app-id="^net.davidotek.pupgui2$"
+    match app-id="^yad$"
+    match app-id="^eog$"
+    match app-id="^io.github.alainm23.planify$"
+    match app-id="^io.gitlab.theevilssskeleton.Upscaler$"
+    match app-id="^com.github.unrud.VideoDownloader$"
+    match app-id="^io.gitlab.adhami3310.Impression$"
+    match app-id="^mate-system-monitor$"
+    match app-id="^zenity$"
+
+    open-floating true
+
+}
+
+window-rule {
+  //Any .EXE running will have VRR
+    match title=".*\\.exe.*"
+    variable-refresh-rate true
+}
+
+
+
+// █▄▀ █▀▀ █ █ █▄▄ █ █▄ █ █▀▄ █▀
+// █ █ ██▄  █  █▄█ █ █ ▀█ █▄▀ ▄█
 
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
@@ -303,7 +262,10 @@ binds {
     Mod+Shift+Down  { move-window-down; }
     Mod+Shift+Up    { move-window-up; }
     Mod+Shift+Right { move-column-right; }
-
+    
+    Mod+Ctrl+Left { set-column-width "50%"; }
+    Mod+Ctrl+Right { set-column-width "100%"; }
+    
 
     // █ █ █ █▀█ █▀█ █▄▀ █▀ █▀█ ▄▀█ █▀▀ █▀▀ █▀
     // █▄▀▄█ █▄█ █▀▄ █ █ ▄█ █▀▀ █▀█ █▄▄ ██▄ ▄█
@@ -317,15 +279,19 @@ binds {
     Mod+7 { focus-workspace 7; }
     Mod+8 { focus-workspace 8; }
     Mod+9 { focus-workspace 9; }
-    Mod+Ctrl+1 { move-window-to-workspace 1; }
-    Mod+Ctrl+2 { move-window-to-workspace 2; }
-    Mod+Ctrl+3 { move-window-to-workspace 3; }
-    Mod+Ctrl+4 { move-window-to-workspace 4; }
-    Mod+Ctrl+5 { move-window-to-workspace 5; }
-    Mod+Ctrl+6 { move-window-to-workspace 6; }
-    Mod+Ctrl+7 { move-window-to-workspace 7; }
-    Mod+Ctrl+8 { move-window-to-workspace 8; }
-    Mod+Ctrl+9 { move-window-to-workspace 9; }
+
+    Mod+Shift+1 { move-window-to-workspace 1; }
+    Mod+Shift+2 { move-window-to-workspace 2; }
+    Mod+Shift+3 { move-window-to-workspace 3; }
+    Mod+Shift+4 { move-window-to-workspace 4; }
+    Mod+Shift+5 { move-window-to-workspace 5; }
+    Mod+Shift+6 { move-window-to-workspace 6; }
+    Mod+Shift+7 { move-window-to-workspace 7; }
+    Mod+Shift+8 { move-window-to-workspace 8; }
+    Mod+Shift+9 { move-window-to-workspace 9; }
+
+    Mod+Ctrl+Shift+Left { move-window-to-monitor-left; }
+    Mod+Ctrl+Shift+Right { move-window-to-monitor-right; }
 
 
     // █ █ ▀█▀ █ █  █ ▀█▀ █ █
