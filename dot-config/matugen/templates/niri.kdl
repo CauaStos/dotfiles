@@ -73,6 +73,8 @@ output "HDMI-A-1" {
 
 layout {
     gaps 8
+    
+    background-color "transparent"
 
     center-focused-column "never"
 
@@ -136,16 +138,53 @@ cursor {
 
 overview {
     zoom 0.5
-    backdrop-color "#262626"
+    workspace-shadow { off; }
+}
 
-    workspace-shadow {
-        // off
-        softness 40
-        spread 10
-        offset x=5 y=5
-        color "#000"
+
+animations {
+    slowdown 1.0
+
+    workspace-switch {
+        spring damping-ratio=1.15 stiffness=550 epsilon=0.0001
+    }
+
+    window-open {
+        duration-ms 220
+        curve "ease-out-cubic"  
+    }
+
+    window-close {
+        duration-ms 200
+        curve "ease-out-quad"  
+    }
+
+    horizontal-view-movement {
+        spring damping-ratio=1.2 stiffness=500 epsilon=0.0001
+    }
+
+    window-movement {
+        spring damping-ratio=1.25 stiffness=500 epsilon=0.0001
+    }
+
+    window-resize {
+        spring damping-ratio=1.1 stiffness=550 epsilon=0.0001
+    }
+
+    config-notification-open-close {
+        spring damping-ratio=0.75 stiffness=700 epsilon=0.001
+    }
+
+    screenshot-ui-open {
+        duration-ms 250
+        curve "ease-out-expo"  
+    }
+
+    overview-open-close {
+        spring damping-ratio=1.1 stiffness=550 epsilon=0.0001
     }
 }
+
 
 screenshot-path "~/Pictures/Screenshots/%d-%m-%Y__%H-%M-%S.png"
 
@@ -217,6 +256,14 @@ window-rule {
     variable-refresh-rate true
 }
 
+
+// █  ▄▀█ █ █ █▀▀ █▀█   █▀█ █ █ █  █▀▀ █▀
+// █▄ █▀█  █  ██▄ █▀▄   █▀▄ █▄█ █▄ ██▄ ▄█
+
+layer-rule {
+    match namespace="^swww-daemon"
+    place-within-backdrop true
+}
 
 
 // █▄▀ █▀▀ █ █ █▄▄ █ █▄ █ █▀▄ █▀
