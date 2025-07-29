@@ -95,17 +95,10 @@ layout {
         urgent-color "{{colors.tertiary.default.hex}}"
     }
 
-    shadow {
-        draw-behind-window true
-        softness 50
-        spread 4
-        offset x=5 y=5
-        color "#000016"
-    }
 
     struts {
-      left 8 
-      right 8
+      left 6 
+      right 6
     }
 }
 
@@ -211,6 +204,23 @@ window-rule {
 }
 
 window-rule {
+  match is-window-cast-target=true
+
+  border {
+    on
+    width 1
+    active-color "{{colors.error.light.hex}}"
+    inactive-color "{{colors.error.light.hex}}"
+  }
+}
+
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=10 y=10 relative-to="bottom-right"
+
+}
+
+window-rule {
     match title="^Picture-in-Picture$"
     open-floating true
 }
@@ -232,7 +242,7 @@ window-rule {
     match app-id="^nm-applet$"
     match app-id="^nm-connection-editor$"
     match app-id="^org.kde.polkit-kde-authentication-agent-1$"
-    match app-id="^Mission Center$"
+    match title="^Mission Center$"
     match app-id="^Signal$"
     match app-id="^com.github.rafostar.Clapper$"
     match app-id="^app.drey.Warp$"
