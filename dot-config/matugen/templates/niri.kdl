@@ -102,6 +102,11 @@ layout {
         offset x=5 y=5
         color "#000016"
     }
+
+    struts {
+      left 8 
+      right 8
+    }
 }
 
 
