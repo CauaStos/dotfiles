@@ -206,11 +206,6 @@ window-rule {
 }
 
 window-rule {
-    match app-id="zen"
-    open-maximized true
-}
-
-window-rule {
     match app-id="^[Ss]potify"
     open-on-output "HDMI-A-1"
 }
