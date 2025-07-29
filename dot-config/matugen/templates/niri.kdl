@@ -13,7 +13,7 @@ spawn-at-startup "steam" "-silent"
 spawn-at-startup "zen-browser"
 spawn-at-startup "spicetify" "watch" "-s"
 spawn-at-startup "vesktop" "--start-minimized"
-spawn-at-startup "swayidle" "-w" "timeout" "601" "niri msg action power-off-monitors" "timeout" "600" "hyprlock" 
+spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors; hyprlock" 
 
 
 // █ █▄ █ █▀█ █ █ ▀█▀
