@@ -371,7 +371,8 @@ binds {
 
     Ctrl+Alt+Z { spawn "wtype" "-k" "backslash"; }
     Shift+Alt+Z { spawn "wtype" "|"; }
-    Shift+Shift_R { spawn "wtype" "/"; }
+    Home { spawn "wtype" "/"; }
+    Shift+Home { spawn "wtype" "?"; }
 
     Mod+Shift+P { power-off-monitors; }
   }
