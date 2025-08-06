@@ -13,7 +13,7 @@ spawn-at-startup "steam" "-silent"
 spawn-at-startup "zen-browser"
 spawn-at-startup "spicetify" "watch" "-s"
 spawn-at-startup "vesktop" "--start-minimized"
-spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors; hyprlock" 
+spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors; sleep 2; hyprlock" 
 
 
 // █ █▄ █ █▀█ █ █ ▀█▀
@@ -223,6 +223,7 @@ window-rule {
 window-rule {
     match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
     default-floating-position x=10 y=10 relative-to="bottom-right"
+    open-focused false
 
 }
 
