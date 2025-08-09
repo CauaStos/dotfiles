@@ -61,6 +61,10 @@ output_path = '~/.config/qt6ct/Material.conf'
 input_path = '~/.config/nvim/pywal/matugen.lua'
 output_path = '~/.cache/wal/base46-dark.lua'
 
+[templates.pywal]
+input_path = '~/.config/matugen/templates/pywal_colors_file'
+output_path = '~/.cache/wal/colors'
+
 #For nvim
 [config.custom_colors.red]
 color = "#FF0000"
