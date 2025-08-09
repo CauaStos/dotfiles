@@ -116,7 +116,7 @@ environment {
   GDK_SCALE "1"
   QSG_RENDER_LOOP "threaded"
   ELECTRON_OZONE_PLATFORM_HINT "wayland"
-  DISPLAY ":1"
+  DISPLAY ":0"
 }
 
 
