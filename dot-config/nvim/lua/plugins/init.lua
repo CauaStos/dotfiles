@@ -43,6 +43,7 @@ return {
         "html",
         "css",
         "python",
+        "wgsl",
       },
     },
   },
