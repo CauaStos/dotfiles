@@ -5,6 +5,8 @@
 
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
+spawn-at-startup "kdeconnectd"
+spawn-at-startup "kdeconnect-indicator"
 spawn-at-startup "playerctld" "daemon"
 spawn-at-startup "easyeffects" "--gapplication-service"
 spawn-at-startup "swww-daemon"
@@ -116,7 +118,7 @@ environment {
   GDK_SCALE "1"
   QSG_RENDER_LOOP "threaded"
   ELECTRON_OZONE_PLATFORM_HINT "wayland"
-  DISPLAY ":0"
+  DISPLAY ":1"
 }
 
 
