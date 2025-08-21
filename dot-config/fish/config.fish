@@ -1,5 +1,6 @@
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
 
+export EDITOR=nvim
 export PATH="$HOME/Documents/development/flutter/bin:$PATH"
 export PATH="$HOME/.cargo/bin/:$PATH"
 
