@@ -2,6 +2,19 @@
 command = "echo"
 set = false
 
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+
+[templates.color-scheme-qt]
+input_path = '~/.config/matugen/templates/qt.colors'
+output_path = '~/.local/share/color-schemes/Matugen.colors'
+
 [templates.zed]
 input_path = '~/.config/matugen/templates/zed.json'
 output_path = '~/.config/zed/themes/material.json'
@@ -14,7 +27,6 @@ output_path = '~/.config/vesktop/themes/material.css'
 input_path = '~/.config/matugen/templates/niri.kdl'
 output_path = '~/.config/niri/config.kdl'
 
-
 [templates.wezterm]
 input_path = '~/.config/matugen/templates/wezterm.lua'
 output_path = '~/.wezterm.lua'
@@ -22,14 +34,6 @@ output_path = '~/.wezterm.lua'
 [templates.macchina]
 input_path = '~/.config/matugen/templates/macchina.toml'
 output_path = '~/.config/macchina/themes/Material.toml'
-
-[templates.qt5]
-input_path = '~/.config/matugen/templates/qtct-colors.conf'
-output_path = '~/.config/qt5ct/Material.conf'
-
-[templates.qt6]
-input_path = '~/.config/matugen/templates/qtct-colors.conf'
-output_path = '~/.config/qt6ct/Material.conf'
 
 [templates.nvim]
 input_path = '~/.config/nvim/pywal/matugen.lua'

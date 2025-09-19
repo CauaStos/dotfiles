@@ -15,7 +15,7 @@ spawn-at-startup "steam" "-silent"
 spawn-at-startup "zen-browser"
 spawn-at-startup "spicetify" "watch" "-s"
 spawn-at-startup "vesktop" "--start-minimized"
-spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors; sleep 2; hyprlock" 
+spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors; sleep 2; hyprlock"
 
 
 // █ █▄ █ █▀█ █ █ ▀█▀
@@ -46,7 +46,7 @@ input {
         accel-profile "flat"
     }
 
-    focus-follows-mouse max-scroll-amount="0%" 
+    focus-follows-mouse max-scroll-amount="0%"
 }
 
 
@@ -75,7 +75,7 @@ output "HDMI-A-1" {
 
 layout {
     gaps 8
-    
+
     background-color "transparent"
 
     center-focused-column "never"
@@ -99,7 +99,7 @@ layout {
 
 
     struts {
-      left 6 
+      left 6
       right 6
     }
 }
@@ -151,12 +151,12 @@ animations {
 
     window-open {
         duration-ms 220
-        curve "ease-out-cubic"  
+        curve "ease-out-cubic"
     }
 
     window-close {
         duration-ms 200
-        curve "ease-out-quad"  
+        curve "ease-out-quad"
     }
 
     horizontal-view-movement {
@@ -183,7 +183,7 @@ animations {
 
     screenshot-ui-open {
         duration-ms 250
-        curve "ease-out-expo"  
+        curve "ease-out-expo"
     }
 
     overview-open-close {
@@ -236,7 +236,6 @@ window-rule {
 
 
 window-rule {
-
     match title="^About Mozilla Firefox$"
     match app-id="^firefox$"
     match app-id="^foot$"
@@ -293,7 +292,7 @@ binds {
 
     // ▄▀█ █▀█ █▀█ █▀
     // █▀█ █▀▀ █▀▀ ▄█
-    
+
 
     Mod+T hotkey-overlay-title="Terminal" { spawn "wezterm" "start" "--always-new-process"; }
     Mod+E hotkey-overlay-title="File Manager" {spawn "nautilus"; }
@@ -307,15 +306,15 @@ binds {
 
     // ▄▀█ █▀▀ ▀█▀ █ █▀█ █▄ █ █▀
     // █▀█ █▄▄  █  █ █▄█ █ ▀█ ▄█
-    
+
     Mod+Q { close-window; }
     Mod+Delete { quit skip-confirmation=true; }
     Mod+W       { toggle-window-floating; }
-    Alt+Return { fullscreen-window; } 
+    Alt+Return { fullscreen-window; }
     Mod+L hotkey-overlay-title="Screenlock" { spawn "hyprlock"; }
 
 
-    
+
     // █ █ █ █ █▄ █ █▀▄ █▀█ █ █ █ █▀
     // █▄▀▄█ █ █ ▀█ █▄▀ █▄█ █▄▀▄█ ▄█
 
@@ -323,15 +322,15 @@ binds {
     Mod+Down  { focus-window-down; }
     Mod+Up    { focus-window-up; }
     Mod+Right { focus-column-right; }
-    
+
     Mod+Shift+Left  { move-column-left; }
     Mod+Shift+Down  { move-window-down; }
     Mod+Shift+Up    { move-window-up; }
     Mod+Shift+Right { move-column-right; }
-    
+
     Mod+Ctrl+Left { set-column-width "50%"; }
     Mod+Ctrl+Right { set-column-width "100%"; }
-    
+
 
     // █ █ █ █▀█ █▀█ █▄▀ █▀ █▀█ ▄▀█ █▀▀ █▀▀ █▀
     // █▄▀▄█ █▄█ █▀▄ █ █ ▄█ █▀▀ █▀█ █▄▄ ██▄ ▄█
@@ -362,11 +361,11 @@ binds {
 
     // █ █ ▀█▀ █ █  █ ▀█▀ █ █
     // █▄█  █  █ █▄ █  █   █
-    
+
     Print { screenshot; }
     Shift+Print { screenshot-screen; }
     Mod+Shift+Print { screenshot-window; }
-    
+
 
 
     // █▀▄▀█ █ █▀ █▀▀ █▀▀ █  ▄▀█ █▄ █ █▀▀ █▀█ █ █ █▀

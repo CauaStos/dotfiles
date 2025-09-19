@@ -3,7 +3,7 @@ local config = {}
 
 config.automatically_reload_config = true
 
-config.font = wezterm.font('SF Mono', { weight = 500, italic = false })
+config.font = wezterm.font('CaskaydiaMono Nerd Font', { weight = 500, italic = false })
 config.font_size = 11
 config.enable_tab_bar = false
 config.window_close_confirmation = 'NeverPrompt'
