@@ -1,15 +1,16 @@
-[config.wallpaper]
+[onfig.wallpaper]
 command = "echo"
 set = false
 
 [templates.gtk3]
-input_path = '~/.config/matugen/templates/gtk-colors.css'
-output_path = '~/.config/gtk-3.0/colors.css'
-post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+input_path = '~/.config/matugen/templates/gtk3.css'
+output_path = '~/.local/share/themes/Material/gtk-3.0/gtk.css'
+post_hook = "gsettings set org.gnome.desktop.interface gtk-theme ''; gsettings set org.gnome.desktop.interface gtk-theme Material; echo 'refreshed gtk'"
 
 [templates.gtk4]
-input_path = '~/.config/matugen/templates/gtk-colors.css'
-output_path = '~/.config/gtk-4.0/colors.css'
+input_path = '~/.config/matugen/templates/gtk4.css'
+output_path = '~/.local/share/themes/Material/gtk-4.0/gtk.css'
+post_hook = "gsettings set org.gnome.desktop.interface gtk-theme ''; gsettings set org.gnome.desktop.interface gtk-theme Material; echo 'refreshed gtk'"
 
 [templates.color-scheme-qt]
 input_path = '~/.config/matugen/templates/qt.colors'
