@@ -119,6 +119,7 @@ environment {
   QSG_RENDER_LOOP "threaded"
   ELECTRON_OZONE_PLATFORM_HINT "wayland"
   DISPLAY ":1"
+  GTK_THEME "Material"
 }
 
 
