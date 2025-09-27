@@ -380,3 +380,10 @@ binds {
 
     Mod+Shift+P { power-off-monitors; }
   }
+
+debug {
+    keep-max-bpc-unchanged
+}
+
+
+
