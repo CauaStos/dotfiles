@@ -3,6 +3,7 @@ export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswi
 export EDITOR=nvim
 export PATH="$HOME/Documents/development/flutter/bin:$PATH"
 export PATH="$HOME/.cargo/bin/:$PATH"
+export FREETYPE_PROPERTIES="truetype:interpreter-version=40 cff:no-stem-darkening=1 autofitter:warping=1"
 
 set fish_greeting
 abbr --add zed zeditor
