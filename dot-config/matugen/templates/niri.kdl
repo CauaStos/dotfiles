@@ -9,7 +9,6 @@ spawn-at-startup "kdeconnectd"
 spawn-at-startup "kdeconnect-indicator"
 spawn-at-startup "playerctld" "daemon"
 spawn-at-startup "easyeffects" "--gapplication-service"
-spawn-at-startup "swww-daemon"
 spawn-at-startup "otd-daemon"
 spawn-at-startup "steam" "-silent"
 spawn-at-startup "zen-browser"
@@ -65,7 +64,7 @@ output "DP-1" {
 output "DP-3" {
     mode "1920x1080@143.855"
     transform "270"
-    position x=-1080 y=-430
+    position x=-1080 y=430
     variable-refresh-rate on-demand=true
 }
 
@@ -282,7 +281,7 @@ window-rule {
 // █▄ █▀█  █  ██▄ █▀▄   █▀▄ █▄█ █▄ ██▄ ▄█
 
 layer-rule {
-    match namespace="^swww-daemon"
+    match namespace="Sidus"
     place-within-backdrop true
 }
 
