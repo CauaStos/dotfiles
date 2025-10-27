@@ -298,9 +298,9 @@ binds {
 
     Mod+T hotkey-overlay-title="Terminal" { spawn "wezterm" "start" "--always-new-process"; }
     Mod+E hotkey-overlay-title="File Manager" {spawn "nautilus"; }
-    Mod+C hotkey-overlay-title="Code Editor" {spawn "wezterm start --always-new-process nvim"; }
+    Mod+C hotkey-overlay-title="Code Editor" {spawn "zeditor"; }
     Mod+F hotkey-overlay-title="Browser" {spawn "zen-browser"; }
-    Mod+A hotkey-overlay-title="Application Launcher" { spawn "fuzzel"; }
+    Mod+A hotkey-overlay-title="Application Launcher" { spawn "vicinae" "toggle"; }
     Ctrl+Shift+Escape hotkey-overlay-title="System Monitor" { spawn "missioncenter"; }
 
 
