@@ -50,7 +50,7 @@ input_path = '~/.config/matugen/templates/pywal_colors_file'
 output_path = '~/.cache/wal/colors'
 
 [templates.kitty]
-input_path = '~/.config/matugen/templates/kitty-colors.conf'
+input_path = '~/.config/matugen/templates/kitty.conf'
 output_path = '~/.config/kitty/kitty.conf'
 post_hook = "pkill -SIGUSR1 kitty" 
 
