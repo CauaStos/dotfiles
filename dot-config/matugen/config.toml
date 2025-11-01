@@ -49,6 +49,11 @@ post_hook = 'vicinae theme set matugen'
 input_path = '~/.config/matugen/templates/pywal_colors_file'
 output_path = '~/.cache/wal/colors'
 
+[templates.kitty]
+input_path = 'path/to/template'
+output_path = '~/.config/kitty/colors.conf'
+post_hook = 'pkill -SIGUSR1 kitty; kitty +kitten themes --reload-in=all your-theme'
+
 #For nvim
 [config.custom_colors.red]
 color = "#FF0000"
