@@ -270,12 +270,6 @@ window-rule {
 
 }
 
-window-rule {
-  //Any .EXE running will have VRR
-    match title=".*\\.exe.*"
-    variable-refresh-rate true
-}
-
 
 // █  ▄▀█ █ █ █▀▀ █▀█   █▀█ █ █ █  █▀▀ █▀
 // █▄ █▀█  █  ██▄ █▀▄   █▀▄ █▄█ █▄ ██▄ ▄█
