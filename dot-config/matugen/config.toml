@@ -40,6 +40,11 @@ output_path = '~/.config/macchina/themes/Material.toml'
 input_path = '~/.config/nvim/pywal/matugen.lua'
 output_path = '~/.cache/wal/base46-dark.lua'
 
+[templates.vicinae]
+input_path = './templates/vicinae.toml'
+output_path = '~/.local/share/vicinae/themes/matugen.toml'
+post_hook = 'vicinae theme set matugen'
+
 [templates.pywal]
 input_path = '~/.config/matugen/templates/pywal_colors_file'
 output_path = '~/.cache/wal/colors'
