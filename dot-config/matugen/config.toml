@@ -28,10 +28,6 @@ output_path = '~/.config/vesktop/themes/material.css'
 input_path = '~/.config/matugen/templates/niri.kdl'
 output_path = '~/.config/niri/config.kdl'
 
-[templates.wezterm]
-input_path = '~/.config/matugen/templates/wezterm.lua'
-output_path = '~/.wezterm.lua'
-
 [templates.macchina]
 input_path = '~/.config/matugen/templates/macchina.toml'
 output_path = '~/.config/macchina/themes/Material.toml'
