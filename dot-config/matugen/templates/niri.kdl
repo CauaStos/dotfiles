@@ -66,7 +66,7 @@ output "DP-1" {
   focus-at-startup
 }
 
-output "DP-3" {
+output "DP-2" {
     mode "1920x1080@143.855"
     transform "270"
     position x=-1080 y=-380
