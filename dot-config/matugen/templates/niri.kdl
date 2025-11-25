@@ -3,7 +3,6 @@
 // █  ▄▀█ █ █ █▄ █ █▀▀ █ █
 // █▄ █▀█ █▄█ █ ▀█ █▄▄ █▀█
 
-spawn-at-startup "xwayland-satellite"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "kdeconnectd"
 spawn-at-startup "kdeconnect-indicator"
