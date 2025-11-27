@@ -17,8 +17,8 @@ spawn-at-startup "vesktop" "--start-minimized"
 spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors; sleep 2; hyprlock"
 
 // Theme Stuff
-spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-name 'Cantarell 11'"
-spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-hinting 'slight'" 
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-name 'SF Pro Text 11'"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-hinting 'none'" 
 spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-antialiasing 'grayscale'"
 spawn-sh-at-startup "gsettings set org.gnome.desktop.interface icon-theme 'WhiteSur'"
 
