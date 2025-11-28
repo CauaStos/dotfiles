@@ -17,10 +17,15 @@ spawn-at-startup "vesktop" "--start-minimized"
 spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors; sleep 2; hyprlock"
 
 // Theme Stuff
-spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-name 'SF Pro Text 11'"
-spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-hinting 'none'" 
-spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-antialiasing 'grayscale'"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface gtk-theme 'Material'"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-name 'SF Pro Text, 10'"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface document-font-name 'SF Pro Text, 10'"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface monospace-font-name 'SF Mono 10'"
 spawn-sh-at-startup "gsettings set org.gnome.desktop.interface icon-theme 'WhiteSur'"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-antialiasing 'grayscale'"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-hinting 'none'"
+
 
 // █ █▄ █ █▀█ █ █ ▀█▀
 // █ █ ▀█ █▀▀ █▄█  █
@@ -60,7 +65,7 @@ input {
 
 output "DP-1" {
   mode "2560x1440@359.999"
-  scale 1.15
+  scale 1
   variable-refresh-rate on-demand=true 
   position x=0 y=0
   focus-at-startup
@@ -123,7 +128,7 @@ environment {
   QT_AUTO_SCREEN_SCALE_FACTOR "1"
   MOZ_ENABLE_WAYLAND "1"
   ELECTRON_OZONE_PLATFORM_HINT "wayland"
-  GDK_SCALE "1" // Important for font rendering.
+  GDK_SCALE "1" 
   GTK_THEME "Material"
 }
 
