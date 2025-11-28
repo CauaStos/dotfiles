@@ -123,6 +123,7 @@ environment {
   QT_AUTO_SCREEN_SCALE_FACTOR "1"
   MOZ_ENABLE_WAYLAND "1"
   ELECTRON_OZONE_PLATFORM_HINT "wayland"
+  GDK_SCALE "1" // Important for font rendering.
   GTK_THEME "Material"
 }
 
