@@ -65,17 +65,29 @@ input {
 
 output "DP-1" {
   mode "2560x1440@359.999"
-  scale 1
-  variable-refresh-rate on-demand=true 
   position x=0 y=0
+  scale 1.2
+
   focus-at-startup
-}
+  variable-refresh-rate on-demand=true 
+
+  layout {
+        default-column-width { proportion 0.5; }
+  }
+
+ }
 
 output "DP-2" {
     mode "1920x1080@143.855"
     transform "270"
     position x=-1080 y=-380
+
     variable-refresh-rate on-demand=true
+
+  layout {
+        default-column-width { proportion 1.0; }
+    }
+
 }
 
 
@@ -88,7 +100,6 @@ layout {
     gaps 8
 
     background-color "transparent"
-
     center-focused-column "never"
 
     preset-column-widths {
@@ -150,6 +161,26 @@ cursor {
 overview {
     zoom 0.5
     workspace-shadow { off; }
+}
+
+recent-windows {
+    // off
+    open-delay-ms 125
+
+    highlight {
+        active-color "{{colors.primary.default.hex}}"
+        urgent-color "{{colors.error.light.hex}}"
+        padding 20
+        corner-radius 10
+    }
+
+    binds {
+        Alt+Tab         { next-window; }
+        Alt+Shift+Tab   { previous-window; }
+
+        Mod+Tab         { next-window; }
+        Mod+Shift+Tab   { previous-window; }
+    }
 }
 
 
@@ -388,10 +419,4 @@ binds {
 
     Mod+Shift+P { power-off-monitors; }
   }
-
-debug {
-    keep-max-bpc-unchanged
-}
-
-
 
