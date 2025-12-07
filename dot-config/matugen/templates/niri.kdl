@@ -113,7 +113,7 @@ layout {
     }
 
     border {
-        width 1
+        width 2
         active-color "{{colors.outline.default.hex}}"
         inactive-color "{{colors.outline_variant.default.hex}}"
         urgent-color "{{colors.tertiary.default.hex}}"
