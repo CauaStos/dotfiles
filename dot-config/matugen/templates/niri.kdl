@@ -22,7 +22,7 @@ spawn-sh-at-startup "gsettings set org.gnome.desktop.interface gtk-theme 'Materi
 spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-name 'SF Pro Text, 10'"
 spawn-sh-at-startup "gsettings set org.gnome.desktop.interface document-font-name 'SF Pro Text, 10'"
 spawn-sh-at-startup "gsettings set org.gnome.desktop.interface monospace-font-name 'SF Mono 10'"
-spawn-sh-at-startup "gsettings set org.gnome.desktop.interface icon-theme 'WhiteSur'"
+spawn-sh-at-startup "gsettings set org.gnome.desktop.interface icon-theme 'MacTahoe-dark'"
 spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-antialiasing 'grayscale'"
 spawn-sh-at-startup "gsettings set org.gnome.desktop.interface font-hinting 'none'"
 
