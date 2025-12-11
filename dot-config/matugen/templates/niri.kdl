@@ -249,7 +249,7 @@ window-rule {
 
 window-rule {
     match app-id="^[Ss]potify"
-    open-on-output "DP-3"
+    open-on-output "DP-2"
 }
 
 window-rule {
@@ -257,9 +257,10 @@ window-rule {
 
   border {
     on
-    width 1
-    active-color "{{colors.error.light.hex}}"
-    inactive-color "{{colors.error.light.hex}}"
+    width 2
+
+    active-gradient from="{{colors.outline_variant.default.hex}}" to="{{colors.error.light.hex}}" angle=135
+    inactive-gradient from="{{colors.outline_variant.default.hex}}" to="{{colors.error.light.hex}}" angle=135
   }
 }
 
