@@ -51,6 +51,10 @@ input {
         scroll-factor 0.4
     }
 
+    tablet {
+      map-to-output "DP-1"
+    }
+
     mouse {
         accel-profile "flat"
     }
@@ -138,7 +142,7 @@ environment {
   SDL_VIDEODRIVER "wayland"
   QT_AUTO_SCREEN_SCALE_FACTOR "1"
   MOZ_ENABLE_WAYLAND "1"
-  ELECTRON_OZONE_PLATFORM_HINT "wayland,x11"
+  ELECTRON_OZONE_PLATFORM_HINT "wayland"
   GDK_SCALE "1" 
   GTK_THEME "Material"
 }
