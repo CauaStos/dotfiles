@@ -50,6 +50,10 @@ input_path = '~/.config/matugen/templates/kitty.conf'
 output_path = '~/.config/kitty/kitty.conf'
 post_hook = "pkill -SIGUSR1 kitty" 
 
+[templates.spotify]
+input_path = '~/.config/matugen/templates/spicetify.ini'
+output_path = '~/.config/spicetify/Themes/text/color.ini'
+
 #For nvim
 [config.custom_colors.red]
 color = "#FF0000"
