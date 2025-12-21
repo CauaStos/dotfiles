@@ -1,0 +1,214 @@
+{
+   "imports": [],
+   "close_on_focus_loss": false,
+   "consider_preedit": false,
+   "pop_to_root_on_close": false,
+   "favicon_service": "twenty",
+   "keybinding": "default",
+   "search_files_in_root": false,
+   "font": {
+      "normal": {
+         "family": "auto",
+         "size": 10.5
+      }
+   },
+   "theme": {
+      "light": {
+         "name": "vicinae-light",
+         "icon_theme": "auto"
+      },
+      "dark": {
+         "name": "matugen",
+         "icon_theme": "MacTahoe-dark"
+      }
+   },
+   "launcher_window": {
+      "opacity": 0.98,
+      "client_side_decorations": {
+         "enabled": true,
+         "rounding": 10,
+           "border_width": 2
+      },
+      "size": {
+         "width": 770,
+         "height": 480
+      },
+      "layer_shell": {
+         "scope": "vicinae",
+         "layer": "overlay",
+         "keyboard_interactivity": "exclusive",
+         "enabled": true
+      }
+   },
+   "keybinds": {
+      "action.copy": "control+shift+C",
+      "action.copy-name": "control+shift+.",
+      "action.copy-path": "control+shift+,",
+      "action.dangerous-remove": "control+shift+X",
+      "action.duplicate": "control+D",
+      "action.edit": "control+E",
+      "action.edit-secondary": "control+shift+E",
+      "action.move-down": "control+shift+ARROWDOWN",
+      "action.move-up": "control+shift+ARROWUP",
+      "action.new": "control+N",
+      "action.open": "control+O",
+      "action.pin": "control+shift+P",
+      "action.refresh": "control+R",
+      "action.remove": "control+X",
+      "action.save": "control+S",
+      "open-search-filter": "control+P",
+      "open-settings": "control+,",
+      "toggle-action-panel": "control+B"
+   },
+   "favorites": [
+      "clipboard:history"
+   ],
+   "fallbacks": [
+      "files:search"
+   ],
+   "providers": {
+      "applications": {
+         "enabled": true,
+         "entrypoints": {
+            "assistant": {
+               "enabled": false
+            },
+            "avahi-discover": {
+               "enabled": false
+            },
+            "bssh": {
+               "enabled": false
+            },
+            "bvnc": {
+               "enabled": false
+            },
+            "designer": {
+               "enabled": false
+            },
+            "jconsole-java-openjdk": {
+               "enabled": false
+            },
+            "jshell-java-openjdk": {
+               "enabled": false
+            },
+            "kdesystemsettings": {
+               "enabled": false
+            },
+            "linguist": {
+               "enabled": false
+            },
+            "lstopo": {
+               "enabled": false
+            },
+            "nvim": {
+               "enabled": false
+            },
+            "nvtop": {
+               "enabled": false
+            },
+            "org.kde.discover": {
+               "enabled": false
+            },
+            "org.kde.drkonqi.coredump.gui": {
+               "enabled": false
+            },
+            "org.kde.iconexplorer": {
+               "enabled": false
+            },
+            "org.kde.kdeconnect.nonplasma": {
+               "enabled": false
+            },
+            "org.kde.kdeconnect.sms": {
+               "enabled": false
+            },
+            "org.kde.plasma-systemmonitor": {
+               "enabled": true
+            },
+            "org.kde.plasma.lookandfeelexplorer": {
+               "enabled": false
+            },
+            "org.kde.plasma.themeexplorer": {
+               "enabled": false
+            },
+            "org.kde.plasmaengineexplorer": {
+               "enabled": true
+            },
+            "org.pulseaudio.pavucontrol": {
+               "enabled": true
+            },
+            "org.rncbc.qtractor": {
+               "enabled": false
+            },
+            "protontricks": {
+               "enabled": false
+            },
+            "qdbusviewer": {
+               "enabled": false
+            },
+            "qv4l2": {
+               "enabled": false
+            },
+            "qvidcap": {
+               "enabled": false
+            },
+            "winetricks": {
+               "enabled": false
+            }
+         }
+      },
+      "clipboard": {
+         "preferences": {
+            "eraseOnStartup": true
+         }
+      },
+      "core": {
+         "entrypoints": {
+            "about": {
+               "enabled": false
+            },
+            "documentation": {
+               "enabled": false
+            },
+            "keybind-settings": {
+               "enabled": false
+            },
+            "list-extensions": {
+               "enabled": true
+            },
+            "manage-fallback": {
+               "enabled": false
+            },
+            "oauth-token-store": {
+               "enabled": true
+            },
+            "open-config-file": {
+               "enabled": true
+            },
+            "open-default-config": {
+               "enabled": false
+            },
+            "report-bug": {
+               "enabled": false
+            },
+            "search-emojis": {
+               "enabled": true
+            },
+            "settings": {
+               "enabled": false
+            },
+            "sponsor": {
+               "enabled": false
+            }
+         }
+      },
+      "power": {
+         "entrypoints": {
+            "lock": {
+               "preferences": {
+                  "customProgram": "hyprlock"
+               }
+            }
+         }
+      }
+   }
+}
