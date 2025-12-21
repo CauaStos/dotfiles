@@ -1,3 +1,13 @@
+// This configuration is merged with the default vicinae configuration file, which you can obtain by running the `vicinae config default` command.
+// Every item defined in this file takes precedence over the values defined in the default config or any other imported file.
+//
+// You can make manual edits to this file, however you should keep in mind that this file may be written to by vicinae when a configuration change is made through the GUI.
+// When that happens, any custom comments or formatting will be lost.
+//
+// If you want to maintain a configuration file with your own comments and formatting, you should create a separate file and add it to the 'imports' array.
+//
+// Learn more about configuration at https://docs.vicinae.com/config
+
 {
    "imports": [],
    "close_on_focus_loss": false,
@@ -27,7 +37,7 @@
       "client_side_decorations": {
          "enabled": true,
          "rounding": 10,
-           "border_width": 2
+         "border_width": 2
       },
       "size": {
          "width": 770,
@@ -68,11 +78,7 @@
    ],
    "providers": {
       "applications": {
-         "enabled": true,
          "entrypoints": {
-            "assistant": {
-               "enabled": false
-            },
             "avahi-discover": {
                "enabled": false
             },
@@ -82,19 +88,10 @@
             "bvnc": {
                "enabled": false
             },
-            "designer": {
-               "enabled": false
-            },
             "jconsole-java-openjdk": {
                "enabled": false
             },
             "jshell-java-openjdk": {
-               "enabled": false
-            },
-            "kdesystemsettings": {
-               "enabled": false
-            },
-            "linguist": {
                "enabled": false
             },
             "lstopo": {
@@ -106,35 +103,11 @@
             "nvtop": {
                "enabled": false
             },
-            "org.kde.discover": {
-               "enabled": false
-            },
-            "org.kde.drkonqi.coredump.gui": {
-               "enabled": false
-            },
-            "org.kde.iconexplorer": {
-               "enabled": false
-            },
             "org.kde.kdeconnect.nonplasma": {
                "enabled": false
             },
             "org.kde.kdeconnect.sms": {
                "enabled": false
-            },
-            "org.kde.plasma-systemmonitor": {
-               "enabled": true
-            },
-            "org.kde.plasma.lookandfeelexplorer": {
-               "enabled": false
-            },
-            "org.kde.plasma.themeexplorer": {
-               "enabled": false
-            },
-            "org.kde.plasmaengineexplorer": {
-               "enabled": true
-            },
-            "org.pulseaudio.pavucontrol": {
-               "enabled": true
             },
             "org.rncbc.qtractor": {
                "enabled": false
@@ -142,13 +115,13 @@
             "protontricks": {
                "enabled": false
             },
-            "qdbusviewer": {
-               "enabled": false
-            },
             "qv4l2": {
                "enabled": false
             },
             "qvidcap": {
+               "enabled": false
+            },
+            "vicinae": {
                "enabled": false
             },
             "winetricks": {
