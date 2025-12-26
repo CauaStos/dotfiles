@@ -18,14 +18,14 @@
    "search_files_in_root": false,
    "font": {
       "normal": {
-         "family": "auto",
+         "family": "SF Pro Text",
          "size": 10.5
       }
    },
    "theme": {
       "light": {
-         "name": "vicinae-light",
-         "icon_theme": "auto"
+         "name": "matugen",
+         "icon_theme": "MacTahoe-light"
       },
       "dark": {
          "name": "matugen",
@@ -43,8 +43,10 @@
          "width": 770,
          "height": 480
       },
+      "compact_mode": {
+         "enabled": true
+      },
       "layer_shell": {
-         "scope": "vicinae",
          "layer": "overlay",
          "keyboard_interactivity": "exclusive",
          "enabled": true
