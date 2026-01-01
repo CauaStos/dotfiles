@@ -45,16 +45,16 @@
 @define-color dark_5 #000000;
 
 /* Colors */
-@define-color accent_bg_color {{colors.primary.light.hex}};
-@define-color accent_fg_color {{colors.on_primary.light.hex}};
-@define-color destructive_bg_color {{colors.error.light.hex}};
-@define-color destructive_fg_color {{colors.on_error.light.hex}};
-@define-color success_bg_color {{colors.secondary.light.hex}};
-@define-color success_fg_color {{colors.on_secondary.light.hex}};
-@define-color warning_bg_color {{colors.tertiary.light.hex}};
+@define-color accent_bg_color {{colors.primary.dark.hex}};
+@define-color accent_fg_color {{colors.on_primary.dark.hex}};
+@define-color destructive_bg_color {{colors.error.dark.hex}};
+@define-color destructive_fg_color {{colors.on_error.dark.hex}};
+@define-color success_bg_color {{colors.secondary.dark.hex}};
+@define-color success_fg_color {{colors.on_secondary.dark.hex}};
+@define-color warning_bg_color {{colors.tertiary.dark.hex}};
 @define-color warning_fg_color rgba(0,0,0,0.8);
-@define-color error_bg_color {{colors.error.light.hex}};
-@define-color error_fg_color {{colors.on_error.light.hex}};
+@define-color error_bg_color {{colors.error.dark.hex}};
+@define-color error_fg_color {{colors.on_error.dark.hex}};
 
 @define-color accent_color mix(@accent_bg_color,black,0.17);
 @define-color destructive_color mix(@destructive_bg_color,black,0.17);
@@ -62,40 +62,40 @@
 @define-color warning_color mix(@warning_bg_color,black,0.17);
 @define-color error_color mix(@error_bg_color,black,0.17);
 
-@define-color window_bg_color {{colors.background.light.hex}};
-@define-color window_fg_color {{colors.on_background.light.hex}};
-@define-color view_bg_color {{colors.surface.light.hex}};
-@define-color view_fg_color {{colors.on_surface.light.hex}};
+@define-color window_bg_color {{colors.background.dark.hex}};
+@define-color window_fg_color {{colors.on_background.dark.hex}};
+@define-color view_bg_color {{colors.surface.dark.hex}};
+@define-color view_fg_color {{colors.on_surface.dark.hex}};
 
-@define-color headerbar_bg_color {{colors.surface_variant.light.hex}};
-@define-color headerbar_fg_color {{colors.on_surface.light.hex}};
+@define-color headerbar_bg_color {{colors.surface_variant.dark.hex}};
+@define-color headerbar_fg_color {{colors.on_surface.dark.hex}};
 @define-color headerbar_border_color rgba(0, 0, 6, 0.8);
 @define-color headerbar_backdrop_color @window_bg_color;
 @define-color headerbar_shade_color rgba(0, 0, 6, 0.12);
 @define-color headerbar_darker_shade_color rgba(0, 0, 6, 0.12);
 
-@define-color sidebar_bg_color {{colors.surface_container_low.light.hex}};
-@define-color sidebar_fg_color {{colors.on_surface.light.hex}};
-@define-color sidebar_backdrop_color {{colors.surface_container.light.hex}};
+@define-color sidebar_bg_color {{colors.surface_container_low.dark.hex}};
+@define-color sidebar_fg_color {{colors.on_surface.dark.hex}};
+@define-color sidebar_backdrop_color {{colors.surface_container.dark.hex}};
 @define-color sidebar_shade_color rgba(0, 0, 6, 0.07);
 @define-color sidebar_border_color rgba(0, 0, 6, 0.07);
 
-@define-color card_bg_color {{colors.surface.light.hex}};
-@define-color card_fg_color {{colors.on_surface.light.hex}};
+@define-color card_bg_color {{colors.surface.dark.hex}};
+@define-color card_fg_color {{colors.on_surface.dark.hex}};
 @define-color card_shade_color rgba(0, 0, 6, 0.07);
 
-@define-color dialog_bg_color {{colors.surface_container.light.hex}};
-@define-color dialog_fg_color {{colors.on_surface.light.hex}};
+@define-color dialog_bg_color {{colors.surface_container.dark.hex}};
+@define-color dialog_fg_color {{colors.on_surface.dark.hex}};
 
 @define-color popover_bg_color {{colors.surface.light.rgb}};
-@define-color popover_fg_color {{colors.on_surface.light.hex}};
+@define-color popover_fg_color {{colors.on_surface.dark.hex}};
 @define-color popover_shade_color rgba(0, 0, 6, 0.07);
 
-@define-color thumbnail_bg_color {{colors.surface.light.hex}};
-@define-color thumbnail_fg_color {{colors.on_surface.light.hex}};
+@define-color thumbnail_bg_color {{colors.surface.dark.hex}};
+@define-color thumbnail_fg_color {{colors.on_surface.dark.hex}};
 
 @define-color shade_color rgba(0, 0, 6, 0.07);
-@define-color scrollbar_outline_color {{colors.on_surface.light.hex}};
+@define-color scrollbar_outline_color {{colors.on_surface.dark.hex}};
 
 @define-color panel_bg_color black;
 @define-color panel_fg_color white;
