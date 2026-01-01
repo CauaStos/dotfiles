@@ -58,7 +58,7 @@ input {
         accel-profile "flat"
     }
 
-    focus-follows-mouse max-scroll-amount="0%"
+    focus-follows-mouse max-scroll-amount="5%"
 }
 
 
@@ -117,8 +117,8 @@ layout {
 
     border {
         width 2
-        active-color "{{colors.outline_variant.default.hex}}"
-        inactive-color "{{colors.outline_variant.default.hex}}"
+        active-color "{{colors.surface_container_high.default.hex}}"
+        inactive-color "{{colors.surface_container.default.hex}}"
         urgent-color "{{colors.tertiary.default.hex}}"
     }
 
@@ -339,7 +339,7 @@ binds {
 
 
     Mod+T hotkey-overlay-title="Terminal" { spawn "kitty"; }
-    Mod+E hotkey-overlay-title="File Manager" {spawn "nautilus"; }
+    Mod+E hotkey-overlay-title="File Manager" {spawn "nautilus" "--new-window"; }
     Mod+C hotkey-overlay-title="Code Editor" {spawn "zeditor"; }
     Mod+F hotkey-overlay-title="Browser" {spawn "zen-browser"; }
     Mod+A hotkey-overlay-title="Application Launcher" { spawn "vicinae" "toggle"; }

@@ -1,21 +1,16 @@
-[onfig.wallpaper]
-command = "echo"
-set = false
+[config.wallpaper]
+command = "swww"
+arguments = ["img", "--transition-fps", "360"]
+set = true
+pre_hook = "gsettings set org.gnome.desktop.interface gtk-theme ''; gsettings set org.gnome.desktop.interface gtk-theme 'Material'" 
 
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk3.css'
 output_path = '~/.themes/Material/gtk-3.0/gtk.css'
-post_hook = "gsettings set org.gnome.desktop.interface gtk-theme ''; gsettings set org.gnome.desktop.interface gtk-theme Material; echo 'refreshed gtk'"
-
-[templates.gtk3-dark]
-input_path = '~/.config/matugen/templates/gtk3-dark.css'
-output_path = '~/.themes/Material/gtk-3.0/gtk-dark.css'
-post_hook = "gsettings set org.gnome.desktop.interface gtk-theme ''; gsettings set org.gnome.desktop.interface gtk-theme Material; echo 'refreshed gtk'"
 
 [templates.gtk4]
 input_path = '~/.config/matugen/templates/libadwaita.css'
 output_path = '~/.themes/Material/gtk-4.0/libadwaita.css'
-post_hook = "gsettings set org.gnome.desktop.interface gtk-theme ''; gsettings set org.gnome.desktop.interface gtk-theme Material; echo 'refreshed gtk'"
 
 [templates.color-scheme-qt]
 input_path = '~/.config/matugen/templates/qt.colors'

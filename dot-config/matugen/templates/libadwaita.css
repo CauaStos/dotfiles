@@ -46,114 +46,61 @@
 @define-color dark_4 #241f31;
 @define-color dark_5 #000000;
 /* GTK NAMED COLORS ---------------- use responsibly! */
-@define-color destructive_bg_color {{colors.error.light.hex}};
-@define-color destructive_fg_color {{colors.on_error.light.hex}};
-@define-color success_bg_color {{colors.secondary.light.hex}};
-@define-color success_fg_color {{colors.on_secondary.light.hex}};
-@define-color warning_bg_color {{colors.tertiary.light.hex}};
-@define-color warning_fg_color {{colors.on_tertiary.light.hex}};
-@define-color error_bg_color {{colors.error.light.hex}};
-@define-color error_fg_color {{colors.on_error.light.hex}};
+@define-color destructive_bg_color {{colors.error.default.hex}};
+@define-color destructive_fg_color {{colors.on_error.default.hex}};
+@define-color success_bg_color {{colors.secondary.default.hex}};
+@define-color success_fg_color {{colors.on_secondary.default.hex}};
+@define-color warning_bg_color {{colors.tertiary.default.hex}};
+@define-color warning_fg_color {{colors.on_tertiary.default.hex}};
+@define-color error_bg_color {{colors.error.default.hex}};
+@define-color error_fg_color {{colors.on_error.default.hex}};
 
-@define-color accent_color oklab(from @accent_bg_color min(l, 0.5) a b);
-@define-color destructive_color oklab(from @destructive_bg_color min(l, 0.5) a b);
-@define-color success_color oklab(from @success_bg_color min(l, 0.5) a b);
-@define-color warning_color oklab(from @warning_bg_color min(l, 0.5) a b);
-@define-color error_color oklab(from @error_bg_color min(l, 0.5) a b);
+@define-color accent_color {{colors.primary.default.hex}};
+@define-color destructive_color {{colors.error.default.hex}};
+@define-color success_color {{colors.secondary.default.hex}};
+@define-color warning_color {{colors.tertiary.default.hex}};
+@define-color error_color {{colors.error.default.hex}};
 
-@define-color window_bg_color {{colors.background.light.hex}};
-@define-color window_fg_color {{colors.on_background.light.hex}};
-@define-color view_bg_color {{colors.surface.light.hex}};
-@define-color view_fg_color {{colors.on_surface.light.hex}};
+@define-color window_bg_color {{colors.background.default.hex}};
+@define-color window_fg_color {{colors.on_background.default.hex}};
+@define-color view_bg_color {{colors.surface.default.hex}};
+@define-color view_fg_color {{colors.on_surface.default.hex}};
 
-@define-color headerbar_bg_color {{colors.surface.light.hex}};
-@define-color headerbar_fg_color {{colors.on_surface.light.hex}};
-@define-color headerbar_border_color {{colors.outline.light.hex}};
-@define-color headerbar_backdrop_color @window_bg_color;
-@define-color headerbar_shade_color {{colors.surface_variant.light.hex}};
-@define-color headerbar_darker_shade_color {{colors.surface_variant.light.hex}};
+@define-color headerbar_bg_color {{colors.surface.default.hex}};
+@define-color headerbar_fg_color {{colors.on_surface.default.hex}};
+@define-color headerbar_border_color {{colors.outline_variant.default.hex}};
+@define-color headerbar_backdrop_color @headerbar_bg_color;
+@define-color headerbar_shade_color {{colors.surface_variant.default.hex}};
+@define-color headerbar_darker_shade_color {{colors.surface_variant.default.hex}};
 
-@define-color sidebar_bg_color {{colors.surface_container_low.light.hex}};
-@define-color sidebar_fg_color {{colors.on_surface.light.hex}};
-@define-color sidebar_backdrop_color {{colors.surface_container.light.hex}};
-@define-color sidebar_shade_color {{colors.surface_variant.light.hex}};
-@define-color sidebar_border_color {{colors.outline_variant.light.hex}};
+@define-color sidebar_bg_color {{colors.surface_container_low.default.hex}};
+@define-color sidebar_fg_color {{colors.on_surface.default.hex}};
+@define-color sidebar_backdrop_color @sidebar_bg_color; 
+@define-color sidebar_shade_color {{colors.surface_variant.default.hex}};
+@define-color sidebar_border_color {{colors.surface_container_high.default.hex}};
 
-@define-color secondary_sidebar_bg_color {{colors.surface_container.light.hex}};
-@define-color secondary_sidebar_fg_color {{colors.on_surface.light.hex}};
-@define-color secondary_sidebar_backdrop_color {{colors.surface_container_high.light.hex}};
-@define-color secondary_sidebar_shade_color {{colors.surface_variant.light.hex}};
-@define-color secondary_sidebar_border_color {{colors.outline_variant.light.hex}};
+@define-color secondary_sidebar_bg_color {{colors.surface_container.default.hex}};
+@define-color secondary_sidebar_fg_color {{colors.on_surface.default.hex}};
+@define-color secondary_sidebar_backdrop_color @secondary_sidebar_bg_color;
+@define-color secondary_sidebar_shade_color {{colors.surface_variant.default.hex}};
+@define-color secondary_sidebar_border_color {{colors.surface_container_high.default.hex}};
 
-@define-color card_bg_color {{colors.surface.light.hex}};
-@define-color card_fg_color {{colors.on_surface.light.hex}};
-@define-color card_shade_color {{colors.surface_variant.light.hex}};
+@define-color card_bg_color {{colors.surface.default.hex}};
+@define-color card_fg_color {{colors.on_surface.default.hex}};
+@define-color card_shade_color {{colors.surface_variant.default.hex}};
 
-@define-color dialog_bg_color {{colors.surface_container.light.hex}};
-@define-color dialog_fg_color {{colors.on_surface.light.hex}};
+@define-color dialog_bg_color {{colors.surface_container.default.hex}};
+@define-color dialog_fg_color {{colors.on_surface.default.hex}};
 
-@define-color popover_bg_color {{colors.surface.light.rgb}};
-@define-color popover_fg_color {{colors.on_surface.light.hex}};
-@define-color popover_shade_color {{colors.surface_variant.light.hex}};
+@define-color popover_bg_color {{colors.surface.default.rgb}};
+@define-color popover_fg_color {{colors.on_surface.default.hex}};
+@define-color popover_shade_color {{colors.surface_variant.default.hex}};
 
-@define-color thumbnail_bg_color {{colors.surface.light.hex}};
-@define-color thumbnail_fg_color {{colors.on_surface.light.hex}};
+@define-color thumbnail_bg_color {{colors.surface.default.hex}};
+@define-color thumbnail_fg_color {{colors.on_surface.default.hex}};
 
-@define-color shade_color rgb(from {{colors.surface_tint.light.hex}} r g b / 12%);
-@define-color scrollbar_outline_color {{colors.on_surface.light.hex}};
-
-@media (prefers-color-scheme: dark) {
-  @define-color destructive_bg_color {{colors.error.dark.hex}};
-  @define-color success_bg_color {{colors.secondary.dark.hex}};
-  @define-color warning_bg_color {{colors.tertiary.dark.hex}};
-  @define-color error_bg_color {{colors.error.dark.hex}};
-
-  @define-color accent_color oklab(from @accent_bg_color max(l, 0.85) a b);
-  @define-color destructive_color oklab(from @destructive_bg_color max(l, 0.85) a b);
-  @define-color success_color oklab(from @success_bg_color max(l, 0.85) a b);
-  @define-color warning_color oklab(from @warning_bg_color max(l, 0.85) a b);
-  @define-color error_color oklab(from @error_bg_color max(l, 0.85) a b);
-
-  @define-color window_bg_color {{colors.background.dark.hex}};
-  @define-color window_fg_color {{colors.on_background.dark.hex}};
-  @define-color view_bg_color {{colors.surface.dark.hex}};
-  @define-color view_fg_color {{colors.on_surface.dark.hex}};
-
-  @define-color headerbar_bg_color {{colors.surface_container_high.dark.hex}};
-  @define-color headerbar_fg_color {{colors.on_surface.dark.hex}};
-  @define-color headerbar_border_color {{colors.outline.dark.hex}};
-  @define-color headerbar_shade_color {{colors.surface_variant.dark.hex}};
-  @define-color headerbar_darker_shade_color {{colors.surface_variant.dark.hex}};
-
-  @define-color sidebar_bg_color {{colors.surface_container_high.dark.hex}};
-  @define-color sidebar_fg_color {{colors.on_surface.dark.hex}};
-  @define-color sidebar_backdrop_color {{colors.surface_container.dark.hex}};
-  @define-color sidebar_shade_color {{colors.surface_variant.dark.hex}};
-  @define-color sidebar_border_color {{colors.outline_variant.dark.hex}};
-
-  @define-color secondary_sidebar_bg_color {{colors.surface_container.dark.hex}};
-  @define-color secondary_sidebar_fg_color {{colors.on_surface.dark.hex}};
-  @define-color secondary_sidebar_backdrop_color {{colors.surface_container_low.dark.hex}};
-  @define-color secondary_sidebar_shade_color {{colors.surface_variant.dark.hex}};
-  @define-color secondary_sidebar_border_color {{colors.outline_variant.dark.hex}};
-
-  @define-color card_bg_color {{colors.surface_container.dark.hex}};
-  @define-color card_fg_color {{colors.on_surface.dark.hex}};
-  @define-color card_shade_color {{colors.surface_variant.dark.hex}};
-
-  @define-color dialog_bg_color {{colors.surface_container_high.dark.hex}};
-  @define-color dialog_fg_color {{colors.on_surface.dark.hex}};
-
-  @define-color popover_bg_color {{colors.surface_container_high.dark.hex}};
-  @define-color popover_fg_color {{colors.on_surface.dark.hex}};
-  @define-color popover_shade_color {{colors.surface_variant.dark.hex}};
-
-  @define-color thumbnail_bg_color {{colors.surface_container_highest.dark.hex}};
-  @define-color thumbnail_fg_color {{colors.on_surface.dark.hex}};
-
-  @define-color shade_color rgb(from {{colors.surface_tint.dark.hex}} r g b / 32%);
-  @define-color scrollbar_outline_color {{colors.on_surface.dark.hex}};
-}
+@define-color shade_color rgb(from {{colors.surface_tint.default.hex}} r g b / 12%);
+@define-color scrollbar_outline_color {{colors.on_surface.default.hex}};
 
 :root {
   --standalone-color-oklab: min(l, 0.5) a b;
@@ -909,7 +856,11 @@ treeview.view > dndtarget:drop(active).after, window.print:not(.ssd-frame) treev
 
 treeview.view > dndtarget:drop(active).before, window.print:not(.ssd-frame) treeview.dialog-action-box > dndtarget:drop(active).before { border-bottom-style: none; }
 
-treeview.view > header > button, window.print:not(.ssd-frame) treeview.dialog-action-box > header > button { padding-left: 4px; padding-right: 4px; border-bottom: 1px solid color-mix(in srgb, currentColor var(--border-opacity), transparent); }
+treeview.view > header > button, window.print:not(.ssd-frame) treeview.dialog-action-box > header > button { padding-left: 4px; padding-right: 4px; border-bottom: @define-color accent_color {{colors.primary.default.hex}};
+@define-color destructive_color {{colors.error.default.hex}};
+@define-color success_color {{colors.secondary.default.hex}};
+@define-color warning_color {{colors.tertiary.default.hex}};
+@define-color error_color {{colors.error.default.hex}};1px solid color-mix(in srgb, currentColor var(--border-opacity), transparent); }
 
 treeview.view.progressbar, window.print:not(.ssd-frame) treeview.progressbar.dialog-action-box { box-shadow: none; }
 
@@ -959,7 +910,11 @@ window.shortcuts:not(.ssd-frame) searchbar { background: none; }
 
 /* Transition shadows */
 flap > dimming, leaflet > dimming { background: var(--shade-color); }
-
+@define-color accent_color {{colors.primary.default.hex}};
+@define-color destructive_color {{colors.error.default.hex}};
+@define-color success_color {{colors.secondary.default.hex}};
+@define-color warning_color {{colors.tertiary.default.hex}};
+@define-color error_color {{colors.error.default.hex}};
 flap > shadow, leaflet > shadow { min-width: 56px; min-height: 56px; }
 
 flap > shadow.left, leaflet > shadow.left { background-image: linear-gradient(to right, color-mix(in srgb, var(--shade-color) 70%, transparent), color-mix(in srgb, var(--shade-color) 14%, transparent) 40px, RGB(from var(--shade-color) r g b/0) 56px), linear-gradient(to right, color-mix(in srgb, var(--shade-color) 40%, transparent), color-mix(in srgb, var(--shade-color) 14%, transparent) 7px, RGB(from var(--shade-color) r g b/0) 24px); }
@@ -2865,3 +2820,13 @@ window.ssd { box-shadow: 0 0 0 1px RGB(0 0 0 / 5%); }
 @define-color theme_unfocused_selected_fg_color @accent_fg_color;
 @define-color unfocused_insensitive_color @insensitive_bg_color;
 @define-color unfocused_borders @borders;
+
+.nautilus-window .navigation-sidebar > .sidebar-row:nth-child(2),
+.nautilus-window .navigation-sidebar > .sidebar-row:nth-child(3), 
+.nautilus-window .navigation-sidebar > .sidebar-row:nth-child(4) {
+  min-height:0;
+  font-size: 0;
+  -gtk-icon-size: 0;
+  margin-top: -2px;
+}
+
