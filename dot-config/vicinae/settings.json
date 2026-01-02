@@ -12,7 +12,7 @@
    "imports": [],
    "close_on_focus_loss": false,
    "consider_preedit": false,
-   "pop_to_root_on_close": false,
+   "pop_to_root_on_close": true,
    "favicon_service": "twenty",
    "keybinding": "default",
    "search_files_in_root": false,
@@ -81,6 +81,9 @@
    "providers": {
       "applications": {
          "entrypoints": {
+            "assistant": {
+               "enabled": false
+            },
             "avahi-discover": {
                "enabled": false
             },
@@ -90,10 +93,19 @@
             "bvnc": {
                "enabled": false
             },
+            "designer": {
+               "enabled": false
+            },
             "jconsole-java-openjdk": {
                "enabled": false
             },
             "jshell-java-openjdk": {
+               "enabled": false
+            },
+            "kdesystemsettings": {
+               "enabled": false
+            },
+            "linguist": {
                "enabled": false
             },
             "lstopo": {
@@ -103,6 +115,15 @@
                "enabled": false
             },
             "nvtop": {
+               "enabled": false
+            },
+            "org.freedesktop.IBus.Setup": {
+               "enabled": false
+            },
+            "org.gnome.Logs": {
+               "enabled": false
+            },
+            "org.gnome.font-viewer": {
                "enabled": false
             },
             "org.kde.kdeconnect.nonplasma": {
@@ -117,10 +138,16 @@
             "protontricks": {
                "enabled": false
             },
+            "qdbusviewer": {
+               "enabled": false
+            },
             "qv4l2": {
                "enabled": false
             },
             "qvidcap": {
+               "enabled": false
+            },
+            "rygel-preferences": {
                "enabled": false
             },
             "vicinae": {
