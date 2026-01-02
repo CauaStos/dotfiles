@@ -1,18 +1,40 @@
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+# Environment
 
-export EDITOR=nvim
-export PATH="$HOME/Documents/development/flutter/bin:$PATH"
-export PATH="$HOME/.cargo/bin/:$PATH"
-export FREETYPE_PROPERTIES="truetype:interpreter-version=40"
+## Editor
+set -gx EDITOR nvim
 
+## Java
+set -gx _JAVA_OPTIONS '-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+
+## Font rendering
+set -gx FREETYPE_PROPERTIES 'truetype:interpreter-version=40'
+
+## GTK Theme
+set -gx GTK_THEME Material
+
+## PATH
+fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.cargo/bin
+
+# Fish behavior
+
+## Disable greeting
 set fish_greeting
-abbr --add zed zeditor
-eval "$(starship init fish)"
-eval "$(zoxide init fish)"
-enable_transience
-#sleep so fastfetch doesnt bug width
 
-if status -i;
-    and sleep 0.1;
-    fastfetch --logo-width 10;
+## Abbreviations
+abbr --add zed zeditor
+abbr --add flutter 'fvm flutter'
+
+## Prompt / tools
+starship init fish | source
+zoxide init fish | source
+
+## Enable transient prompt
+type -q enable_transience; and enable_transience
+
+## Eye candy
+### Sleep so fastfetch doesn't mess width
+if status is-interactive
+    sleep 0.1
+    fastfetch --logo-width 10
 end
