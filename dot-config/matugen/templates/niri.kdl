@@ -58,7 +58,7 @@ input {
         accel-profile "flat"
     }
 
-    focus-follows-mouse max-scroll-amount="5%"
+    focus-follows-mouse max-scroll-amount="1%"
 }
 
 
