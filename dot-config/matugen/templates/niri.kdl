@@ -354,7 +354,7 @@ binds {
     // █▀█ █▄▄  █  █ █▄█ █ ▀█ ▄█
 
     Mod+Q { close-window; }
-    Mod+Delete { quit skip-confirmation=true; }
+    Mod+Shift+Delete { quit skip-confirmation=true; }
     Mod+W       { toggle-window-floating; }
     Alt+Return { fullscreen-window; }
     Mod+L hotkey-overlay-title="Screenlock" { spawn "hyprlock"; }
@@ -417,8 +417,8 @@ binds {
     // █▀▄▀█ █ █▀ █▀▀ █▀▀ █  ▄▀█ █▄ █ █▀▀ █▀█ █ █ █▀
     // █ ▀ █ █ ▄█ █▄▄ ██▄ █▄ █▀█ █ ▀█ ██▄ █▄█ █▄█ ▄█
 
-    Ctrl+Alt+Z { spawn "wtype" "-k" "backslash"; }
-    Shift+Alt+Z { spawn "wtype" "|"; }
+    Alt+Z { spawn "wtype" "-k" "backslash"; }
+    Mod+Z { spawn "wtype" "|"; }
     Home { spawn "wtype" "/"; }
     Shift+Home { spawn "wtype" "?"; }
 
