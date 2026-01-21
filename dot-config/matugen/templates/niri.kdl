@@ -175,9 +175,6 @@ recent-windows {
     }
 
     binds {
-        Alt+Tab         { next-window; }
-        Alt+Shift+Tab   { previous-window; }
-
         Mod+Tab         { next-window; }
         Mod+Shift+Tab   { previous-window; }
     }
@@ -356,7 +353,7 @@ binds {
     Mod+Q { close-window; }
     Mod+Shift+Delete { quit skip-confirmation=true; }
     Mod+W       { toggle-window-floating; }
-    Alt+Return { fullscreen-window; }
+    Mod+Return { fullscreen-window; }
     Mod+L hotkey-overlay-title="Screenlock" { spawn "hyprlock"; }
 
 
