@@ -36,7 +36,7 @@ input {
 
     keyboard {
         xkb {
-            layout "br"
+            file "~/.config/keymap.xkb"
         }
     }
 
@@ -413,11 +413,6 @@ binds {
 
     // █▀▄▀█ █ █▀ █▀▀ █▀▀ █  ▄▀█ █▄ █ █▀▀ █▀█ █ █ █▀
     // █ ▀ █ █ ▄█ █▄▄ ██▄ █▄ █▀█ █ ▀█ ██▄ █▄█ █▄█ ▄█
-
-    Alt+Z { spawn "wtype" "-k" "backslash"; }
-    Mod+Z { spawn "wtype" "|"; }
-    Home { spawn "wtype" "/"; }
-    Shift+Home { spawn "wtype" "?"; }
 
     Mod+Shift+P { power-off-monitors; }
   }
