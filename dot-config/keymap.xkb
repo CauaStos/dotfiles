@@ -4,7 +4,7 @@ xkb_keymap {
     xkb_compat    { include "complete" };
     xkb_symbols   {
         include "pc+br(abnt2)+inet(evdev)"
-        key <RTSH> { [ slash, question ] };
+        key <RTSH> { [ slash, question, bar, backslash ] };
     };
     xkb_geometry  { include "pc(pc105)" };
 };
