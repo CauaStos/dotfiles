@@ -1,8 +1,7 @@
 [config.wallpaper]
-command = "swww"
-arguments = ["img", "--transition-fps", "360"]
 set = true
-pre_hook = "gsettings set org.gnome.desktop.interface gtk-theme ''; gsettings set org.gnome.desktop.interface gtk-theme 'Material'" 
+command = "swww img --transition-fps 360 {{image}}"
+pre_hook = "gsettings set org.gnome.desktop.interface gtk-theme ''; gsettings set org.gnome.desktop.interface gtk-theme 'Material'"
 
 [templates.gtk3]
 input_path = '~/.config/matugen/templates/gtk3.css'
@@ -48,7 +47,7 @@ output_path = '~/.cache/wal/colors'
 [templates.kitty]
 input_path = '~/.config/matugen/templates/kitty.conf'
 output_path = '~/.config/kitty/kitty.conf'
-post_hook = "pkill -SIGUSR1 kitty" 
+post_hook = "pkill -SIGUSR1 kitty"
 
 [templates.spotify]
 input_path = '~/.config/matugen/templates/spicetify.ini'
