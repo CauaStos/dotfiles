@@ -11,7 +11,7 @@ spawn-at-startup "swww-daemon"
 spawn-at-startup "easyeffects" "--gapplication-service"
 spawn-at-startup "steam" "-silent"
 spawn-at-startup "zen-browser"
-spawn-at-startup "cider"
+spawn-at-startup "flatpak run sh.cider.Cider" 
 spawn-at-startup "vesktop" "--start-minimized"
 spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors; sleep 2; hyprlock"
 
@@ -69,7 +69,7 @@ input {
 output "DP-1" {
   mode "2560x1440@359.999"
   position x=0 y=0
-  scale 1.2
+  scale 1.25
 
   focus-at-startup
   variable-refresh-rate on-demand=true 
@@ -80,10 +80,11 @@ output "DP-1" {
 
  }
 
-output "DP-2" {
-    mode "1920x1080@143.855"
+output "HDMI-A-1" {
+    mode "3840x2160@60.000"
     transform "270"
-    position x=-1080 y=-380
+    position x=-1080 y=-635
+    scale 1.75
 
     variable-refresh-rate on-demand=true
 
@@ -153,9 +154,8 @@ hotkey-overlay {
 }
 
 cursor {
-    xcursor-theme "Bibata-Modern-Classic"
-    xcursor-size 24
-
+    xcursor-theme "macOS"
+    xcursor-size 28
 }
 
 overview {
@@ -251,7 +251,7 @@ window-rule {
 
 window-rule {
     match app-id="^[Cc]ider"
-    open-on-output "DP-2"
+    open-on-output "HDMI-A-1"
 }
 
 window-rule {
