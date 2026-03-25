@@ -1,6 +1,6 @@
 [config.wallpaper]
 set = true
-command = "swww img --transition-fps 360 {{image}}"
+command = "awww img --transition-fps 360 {{image}}"
 pre_hook = "gsettings set org.gnome.desktop.interface gtk-theme ''; gsettings set org.gnome.desktop.interface gtk-theme 'Material'"
 
 [templates.gtk3]
