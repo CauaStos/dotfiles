@@ -1,0 +1,54 @@
+environment {
+    QT_QPA_PLATFORM "wayland"
+    QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+    SDL_VIDEODRIVER "wayland"
+    MOZ_ENABLE_WAYLAND "1"
+    ELECTRON_OZONE_PLATFORM_HINT "wayland"
+}
+
+prefer-no-csd
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+cursor {
+    xcursor-theme "macOS"
+    xcursor-size 28
+}
+
+overview {
+    zoom 0.55
+
+    workspace-shadow {
+        on
+        softness 64
+        spread -14
+        offset x=0 y=18
+        color "#00000055"
+    }
+}
+
+recent-windows {
+    open-delay-ms 90
+
+    highlight {
+        padding 18
+        corner-radius 14
+    }
+
+    binds {
+        Mod+Tab { next-window; }
+        Mod+Shift+Tab { previous-window; }
+    }
+}
+
+blur {
+    passes 3
+    offset 5
+    noise 0.018
+    saturation 1.22
+}
+
+screenshot-path "~/Pictures/Screenshots/%d-%m-%Y__%H-%M-%S.png"

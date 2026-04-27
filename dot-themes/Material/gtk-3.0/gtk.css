@@ -43,50 +43,63 @@
 @define-color dark_3 #3d3846;
 @define-color dark_4 #241f31;
 @define-color dark_5 #000000;
-@define-color accent_bg_color @blue_3;
-@define-color accent_fg_color white;
-@define-color destructive_bg_color @red_3;
-@define-color destructive_fg_color white;
-@define-color success_bg_color @green_4;
-@define-color success_fg_color white;
-@define-color warning_bg_color @yellow_5;
+
+/* Colors */
+@define-color accent_bg_color #ffb4a7;
+@define-color accent_fg_color #561e16;
+@define-color destructive_bg_color #ffb4ab;
+@define-color destructive_fg_color #690005;
+@define-color success_bg_color #e7bdb6;
+@define-color success_fg_color #442925;
+@define-color warning_bg_color #dec48c;
 @define-color warning_fg_color rgba(0,0,0,0.8);
-@define-color error_bg_color @red_3;
-@define-color error_fg_color white;
+@define-color error_bg_color #ffb4ab;
+@define-color error_fg_color #690005;
+
 @define-color accent_color mix(@accent_bg_color,black,0.17);
 @define-color destructive_color mix(@destructive_bg_color,black,0.17);
 @define-color success_color mix(@success_bg_color,black,0.17);
 @define-color warning_color mix(@warning_bg_color,black,0.17);
 @define-color error_color mix(@error_bg_color,black,0.17);
-@define-color window_bg_color #fafafb;
-@define-color window_fg_color #323233;
-@define-color view_bg_color #ffffff;
-@define-color view_fg_color #333334;
-@define-color headerbar_bg_color #ebebed;
-@define-color headerbar_fg_color #2f2f30;
+
+@define-color window_bg_color alpha(#1a1110, 0.90);
+@define-color window_fg_color #f1dfdb;
+@define-color view_bg_color alpha(#1a1110, 0.90);
+@define-color view_fg_color #f1dfdb;
+
+@define-color headerbar_bg_color alpha(#271d1c, 0.90);
+@define-color headerbar_fg_color #f1dfdb;
 @define-color headerbar_border_color rgba(0, 0, 6, 0.8);
 @define-color headerbar_backdrop_color @window_bg_color;
 @define-color headerbar_shade_color rgba(0, 0, 6, 0.12);
 @define-color headerbar_darker_shade_color rgba(0, 0, 6, 0.12);
-@define-color sidebar_bg_color #ebebed;
-@define-color sidebar_fg_color #2f2f30;
-@define-color sidebar_backdrop_color #f2f2f4;
+
+@define-color sidebar_bg_color alpha(#231918, 0.90);
+@define-color sidebar_fg_color #f1dfdb;
+@define-color sidebar_backdrop_color alpha(#271d1c, 0.90);
 @define-color sidebar_shade_color rgba(0, 0, 6, 0.07);
 @define-color sidebar_border_color rgba(0, 0, 6, 0.07);
-@define-color card_bg_color #ffffff;
-@define-color card_fg_color #333334;
+
+@define-color card_bg_color alpha(#1a1110, 0.90);
+@define-color card_fg_color #f1dfdb;
 @define-color card_shade_color rgba(0, 0, 6, 0.07);
-@define-color dialog_bg_color #fafafb;
-@define-color dialog_fg_color #323233;
-@define-color popover_bg_color #ffffff;
-@define-color popover_fg_color #333334;
+
+@define-color dialog_bg_color alpha(#271d1c, 0.90);
+@define-color dialog_fg_color #f1dfdb;
+
+@define-color popover_bg_color alpha(#1a1110, 0.90);
+@define-color popover_fg_color #f1dfdb;
 @define-color popover_shade_color rgba(0, 0, 6, 0.07);
-@define-color thumbnail_bg_color #ffffff;
-@define-color thumbnail_fg_color #333334;
+
+@define-color thumbnail_bg_color alpha(#1a1110, 0.90);
+@define-color thumbnail_fg_color #f1dfdb;
+
 @define-color shade_color rgba(0, 0, 6, 0.07);
-@define-color scrollbar_outline_color white;
+@define-color scrollbar_outline_color #f1dfdb;
+
 @define-color panel_bg_color black;
 @define-color panel_fg_color white;
+
 @define-color theme_fg_color @window_fg_color;
 @define-color theme_text_color @view_fg_color;
 @define-color theme_bg_color @window_bg_color;
@@ -123,6 +136,7 @@
 @define-color wm_button_active_color_c shade(@window_bg_color, 0.9);
 @define-color content_view_bg @view_bg_color;
 @define-color text_view_bg @view_bg_color;
+
 * {
   padding: 0;
   -GtkToolButton-icon-spacing: 4;
@@ -7793,4 +7807,23 @@ window.background:not(.solid-csd):not(.csd) > notebook > stack:not(:only-child) 
 }
 #settingsDialog .dialog-vbox.vertical tab:checked:hover {
   background-color: mix(@window_fg_color,@window_bg_color,0.65);
+}
+
+/* Hide dropdown chevrons in combo boxes and menu popovers. */
+combobox arrow,
+menubutton arrow,
+popover.background modelbutton arrow,
+popover.background .menuitem arrow,
+popover.combo arrow,
+menu menuitem arrow,
+.menu menuitem arrow,
+.context-menu menuitem arrow,
+.selection-menu arrow {
+  -gtk-icon-source: none;
+  -GtkArrow-arrow-scaling: 0;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
 }

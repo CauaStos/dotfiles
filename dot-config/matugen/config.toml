@@ -3,57 +3,7 @@ set = true
 command = "awww img --transition-fps 360 {{image}}"
 pre_hook = "gsettings set org.gnome.desktop.interface gtk-theme ''; gsettings set org.gnome.desktop.interface gtk-theme 'Material'"
 
-[templates.gtk3]
-input_path = '~/.config/matugen/templates/gtk3.css'
-output_path = '~/.themes/Material/gtk-3.0/gtk.css'
-
-[templates.gtk4]
-input_path = '~/.config/matugen/templates/libadwaita.css'
-output_path = '~/.themes/Material/gtk-4.0/libadwaita.css'
-
-[templates.color-scheme-qt]
-input_path = '~/.config/matugen/templates/qt.colors'
-output_path = '~/.local/share/color-schemes/Matugen.colors'
-
-[templates.zed]
-input_path = '~/.config/matugen/templates/zed.json'
-output_path = '~/.config/zed/themes/material.json'
-
-[templates.vesktop]
-input_path = '~/.config/matugen/templates/discord.css'
-output_path = '~/.config/vesktop/themes/material.css'
-
-[templates.niri]
-input_path = '~/.config/matugen/templates/niri.kdl'
-output_path = '~/.config/niri/config.kdl'
-
-[templates.macchina]
-input_path = '~/.config/matugen/templates/macchina.toml'
-output_path = '~/.config/macchina/themes/Material.toml'
-
-[templates.nvim]
-input_path = '~/.config/nvim/pywal/matugen.lua'
-output_path = '~/.cache/wal/base46-dark.lua'
-
-[templates.vicinae]
-input_path = './templates/vicinae.toml'
-output_path = '~/.local/share/vicinae/themes/matugen.toml'
-post_hook = 'vicinae theme set matugen'
-
-[templates.pywal]
-input_path = '~/.config/matugen/templates/pywal_colors_file'
-output_path = '~/.cache/wal/colors'
-
-[templates.kitty]
-input_path = '~/.config/matugen/templates/kitty.conf'
-output_path = '~/.config/kitty/kitty.conf'
-post_hook = "pkill -SIGUSR1 kitty"
-
-[templates.spotify]
-input_path = '~/.config/matugen/templates/spicetify.ini'
-output_path = '~/.config/spicetify/Themes/text/color.ini'
-
-#For nvim
+# For nvim
 [config.custom_colors.red]
 color = "#FF0000"
 blend = true
@@ -81,3 +31,53 @@ blend = true
 [config.custom_colors.white]
 color = "#FFFFFF"
 blend = true
+
+[templates.gtk3]
+input_path = "~/.config/matugen/templates/gtk3.css"
+output_path = "~/.themes/Material/gtk-3.0/gtk.css"
+
+[templates.gtk4]
+input_path = "~/.config/matugen/templates/libadwaita.css"
+output_path = "~/.themes/Material/gtk-4.0/libadwaita.css"
+
+[templates.color-scheme-qt]
+input_path = "~/.config/matugen/templates/qt.colors"
+output_path = "~/.local/share/color-schemes/Matugen.colors"
+
+[templates.zed]
+input_path = "~/.config/matugen/templates/zed.json"
+output_path = "~/.config/zed/themes/material.json"
+
+[templates.vesktop]
+input_path = "~/.config/matugen/templates/discord.css"
+output_path = "~/.config/vesktop/themes/material.css"
+
+[templates.niri]
+input_path = "~/.config/matugen/templates/niri-theme.kdl"
+output_path = "~/.config/niri/theme.kdl"
+
+[templates.macchina]
+input_path = "~/.config/matugen/templates/macchina.toml"
+output_path = "~/.config/macchina/themes/Material.toml"
+
+[templates.nvim]
+input_path = "~/.config/nvim/pywal/matugen.lua"
+output_path = "~/.cache/wal/base46-dark.lua"
+
+[templates.vicinae]
+input_path = "./templates/vicinae.toml"
+output_path = "~/.local/share/vicinae/themes/matugen.toml"
+post_hook = "vicinae theme set matugen"
+
+[templates.pywal]
+input_path = "~/.config/matugen/templates/pywal_colors_file"
+output_path = "~/.cache/wal/colors"
+
+[templates.kitty]
+input_path = "~/.config/matugen/templates/kitty.conf"
+output_path = "~/.config/kitty/kitty.conf"
+post_hook = "pkill -SIGUSR1 kitty"
+
+[templates.spotify]
+input_path = "~/.config/matugen/templates/spicetify.ini"
+output_path = "~/.config/spicetify/Themes/text/color.ini"

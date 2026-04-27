@@ -1,0 +1,13 @@
+include "startup.kdl"
+include "input.kdl"
+include "gestures.kdl"
+include "outputs.kdl"
+include "layout.kdl"
+include "session.kdl"
+include "animations.kdl"
+
+include "theme-base.kdl"
+include optional=true "theme.kdl"
+
+include "rules.kdl"
+include "binds.kdl"

@@ -1,4 +1,9 @@
 {
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
   "disable_ai": true,
   "git": {
     "inline_blame": {
@@ -125,5 +130,10 @@
     "mode": "dark",
     "light": "One Light",
     "dark": "Material - Matugen"
+  },
+  "theme_overrides": {
+    "Material - Matugen": {
+      "background.appearance": "blurred"
+    }
   }
 }

@@ -1,0 +1,27 @@
+layout {
+    border {
+        on
+        active-color "#f4f4f455"
+        inactive-color "#f4f4f422"
+        urgent-color "#d75f5f"
+    }
+}
+
+recent-windows {
+    highlight {
+        active-color "#f4f4f466"
+        urgent-color "#ff9b9b"
+    }
+}
+
+window-rule {
+    match is-window-cast-target=true
+
+    border {
+        on
+        width 2
+
+        active-gradient from="#f4f4f488" to="#ff9b9bcc" angle=135
+        inactive-gradient from="#f4f4f433" to="#ff9b9b88" angle=135
+    }
+}

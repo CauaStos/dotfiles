@@ -1,0 +1,31 @@
+input {
+    mod-key "Super"
+    mod-key-nested "Alt"
+
+    keyboard {
+        xkb {
+            file "~/.config/keymap.xkb"
+        }
+    }
+
+    touchpad {
+        tap
+        dwt
+        dwtp
+        natural-scroll
+        click-method "clickfinger"
+        scroll-method "two-finger"
+        scroll-factor vertical=0.50 horizontal=0.60
+        accel-speed 0.20
+    }
+
+    tablet {
+        map-to-output "DP-1"
+    }
+
+    mouse {
+        accel-profile "flat"
+    }
+
+    focus-follows-mouse max-scroll-amount="1%"
+}

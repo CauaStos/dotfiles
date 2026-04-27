@@ -1,0 +1,25 @@
+output "DP-1" {
+    mode "2560x1440@359.999"
+    position x=0 y=0
+    scale 1.25
+
+    focus-at-startup
+    variable-refresh-rate on-demand=true
+
+    layout {
+        default-column-width { proportion 0.5; }
+    }
+}
+
+output "HDMI-A-1" {
+    mode "3840x2160@60.000"
+    transform "270"
+    position x=-1080 y=-635
+    scale 1.75
+
+    variable-refresh-rate on-demand=true
+
+    layout {
+        default-column-width { proportion 1.0; }
+    }
+}

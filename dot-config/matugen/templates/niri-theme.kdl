@@ -1,0 +1,27 @@
+layout {
+    border {
+        on
+        active-color "{{colors.on_surface.default.hex}}55"
+        inactive-color "{{colors.outline_variant.default.hex}}33"
+        urgent-color "{{colors.error.default.hex}}"
+    }
+}
+
+recent-windows {
+    highlight {
+        active-color "{{colors.on_surface.default.hex}}66"
+        urgent-color "{{colors.error.light.hex}}"
+    }
+}
+
+window-rule {
+    match is-window-cast-target=true
+
+    border {
+        on
+        width 2
+
+        active-gradient from="{{colors.on_surface.default.hex}}88" to="{{colors.error.default.hex}}cc" angle=135
+        inactive-gradient from="{{colors.outline_variant.default.hex}}55" to="{{colors.error.default.hex}}99" angle=135
+    }
+}

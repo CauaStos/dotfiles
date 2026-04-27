@@ -1,0 +1,125 @@
+window-rule {
+    geometry-corner-radius 14
+    clip-to-geometry true
+    draw-border-with-background false
+
+    background-effect {
+        blur true
+        xray false
+        noise 0.018
+        saturation 1.22
+    }
+
+    popups {
+        geometry-corner-radius 12
+
+        background-effect {
+            blur true
+            xray false
+            noise 0.018
+            saturation 1.22
+        }
+    }
+}
+
+window-rule {
+    match app-id="^[Cc]ider"
+    open-on-output "HDMI-A-1"
+}
+
+window-rule {
+    match is-floating=true
+    geometry-corner-radius 16
+
+    background-effect {
+        blur true
+        xray false
+        noise 0.018
+        saturation 1.22
+    }
+
+    shadow {
+        on
+        softness 42
+        spread -10
+        offset x=0 y=16
+        color "#00000066"
+        inactive-color "#00000040"
+    }
+}
+
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=10 y=10 relative-to="bottom-right"
+    open-focused false
+}
+
+window-rule {
+    match title="^Picture-in-Picture$"
+    open-floating true
+}
+
+window-rule {
+    match title="^About Mozilla Firefox$"
+    match app-id="^firefox$"
+    match app-id="^foot$"
+    match app-id="^vlc$"
+    match app-id="^kvantummanager$"
+    match app-id="^qt5ct$"
+    match app-id="^qt6ct$"
+    match app-id="^nwg-look$"
+    match app-id="^org.kde.ark$"
+    match app-id="^pavucontrol-qt$"
+    match app-id="^blueman-manager$"
+    match app-id="^nm-applet$"
+    match app-id="^nm-connection-editor$"
+    match app-id="^org.kde.polkit-kde-authentication-agent-1$"
+    match title="^Mission Center$"
+    match app-id="^Signal$"
+    match app-id="^com.github.rafostar.Clapper$"
+    match app-id="^app.drey.Warp$"
+    match app-id="^net.davidotek.pupgui2$"
+    match app-id="^yad$"
+    match app-id="^eog$"
+    match app-id="^io.github.alainm23.planify$"
+    match app-id="^io.gitlab.theevilssskeleton.Upscaler$"
+    match app-id="^com.github.unrud.VideoDownloader$"
+    match app-id="^io.gitlab.adhami3310.Impression$"
+    match app-id="^mate-system-monitor$"
+    match app-id="^zenity$"
+
+    open-floating true
+}
+
+layer-rule {
+    match namespace="Sidus"
+    place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="awww-daemon"
+    place-within-backdrop true
+}
+
+layer-rule {
+    match layer="top"
+    match layer="overlay"
+
+    background-effect {
+        blur true
+        xray false
+        noise 0.018
+        saturation 1.22
+    }
+
+    popups {
+        geometry-corner-radius 12
+
+        background-effect {
+            blur true
+            xray false
+            noise 0.018
+            saturation 1.22
+        }
+    }
+}
