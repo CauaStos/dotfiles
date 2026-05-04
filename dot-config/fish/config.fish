@@ -12,6 +12,9 @@ set -gx FREETYPE_PROPERTIES 'truetype:interpreter-version=40'
 ## GTK Theme
 set -gx GTK_THEME Material
 
+## OpenAI Agents SDK
+set -gx OPENAI_AGENTS_DISABLE_TRACING 1
+
 ## PATH
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.cargo/bin
