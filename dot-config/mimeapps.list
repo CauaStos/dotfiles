@@ -68,3 +68,4 @@ audio/wav=io.bassi.Amberol.desktop;
 application/x-bittorrent=org.qbittorrent.qBittorrent.desktop;
 x-scheme-handler/magnet=org.qbittorrent.qBittorrent.desk
 x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/jetbrains=jetbrainsd.desktop

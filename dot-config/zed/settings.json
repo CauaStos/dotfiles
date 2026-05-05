@@ -1,4 +1,5 @@
 {
+  "show_edit_predictions": false,
   "agent_servers": {
     "codex-acp": {
       "default_config_options": {
