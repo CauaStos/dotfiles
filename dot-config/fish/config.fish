@@ -5,6 +5,7 @@ set -gx EDITOR nvim
 
 ## Java
 set -gx _JAVA_OPTIONS '-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+set -gx _JAVA_AWT_WM_NONREPARENTING 1
 
 ## Font rendering
 set -gx FREETYPE_PROPERTIES 'truetype:interpreter-version=40'
