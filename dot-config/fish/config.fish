@@ -26,7 +26,6 @@ fish_add_path $HOME/.cargo/bin
 set fish_greeting
 
 ## Abbreviations
-abbr --add zed zeditor
 abbr --add flutter 'fvm flutter'
 
 ## Prompt / tools
@@ -39,6 +38,9 @@ type -q enable_transience; and enable_transience
 ## Eye candy
 ### Sleep so fastfetch doesn't mess width
 if status is-interactive
+    alias zed='zeditor'
+    alias ssh="kitty +kitten ssh"
+
     sleep 0.1
     fastfetch --logo-width 10
 end
