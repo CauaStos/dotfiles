@@ -59,4 +59,7 @@ binds {
     Mod+Shift+Print { screenshot-window; }
 
     Mod+Shift+P { power-off-monitors; }
+
+    Mod+WheelScrollLeft { focus-column-right; }
+    Mod+WheelScrollRight { focus-column-left; }
 }
