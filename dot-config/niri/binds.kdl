@@ -60,6 +60,6 @@ binds {
 
     Mod+Shift+P { power-off-monitors; }
 
-    Mod+WheelScrollLeft { focus-column-right; }
-    Mod+WheelScrollRight { focus-column-left; }
+    Mod+WheelScrollLeft { focus-column-left; }
+    Mod+WheelScrollRight { focus-column-right; }
 }
