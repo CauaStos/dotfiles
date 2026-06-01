@@ -9,6 +9,7 @@ spawn-at-startup "zen-browser"
 spawn-sh-at-startup "flatpak run sh.cider.Cider"
 spawn-at-startup "vesktop" "--start-minimized"
 spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors; sleep 2; hyprlock"
+spawn-sh-at-startup "solaar"
 
 spawn-sh-at-startup "gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'"
 spawn-sh-at-startup "gsettings set org.gnome.desktop.interface gtk-theme 'Material'"
