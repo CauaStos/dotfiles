@@ -48,9 +48,9 @@ output_path = "~/.local/share/color-schemes/Matugen.colors"
 input_path = "~/.config/matugen/templates/zed.json"
 output_path = "~/.config/zed/themes/material.json"
 
-[templates.vesktop]
+[templates.vencord]
 input_path = "~/.config/matugen/templates/discord.css"
-output_path = "~/.config/vesktop/themes/material.css"
+output_path = "~/.config/Vencord/themes/material.css"
 
 [templates.niri]
 input_path = "~/.config/matugen/templates/niri-theme.kdl"
